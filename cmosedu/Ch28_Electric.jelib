@@ -1,0 +1,2195 @@
+# header information:
+HCh28_Electric|8.11
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell Fig28_5a;1{sch}
+CFig28_5a;1{sch}||schematic|1209515525379|1286673513935|
+IIdeal_Sample&Hold;1{ic}|Ideal_Sa@0||0|0|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-15.5|0||||
+NOff-Page|conn@1||0|-12|||R|
+NOff-Page|conn@2||15|0||||
+NOff-Page|conn@3||0|13|||RRR|
+Ngeneric:Invisible-Pin|pin@4||-16|9.5|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,Vin Vin 0 DC 0 SINE(0.5 0.5 4MEG),Vclk Vclk 0 DC 0 PULSE(0 1 0 0 0 4.9n 10n),.tran 10p 500n 10p .1n,*.options post,.options plotwinsize=0]
+Awire|net@9|||2700|Ideal_Sa@0|VDD|0|5|conn@3|y|0|11
+Awire|net@10|||1800|Ideal_Sa@0|Voutsh|7|0|conn@2|a|13|0
+Awire|net@11|||900|Ideal_Sa@0|Vclk|0|-5|conn@1|y|0|-10
+Awire|net@12|||0|Ideal_Sa@0|Vin|-7|0|conn@0|y|-13.5|0
+EVDD||D5G2;X-2.5;|conn@3|y|P
+EVclk||D5G2;X1.5;|conn@1|a|I
+EVin||D5G2;X-2.5;|conn@0|y|I
+EVout||D5G2;X-2;|conn@2|y|O
+X
+
+# Cell Fig28_5b;1{sch}
+CFig28_5b;1{sch}||schematic|1209515525379|1286673537785|
+IIdeal_Track&Hold;1{ic}|Ideal_Sa@0||0|0|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-15.5|0||||
+NOff-Page|conn@1||0|-12|||R|
+NOff-Page|conn@2||15|0||||
+NOff-Page|conn@3||0|13|||RRR|
+Ngeneric:Invisible-Pin|pin@4||-16|9.5|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,Vin Vin 0 DC 0 SINE(0.5 0.5 4MEG),Vclk Vclk 0 DC 0 PULSE(0 1 0 0 0 4.9n 10n),.tran 10p 500n 10p .1n,*.options post,.options plotwinsize=0]
+Awire|net@9|||2700|Ideal_Sa@0|VDD|0|5|conn@3|y|0|11
+Awire|net@10|||1800|Ideal_Sa@0|Voutsh|7|0|conn@2|a|13|0
+Awire|net@11|||900|Ideal_Sa@0|Vclk|0|-5|conn@1|y|0|-10
+Awire|net@12|||0|Ideal_Sa@0|Vin|-7|0|conn@0|y|-13.5|0
+EVDD||D5G2;X-2.5;|conn@3|y|P
+EVclk||D5G2;X1.5;|conn@1|a|I
+EVin||D5G2;X-2.25;|conn@0|y|I
+EVout||D5G2;X-2;|conn@2|y|O
+X
+
+# Cell Fig28_10;1{sch}
+CFig28_10;1{sch}||schematic|1209516846863|1286673559500|
+IIdeal_3Bit_DAC;1{ic}|Ideal_3B@0||-9|1.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-22.5|4.25||||
+NOff-Page|conn@1||-22.5|1.75||||
+NOff-Page|conn@2||-22.5|-0.75||||
+NOff-Page|conn@6||2.75|2.25||||
+NGround|gnd@0||-5.5|-12.5||||
+Ngeneric:Invisible-Pin|pin@9||-31.75|-8.5|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,VB0 B0 0 DC 0 PULSE(0 1 5n 100p 100p 4.9n 10n),VB1 B1 0 DC 0 PULSE(0 1 10n 100p 100p 9.9n 20n),VB2 B2 0 DC 0 PULSE(0 1 20n 100p 100p 19.9n 40n),.tran 10p 40n 10p .1n uic,*.options post,.options plotwinsize=0]
+Ngeneric:Invisible-Pin|pin@10||-25.5|12|||||ART_message(D5G1;)S[Ideal 3-bit DAC Transfer Curves,"Plot Vout,B0,B1,B2"]
+NPower|pwr@0||-9|13.75||||
+NPower|pwr@1||-11.5|-10.25||||
+Awire|net@24|||2700|Ideal_3B@0|VDD|-9|9.5|pwr@0||-9|13.75
+Awire|net@25|||2700|pwr@1||-11.5|-10.25|Ideal_3B@0|VREFP|-11.5|-5.75
+Awire|net@26|||1800|Ideal_3B@0|Vout|-3.75|2.25|conn@6|a|0.75|2.25
+Awire|net@28|||1800|conn@0|y|-20.5|4.25|Ideal_3B@0|B2|-13.75|4.25
+Awire|net@30|||1800|conn@1|y|-20.5|1.75|Ideal_3B@0|B1|-13.75|1.75
+Awire|net@31|||0|Ideal_3B@0|B0|-13.75|-0.75|conn@2|y|-20.5|-0.75
+Awire|net@32|||900|Ideal_3B@0|VREFM|-5.5|-5.75|gnd@0||-5.5|-10.5
+EB0||D5G2;X-2.25;|conn@2|y|I
+EB1||D5G2;X-2.25;|conn@1|y|I
+EB2||D5G2;X-2.25;|conn@0|y|I
+EVout||D5G2;X-2.25;|conn@6|y|O
+X
+
+# Cell Fig28_11;1{sch}
+CFig28_11;1{sch}||schematic|1209516846863|1286673578514|
+IIdeal_3Bit_DAC;1{ic}|Ideal_3B@0||-53.5|36.25|||D5G4;
+IIdeal_3Bit_DAC_w_error;1{ic}|Ideal_3B@3||-10.75|37|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-67|39||||
+NOff-Page|conn@1||-67|36.5||||
+NOff-Page|conn@2||-67|34||||
+NOff-Page|conn@6||-41.75|37||||
+NOff-Page|conn@11||1|37.75||||
+NGround|gnd@0||-50|22.25||||
+NGround|gnd@1||-7.25|23||||
+Ngeneric:Invisible-Pin|pin@9||-32.5|28.5|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,VB0 B0 0 DC 0 PULSE(0 1 5n 100p 100p 4.9n 10n),VB1 B1 0 DC 0 PULSE(0 1 10n 100p 100p 9.9n 20n),VB2 B2 0 DC 0 PULSE(0 1 20n 100p 100p 19.9n 40n),.tran 10p 40n 10p .1n uic,*.options post,.options plotwinsize=0]
+Ngeneric:Invisible-Pin|pin@10||-31|53.75|||||ART_message(D5G2;)S[3-bit DAC Transfer Curves with error,"Plot Vout,B0,B1,B2"]
+NWire_Pin|pin@21||-21.25|34.75||||
+NWire_Pin|pin@22||-21|39.75||||
+NWire_Pin|pin@23||-21.25|37.25||||
+NPower|pwr@0||-10.75|50.75||||
+NPower|pwr@1||-13.25|24.5||||
+NPower|pwr@2||-56|22.5||||
+NPower|pwr@3||-53.5|49.75||||
+Awire|B0|D5G1;Y1;||0|Ideal_3B@3|B0|-15.5|34.75|pin@21||-21.25|34.75
+Awire|B1|D5G1;Y0.75;||0|Ideal_3B@3|B1|-15.5|37.25|pin@23||-21.25|37.25
+Awire|B2|D5G1;Y0.75;||0|Ideal_3B@3|B2|-15.5|39.75|pin@22||-21|39.75
+Awire|net@44|||2700|pwr@2||-56|22.5|Ideal_3B@0|VREFP|-56|29
+Awire|net@46|||1800|Ideal_3B@0|Vout|-48.25|37|conn@6|a|-43.75|37
+Awire|net@47|||2700|Ideal_3B@0|VDD|-53.5|44.25|pwr@3||-53.5|49.75
+Awire|net@49|||1800|conn@0|y|-65|39|Ideal_3B@0|B2|-58.25|39
+Awire|net@51|||1800|conn@1|y|-65|36.5|Ideal_3B@0|B1|-58.25|36.5
+Awire|net@52|||0|Ideal_3B@0|B0|-58.25|34|conn@2|y|-65|34
+Awire|net@53|||900|Ideal_3B@3|VREFM|-7.25|29.75|gnd@1||-7.25|25
+Awire|net@54|||0|conn@11|a|-1|37.75|Ideal_3B@3|Vout|-5.5|37.75
+Awire|net@56|||900|pwr@0||-10.75|50.75|Ideal_3B@3|VDD|-10.75|45
+Awire|net@59|||2700|pwr@1||-13.25|24.5|Ideal_3B@3|VREFP|-13.25|29.75
+Awire|net@60|||900|Ideal_3B@0|VREFM|-50|29|gnd@0||-50|24.25
+EB0||D5G2;X-2.25;|conn@2|y|I
+EB1||D5G2;X-2.25;|conn@1|y|I
+EB2||D5G2;X-2.25;|conn@0|y|I
+EVout_errors|Vout_error|D5G2;X5.75;|conn@11|y|O
+EVout|Vout_noerror|D5G2;X6.75;|conn@6|y|O
+X
+
+# Cell Fig28_20;1{sch}
+CFig28_20;1{sch}||schematic|1209516846863|1286673597882|
+IIdeal_3Bit_DAC;1{ic}|Ideal_3B@0||-9.25|1.25|||D5G4;
+IIdeal_3Bit_ADC;1{ic}|Ideal_3B@1||-15.75|6.75|||D5G4;
+IIdeal_Differencer_1;1{ic}|Ideal_Di@0||5.75|-16|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@6||2.75|2||||
+NOff-Page|conn@7||-43.5|1.75||||
+NOff-Page|conn@8||-34|-12.75|||R|
+NOff-Page|conn@9||10.5|-9.25||||
+NGround|gnd@0||-5.75|-11.25||||
+NGround|gnd@1||-26.25|-11||||
+NGround|gnd@2||5.75|-23||||
+Ngeneric:Invisible-Pin|pin@9||-35.25|-20.25|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,Vin  Vin  0 DC 0 PULSE(0 1 0 10u),Vclock  Vclock  0 DC 0 PULSE(0 1 5n 100p 100p 4.9n 10n),.tran 10p 10u 10p .1n uic,*.options post,.options plotwinsize=0]
+Ngeneric:Invisible-Pin|pin@10||-18.75|14.75|||||ART_message(D5G1;)SIdeal 3-bit ADC transfer curves
+NWire_Pin|pin@14||5.75|-22.5||||
+NWire_Pin|pin@15||-1.5|-17.75||||
+NWire_Pin|pin@16||-1.25|-13.75||||
+NWire_Pin|pin@17||5.75|-9.25||||
+NPower|pwr@0||-29.75|13.75||||
+NPower|pwr@1||-9.25|14||||
+NPower|pwr@2||-30.5|-10.25||||
+NPower|pwr@3||-11.75|-11||||
+Awire|Vin|D5G1;Y0.75;||0|Ideal_Di@0|im|1.75|-17.75|pin@15||-1.5|-17.75
+Awire|Vout|D5G1;Y1;||0|Ideal_Di@0|ip|1.5|-13.75|pin@16||-1.25|-13.75
+Awire|net@17|||1800|Ideal_3B@1|B2|-24.5|4|Ideal_3B@0|B2|-14|4
+Awire|net@18|||1800|Ideal_3B@1|B1|-24.5|1.5|Ideal_3B@0|B1|-14|1.5
+Awire|net@19|||1800|Ideal_3B@1|B0|-24.5|-1|Ideal_3B@0|B0|-14|-1
+Awire|net@22|||0|Ideal_3B@1|Vin|-35.75|1.75|conn@7|y|-41.5|1.75
+Awire|net@25|||900|pwr@0||-29.75|13.75|Ideal_3B@1|VDD|-29.75|9
+Awire|net@28|||2700|pwr@2||-30.5|-10.25|Ideal_3B@1|VREFP|-30.5|-6.25
+Awire|net@29|||2700|pwr@3||-11.75|-11|Ideal_3B@0|VREFP|-11.75|-6
+Awire|net@32|||2700|gnd@1||-26.25|-9|Ideal_3B@1|VREFM|-26.25|-6.25
+Awire|net@33|||2700|conn@8|y|-34|-10.75|Ideal_3B@1|clock|-34|-6.25
+Awire|net@34|||900|pwr@1||-9.25|14|Ideal_3B@0|VDD|-9.25|9.25
+Awire|net@35|||2700|gnd@0||-5.75|-9.25|Ideal_3B@0|VREFM|-5.75|-6
+Awire|net@36|||1800|Ideal_3B@0|Vout|-4|2|conn@6|a|0.75|2
+Awire|net@37|||900|Ideal_Di@0|om|5.75|-19.75|pin@14||5.75|-22.5
+Awire|net@38|||900|gnd@2||5.75|-21|pin@14||5.75|-22.5
+Awire|net@41|||2700|Ideal_Di@0|op|5.75|-11.75|pin@17||5.75|-9.25
+Awire|net@44|||1800|pin@17||5.75|-9.25|conn@9|a|8.5|-9.25
+EQe||D5G2;X1.5;|conn@9|a|O
+EVclock||D5G2;X1.5;Y0.5;|conn@8|a|I
+EVin||D5G2;X-2;|conn@7|y|I
+EVout||D5G2;X-2.25;|conn@6|y|O
+X
+
+# Cell Fig28_21;1{sch}
+CFig28_21;1{sch}||schematic|1209516846863|1286673618947|
+IIdeal_3Bit_DAC;1{ic}|Ideal_3B@0||-9.25|1.25|||D5G4;
+IIdeal_3Bit_ADC;1{ic}|Ideal_3B@1||-15.75|6.75|||D5G4;
+IIdeal_3Bit_DAC;1{ic}|Ideal_3B@2||-9.5|40.25|||D5G4;
+IIdeal_3Bit_ADC_w_error;1{ic}|Ideal_3B@3||-16|45.75|||D5G4;
+IIdeal_Differencer_1;1{ic}|Ideal_Di@0||9|-9|||D5G4;
+IIdeal_Differencer_1;1{ic}|Ideal_Di@1||6.75|24.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@6||2.75|2||||
+NOff-Page|conn@7||-43.5|1.75||||
+NOff-Page|conn@8||-34|-12.75|||R|
+NOff-Page|conn@9||13.75|-2.25||||
+NOff-Page|conn@10||2.5|41||||
+NOff-Page|conn@13||11.5|31.25||||
+NGround|gnd@0||-5.75|-11.25||||
+NGround|gnd@1||-26.25|-11||||
+NGround|gnd@2||9|-16||||
+NGround|gnd@3||-6|28.25||||
+NGround|gnd@4||-26.5|28.5||||
+NGround|gnd@5||6.75|15.75||||
+Ngeneric:Invisible-Pin|pin@9||-20|21.5|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,Vin  Vin  0 DC 0 PULSE(0 1 0 10u),Vclock  Vclock  0 DC 0 PULSE(0 1 5n 100p 100p 4.9n 10n),.tran 10p 10u 10p .1n uic,*.options post,.options plotwinsize=0]
+NWire_Pin|pin@14||9|-15.5||||
+NWire_Pin|pin@15||1.75|-10.75||||
+NWire_Pin|pin@16||2|-6.75||||
+NWire_Pin|pin@17||9|-2.25||||
+Ngeneric:Invisible-Pin|pin@19||-10.25|57.75|||||ART_message(D5G3;)S3-bit ADC transfer curves with error
+NWire_Pin|pin@21||-0.5|22.75||||
+NWire_Pin|pin@22||-0.25|26.75||||
+NWire_Pin|pin@23||6.75|31.25||||
+NWire_Pin|pin@25||-39.75|40.75||||
+NWire_Pin|pin@26||-34.25|27.25||||
+NPower|pwr@0||-29.75|13.75||||
+NPower|pwr@1||-9.25|14||||
+NPower|pwr@2||-30.5|-10.25||||
+NPower|pwr@3||-11.75|-11||||
+NPower|pwr@4||-30|53.25||||
+NPower|pwr@5||-9.5|53.5||||
+NPower|pwr@6||-30.75|29.25||||
+NPower|pwr@7||-12|28.5||||
+Awire|Vclock|D5G1;X-1.5;Y-2;||900|Ideal_3B@3|clock|-34.25|32.75|pin@26||-34.25|27.25
+Awire|Vin|D5G1;Y0.75;||0|Ideal_Di@0|im|5|-10.75|pin@15||1.75|-10.75
+Awire|Vin|D5G1;Y0.75;||0|Ideal_Di@1|im|2.75|22.75|pin@21||-0.5|22.75
+Awire|Vin|D5G1;Y1;||0|Ideal_3B@3|Vin|-36|40.75|pin@25||-39.75|40.75
+Awire|Vout_error|D5G1;Y1;||0|Ideal_Di@1|ip|2.5|26.75|pin@22||-0.25|26.75
+Awire|Vout_noerror|D5G1;Y1;||0|Ideal_Di@0|ip|4.75|-6.75|pin@16||2|-6.75
+Awire|net@17|||1800|Ideal_3B@1|B2|-24.5|4|Ideal_3B@0|B2|-14|4
+Awire|net@18|||1800|Ideal_3B@1|B1|-24.5|1.5|Ideal_3B@0|B1|-14|1.5
+Awire|net@19|||1800|Ideal_3B@1|B0|-24.5|-1|Ideal_3B@0|B0|-14|-1
+Awire|net@22|||0|Ideal_3B@1|Vin|-35.75|1.75|conn@7|y|-41.5|1.75
+Awire|net@25|||900|pwr@0||-29.75|13.75|Ideal_3B@1|VDD|-29.75|9
+Awire|net@28|||2700|pwr@2||-30.5|-10.25|Ideal_3B@1|VREFP|-30.5|-6.25
+Awire|net@29|||2700|pwr@3||-11.75|-11|Ideal_3B@0|VREFP|-11.75|-6
+Awire|net@32|||2700|gnd@1||-26.25|-9|Ideal_3B@1|VREFM|-26.25|-6.25
+Awire|net@33|||2700|conn@8|y|-34|-10.75|Ideal_3B@1|clock|-34|-6.25
+Awire|net@34|||900|pwr@1||-9.25|14|Ideal_3B@0|VDD|-9.25|9.25
+Awire|net@35|||2700|gnd@0||-5.75|-9.25|Ideal_3B@0|VREFM|-5.75|-6
+Awire|net@36|||1800|Ideal_3B@0|Vout|-4|2|conn@6|a|0.75|2
+Awire|net@37|||900|Ideal_Di@0|om|9|-12.75|pin@14||9|-15.5
+Awire|net@38|||900|gnd@2||9|-14|pin@14||9|-15.5
+Awire|net@41|||2700|Ideal_Di@0|op|9|-4.75|pin@17||9|-2.25
+Awire|net@44|||1800|Ideal_3B@3|B2|-24.75|43|Ideal_3B@2|B2|-14.25|43
+Awire|net@45|||1800|Ideal_3B@3|B1|-24.75|40.5|Ideal_3B@2|B1|-14.25|40.5
+Awire|net@46|||1800|Ideal_3B@3|B0|-24.75|38|Ideal_3B@2|B0|-14.25|38
+Awire|net@48|||900|pwr@4||-30|53.25|Ideal_3B@3|VDD|-30|48
+Awire|net@49|||2700|pwr@6||-30.75|29.25|Ideal_3B@3|VREFP|-30.75|32.75
+Awire|net@50|||2700|pwr@7||-12|28.5|Ideal_3B@2|VREFP|-12|33
+Awire|net@51|||2700|gnd@4||-26.5|30.5|Ideal_3B@3|VREFM|-26.5|32.75
+Awire|net@53|||900|pwr@5||-9.5|53.5|Ideal_3B@2|VDD|-9.5|48.25
+Awire|net@54|||2700|gnd@3||-6|30.25|Ideal_3B@2|VREFM|-6|33
+Awire|net@55|||1800|Ideal_3B@2|Vout|-4.25|41|conn@10|a|0.5|41
+Awire|net@58|||2700|Ideal_Di@1|op|6.75|28.75|pin@23||6.75|31.25
+Awire|net@63|||2700|gnd@5||6.75|17.75|Ideal_Di@1|om|6.75|20.75
+Awire|net@64|||1800|pin@23||6.75|31.25|conn@13|a|9.5|31.25
+Awire|net@65|||1800|pin@17||9|-2.25|conn@9|a|11.75|-2.25
+EQe||D5G2;X1.5;|conn@9|a|O
+EQe_error||D5G2;|conn@13|y|O
+EVclock||D5G2;X1.5;Y0.5;|conn@8|a|I
+EVin||D5G2;X-2;|conn@7|y|I
+EVout_error||D5G2;X5;|conn@10|y|O
+EVout|Vout_noerror|D5G2;X5.75;|conn@6|y|O
+X
+
+# Cell Fig28_25;1{sch}
+CFig28_25;1{sch}||schematic|1209516846863|1286673644772|
+IIdeal_10Bit_DAC;1{ic}|Ideal_3B@0||-11|7.75|||D5G4;
+IIdeal_10Bit_ADC;1{ic}|Ideal_3B@1||-14.25|-1|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@6||0.5|6.5||||
+NOff-Page|conn@7||-43.5|6.5||||
+NOff-Page|conn@8||-35|-11.75|||R|
+NGround|gnd@0||-8.5|-9.5||||
+NGround|gnd@1||-28|-11||||
+Ngeneric:Invisible-Pin|pin@9||-20.75|-17.75|||||SIM_spice_card(D5G1;)S[VDD VDD 0 DC 1,VGND GND 0 DC 0,Vin  Vin  0 DC 0 SINE(0.5 0.5 60MEG 0),Vclock  Vclock  0 DC 0 PULSE(0 1 5n 100p 100p 4.9n 10n),.tran 10p 200n 10p .1n uic,*.options post,.options plotwinsize=0]
+Ngeneric:Invisible-Pin|pin@10||-21.25|24.5|||||ART_message(D5G1;)S[Plot Vout and Vin.,After running the simulation click on the waveform window.,"Go to the menu item View, FFT, and then select Vout and vin."]
+Ngeneric:Invisible-Pin|pin@20||-39|-9.25|||||ART_message(D5G1;)S100 MHz clock
+Ngeneric:Invisible-Pin|pin@21||-41.5|4|||||ART_message(D5G1;)S60 MHz input
+NPower|pwr@0||-31.25|20.75||||
+NPower|pwr@1||-11.25|21||||
+NPower|pwr@2||-31.75|-10.25||||
+NPower|pwr@3||-13.5|-9.25||||
+Awire|net@45|||2700|conn@8|y|-35|-9.75|Ideal_3B@1|clock|-35|-6.75
+Awire|net@46|||2700|pwr@2||-31.75|-10.25|Ideal_3B@1|VREFP|-31.75|-6.75
+Awire|net@47|||2700|gnd@1||-28|-9|Ideal_3B@1|VREFM|-28|-6.75
+Awire|net@48|||900|pwr@0||-31.25|20.75|Ideal_3B@1|VDD|-31.25|18.5
+Awire|net@53|||2700|Ideal_3B@0|VDD|-11.25|18.5|pwr@1||-11.25|21
+Awire|net@54|||0|conn@6|a|-1.5|6.5|Ideal_3B@0|Vout|-4.25|6.5
+Awire|net@55|||1800|conn@7|y|-41.5|6.5|Ideal_3B@1|Vin|-38.75|6.5
+Awire|net@56|||1800|Ideal_3B@1|B9|-25|15.5|Ideal_3B@0|B9|-17.5|15.5
+Awire|net@57|||1800|Ideal_3B@1|B8|-25|13.5|Ideal_3B@0|B8|-17.5|13.5
+Awire|net@58|||1800|Ideal_3B@1|B7|-25|11.5|Ideal_3B@0|B7|-17.5|11.5
+Awire|net@59|||1800|Ideal_3B@1|B6|-25|9.5|Ideal_3B@0|B6|-17.5|9.5
+Awire|net@60|||1800|Ideal_3B@1|B5|-25|7.5|Ideal_3B@0|B5|-17.5|7.5
+Awire|net@61|||1800|Ideal_3B@1|B4|-25|5.5|Ideal_3B@0|B4|-17.5|5.5
+Awire|net@62|||1800|Ideal_3B@1|B3|-25|3.5|Ideal_3B@0|B3|-17.5|3.5
+Awire|net@63|||0|Ideal_3B@0|B2|-17.5|1.5|Ideal_3B@1|B2|-25|1.5
+Awire|net@64|||1800|Ideal_3B@1|B1|-25|-0.5|Ideal_3B@0|B1|-17.5|-0.5
+Awire|net@65|||0|Ideal_3B@0|B0|-17.5|-2.5|Ideal_3B@1|B0|-25|-2.5
+Awire|net@66|||2700|gnd@0||-8.5|-7.5|Ideal_3B@0|VREFM|-8.5|-6.5
+Awire|net@67|||2700|pwr@3||-13.5|-9.25|Ideal_3B@0|VREFP|-13.5|-6.5
+EVclock||D5G2;X1.5;Y0.5;|conn@8|a|I
+EVin||D5G2;X-2;|conn@7|y|I
+EVout||D5G2;X-2.25;|conn@6|y|O
+X
+
+# Cell Ideal_3Bit_ADC;1{ic}
+CIdeal_3Bit_ADC;1{ic}||artwork|1208233117452|1209518727441|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||-14.375|-5.375|11.25|15.25|||SCHEM_function(D5G1;RY0.75;)S3Bit_Ideal_ADC|trace()V[-5.625/-7.625,-5.625/7.625,5.625/7.625,5.625/-7.625,-5.625/-7.625]
+Nschematic:Bus_Pin|pin@0||-8.75|-7.75|||RR|
+Nschematic:Wire_Pin|pin@1||-6.75|-7.75|||RR|
+Nschematic:Bus_Pin|pin@2||-8.75|-5.25|||RR|
+Nschematic:Wire_Pin|pin@3||-6.75|-5.25|||RR|
+Nschematic:Bus_Pin|pin@4||-8.75|-2.75|||RR|
+Nschematic:Wire_Pin|pin@5||-6.75|-2.75|||RR|
+Nschematic:Bus_Pin|pin@8||-14|2.25||||
+Nschematic:Bus_Pin|pin@10||-10.5|-13||||
+Nschematic:Bus_Pin|pin@12||-14.75|-13||||
+Nschematic:Bus_Pin|pin@14||-20|-5|||X|
+Nschematic:Wire_Pin|pin@15||-22|-5|||X|
+Nschematic:Bus_Pin|pin@16||-18.25|-13||||
+Nschematic:Wire_Pin|pin@18||-18.25|-14.5||||
+Nschematic:Wire_Pin|pin@19||-14.75|-14.5||||
+Nschematic:Wire_Pin|pin@20||-10.5|-14.5||||
+Nschematic:Wire_Pin|pin@21||-14|4||||
+Ngeneric:Invisible-Pin|pin@22||-18.25|-12.25|||||ART_message(D5G1;)Sclock
+Ngeneric:Invisible-Pin|pin@23||-14.75|-12.25|||||ART_message(D5G1;)SVREFP
+Ngeneric:Invisible-Pin|pin@24||-10.75|-12.25|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@26||-9.75|-3|||XRR||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@27||-9.75|-5.25|||XRR||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@28||-9.75|-7.75|||XRR||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@29||-19|-5|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@30||-14|1.5|||||ART_message(D5G1;)SVDD
+Aschematic:wire|net@0|||0|pin@1||-6.75|-7.75|pin@0||-8.75|-7.75
+Aschematic:wire|net@1|||0|pin@3||-6.75|-5.25|pin@2||-8.75|-5.25
+Aschematic:wire|net@2|||0|pin@5||-6.75|-2.75|pin@4||-8.75|-2.75
+Aschematic:wire|net@7|||1800|pin@15||-22|-5|pin@14||-20|-5
+Aschematic:wire|net@9|||900|pin@16||-18.25|-13|pin@18||-18.25|-14.5
+Aschematic:wire|net@10|||900|pin@12||-14.75|-13|pin@19||-14.75|-14.5
+Aschematic:wire|net@11|||900|pin@10||-10.5|-13|pin@20||-10.5|-14.5
+Aschematic:wire|net@12|||2700|pin@8||-14|2.25|pin@21||-14|4
+EB0||D5FLeave alone;G1;X-2.75;|pin@0||O
+EB1||D5FLeave alone;G1;X-2.75;|pin@2||O
+EB2||D5FLeave alone;G1;X-2.75;|pin@4||O
+EVDD||D5FLeave alone;G1;Y2.25;|pin@8||I
+EVREFM||D5FLeave alone;G1;Y-2;|pin@10||I
+EVREFP||D5FLeave alone;G1;Y-2;|pin@12||I
+EVin||D5FLeave alone;G1;X2.75;|pin@14||I
+Eclock||D5FLeave alone;G1;Y-2;|pin@16||I
+X
+
+# Cell Ideal_3Bit_ADC;1{sch}
+CIdeal_3Bit_ADC;1{sch}||schematic|1207195820362|1209515124191|
+IIdeal_ADCbit;1{ic}|Ideal_AD@9||-12|20|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@10||-12|4.75|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@11||-12|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@4||-1.25|20.25||||
+NOff-Page|conn@5||-1.25|5||||
+NOff-Page|conn@6||-1.25|-10.25||||
+NOff-Page|conn@11||-48|33.5|||RRR|
+NOff-Page|conn@12||-58|-8.5||||
+NOff-Page|conn@13||-58|0.25||||
+NOff-Page|conn@14||-33.75|19||||
+NOff-Page|conn@15||-33.75|13.75||||
+NGround|gnd@0||-48|14||||
+IIdeal_Sample&Hold;1{ic}|ideal_Sa@0||-47|0.25|||D5G4;
+NWire_Pin|pin@2||-22.25|-7.75||||
+NWire_Pin|pin@3||-22.25|-10.5||||
+NWire_Pin|pin@4||-22.25|-13.5||||
+NWire_Pin|pin@7||-22.25|22.75||||
+NWire_Pin|pin@8||-22.25|20||||
+NWire_Pin|pin@9||-22.25|17||||
+NWire_Pin|pin@11||-22.25|7.5||||
+NWire_Pin|pin@35||-11.75|31.25||||
+NWire_Pin|pin@36||-48|23||||
+NWire_Pin|pin@37||-43.25|23||||
+NWire_Pin|pin@38||-47|8.75||||
+NWire_Pin|pin@40||-32|0.25||||
+NWire_Pin|pin@41||-47|-8.5||||
+NWire_Pin|pin@44||-21.75|31.25||||
+Ngeneric:Invisible-Pin|pin@46||-62|-13.75|||||SIM_spice_card(D6G1.5;)SB1 VCM 0 V=(V(VREFP)-V(VREFM))/2
+Ngeneric:Invisible-Pin|pin@47||-62|-21.25|||||SIM_spice_card(D6G1.5;)SBPIP PIPIN 0 V=V(VOUTSH)-V(VREFM)+((V(VREFP)-V(VREFM))/16)
+Ngeneric:Invisible-Pin|pin@48||-62|-26.5|||||ART_message(C14;D6G2;)S[Spice Code used for Behavioral source,Level shift S/H output by 1/2 LSB and Vrefm,This moves the signal between ground and Vrefp-Vrefm]
+NWire_Pin|pin@51||-22.25|4.75||||
+NWire_Pin|pin@52||-22.25|1.75||||
+Ngeneric:Invisible-Pin|pin@53||-62|-16.25|||||ART_message(C14;D6G2;)SSetup common-mode voltage
+NResistor|res@0||-48|27|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-48|19|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+Awire|PIPIN|D5G1.5;X-7.25;||1800|pin@44||-21.75|31.25|pin@35||-11.75|31.25
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VCM|-18.75|-13.5|pin@4||-22.25|-13.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VCM|-18.75|1.75|pin@52||-22.25|1.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VCM|-18.75|17|pin@9||-22.25|17
+Awire|VDD|D5G1.5;Y2.5;||2700|ideal_Sa@0|VDD|-47|5.25|pin@38||-47|8.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VDD|-18.75|-7.75|pin@2||-22.25|-7.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VDD|-18.75|7.5|pin@11||-22.25|7.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VDD|-18.75|22.75|pin@7||-22.25|22.75
+Awire|VOUTSH|D5G1.5;X1.5;Y0.5;||1800|ideal_Sa@0|Voutsh|-40|0.25|pin@40||-32|0.25
+Awire|Vtrip|D5G1.5;X1.5;Y1;||1800|pin@36||-48|23|pin@37||-43.25|23
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|Vtrip|-18.75|-10.5|pin@3||-22.25|-10.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|Vtrip|-18.75|4.75|pin@51||-22.25|4.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|Vtrip|-18.75|20|pin@8||-22.25|20
+Awire|net@14|||2700|Ideal_AD@11|Vin|-11.75|-5.5|Ideal_AD@10|Vout|-11.75|-0.25
+Awire|net@15|||2700|Ideal_AD@10|Vin|-11.75|9.75|Ideal_AD@9|Vout|-11.75|15
+Awire|net@26|||2700|res@0|b|-48|29|conn@11|y|-48|31.5
+Awire|net@27|||900|res@0|a|-48|25|pin@36||-48|23
+Awire|net@28|||2700|res@1|b|-48|21|pin@36||-48|23
+Awire|net@29|||2700|gnd@0||-48|16|res@1|a|-48|17
+Awire|net@30|||900|ideal_Sa@0|Vclk|-47|-4.75|pin@41||-47|-8.5
+Awire|net@31|||0|pin@41||-47|-8.5|conn@12|y|-56|-8.5
+Awire|net@32|||1800|conn@13|y|-56|0.25|ideal_Sa@0|Vin|-54|0.25
+Awire|net@35|||0|conn@6|a|-3.25|-10.25|Ideal_AD@11|Bitout|-5.25|-10.25
+Awire|net@36|||0|conn@4|a|-3.25|20.25|Ideal_AD@9|Bitout|-5.25|20.25
+Awire|net@37|||0|conn@5|a|-3.25|5|Ideal_AD@10|Bitout|-5.25|5
+Awire|net@42|||900|pin@35||-11.75|31.25|Ideal_AD@9|Vin|-11.75|25
+EB0||D5FLeave alone;G1.5;X-2;|conn@6|y|O
+EB1||D5FLeave alone;G1.5;X-2;|conn@5|y|O
+EB2||D5FLeave alone;G1.5;X-2;|conn@4|y|O
+EVDD||D5FLeave alone;G1.5;RX1.75;|conn@11|a|I
+EVREFM||D5FLeave alone;G1;X1.75;|conn@14|a|I
+EVREFP||D5FLeave alone;G1;X1.75;|conn@15|a|I
+EVin||D5FLeave alone;G1.5;X-2.25;|conn@13|y|I
+Eclock||D5FLeave alone;G1.5;X1.75;|conn@12|a|I
+X
+
+# Cell Ideal_3Bit_ADC_w_error;1{ic}
+CIdeal_3Bit_ADC_w_error;1{ic}||artwork|1208233117452|1209520473472|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||-14.375|-5.375|11.25|15.25|||SCHEM_function(D5G1;RY0.75;)S3Bit_Ideal_ADC_w/error|trace()V[-5.625/-7.625,-5.625/7.625,5.625/7.625,5.625/-7.625,-5.625/-7.625]
+Nschematic:Bus_Pin|pin@0||-8.75|-7.75|||RR|
+Nschematic:Wire_Pin|pin@1||-6.75|-7.75|||RR|
+Nschematic:Bus_Pin|pin@2||-8.75|-5.25|||RR|
+Nschematic:Wire_Pin|pin@3||-6.75|-5.25|||RR|
+Nschematic:Bus_Pin|pin@4||-8.75|-2.75|||RR|
+Nschematic:Wire_Pin|pin@5||-6.75|-2.75|||RR|
+Nschematic:Bus_Pin|pin@8||-14|2.25||||
+Nschematic:Bus_Pin|pin@10||-10.5|-13||||
+Nschematic:Bus_Pin|pin@12||-14.75|-13||||
+Nschematic:Bus_Pin|pin@14||-20|-5|||X|
+Nschematic:Wire_Pin|pin@15||-22|-5|||X|
+Nschematic:Bus_Pin|pin@16||-18.25|-13||||
+Nschematic:Wire_Pin|pin@18||-18.25|-14.5||||
+Nschematic:Wire_Pin|pin@19||-14.75|-14.5||||
+Nschematic:Wire_Pin|pin@20||-10.5|-14.5||||
+Nschematic:Wire_Pin|pin@21||-14|4||||
+Ngeneric:Invisible-Pin|pin@22||-18.25|-12.25|||||ART_message(D5G1;)Sclock
+Ngeneric:Invisible-Pin|pin@23||-14.75|-12.25|||||ART_message(D5G1;)SVREFP
+Ngeneric:Invisible-Pin|pin@24||-10.75|-12.25|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@26||-9.75|-3|||XRR||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@27||-9.75|-5.25|||XRR||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@28||-9.75|-7.75|||XRR||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@29||-19|-5|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@30||-14|1.5|||||ART_message(D5G1;)SVDD
+Aschematic:wire|net@0|||0|pin@1||-6.75|-7.75|pin@0||-8.75|-7.75
+Aschematic:wire|net@1|||0|pin@3||-6.75|-5.25|pin@2||-8.75|-5.25
+Aschematic:wire|net@2|||0|pin@5||-6.75|-2.75|pin@4||-8.75|-2.75
+Aschematic:wire|net@7|||1800|pin@15||-22|-5|pin@14||-20|-5
+Aschematic:wire|net@9|||900|pin@16||-18.25|-13|pin@18||-18.25|-14.5
+Aschematic:wire|net@10|||900|pin@12||-14.75|-13|pin@19||-14.75|-14.5
+Aschematic:wire|net@11|||900|pin@10||-10.5|-13|pin@20||-10.5|-14.5
+Aschematic:wire|net@12|||2700|pin@8||-14|2.25|pin@21||-14|4
+EB0||D5FLeave alone;G1;X-2.75;|pin@0||O
+EB1||D5FLeave alone;G1;X-2.75;|pin@2||O
+EB2||D5FLeave alone;G1;X-2.75;|pin@4||O
+EVDD||D5FLeave alone;G1;Y2.25;|pin@8||I
+EVREFM||D5FLeave alone;G1;Y-2;|pin@10||I
+EVREFP||D5FLeave alone;G1;Y-2;|pin@12||I
+EVin||D5FLeave alone;G1;X2.75;|pin@14||I
+Eclock||D5FLeave alone;G1;Y-2;|pin@16||I
+X
+
+# Cell Ideal_3Bit_ADC_w_error;1{sch}
+CIdeal_3Bit_ADC_w_error;1{sch}||schematic|1207195820362|1209522147050|
+IIdeal_ADCbit_w/error;1{ic}|Ideal_AD@9||-12|20|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@10||-12|4.75|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@11||-12|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@4||-1.25|20.25||||
+NOff-Page|conn@5||-1.25|5||||
+NOff-Page|conn@6||-1.25|-10.25||||
+NOff-Page|conn@11||-48|33.5|||RRR|
+NOff-Page|conn@12||-58|-8.5||||
+NOff-Page|conn@13||-58|0.25||||
+NOff-Page|conn@14||-33.75|19||||
+NOff-Page|conn@15||-33.75|13.75||||
+NGround|gnd@0||-48|14||||
+IIdeal_Sample&Hold;1{ic}|ideal_Sa@0||-47|0.25|||D5G4;
+NWire_Pin|pin@2||-22.25|-7.75||||
+NWire_Pin|pin@3||-22.25|-10.5||||
+NWire_Pin|pin@4||-22.25|-13.5||||
+NWire_Pin|pin@7||-22.25|22.75||||
+NWire_Pin|pin@8||-22.25|20||||
+NWire_Pin|pin@9||-22.25|17||||
+NWire_Pin|pin@11||-22.25|7.5||||
+NWire_Pin|pin@35||-11.75|31.25||||
+NWire_Pin|pin@36||-48|23||||
+NWire_Pin|pin@37||-43.25|23||||
+NWire_Pin|pin@38||-47|8.75||||
+NWire_Pin|pin@40||-32|0.25||||
+NWire_Pin|pin@41||-47|-8.5||||
+NWire_Pin|pin@44||-21.75|31.25||||
+Ngeneric:Invisible-Pin|pin@46||-62|-13.75|||||SIM_spice_card(D6G1.5;)SB1 VCM 0 V=(V(VREFP)-V(VREFM))/2
+Ngeneric:Invisible-Pin|pin@47||-62|-21.25|||||SIM_spice_card(D6G1.5;)SBPIP PIPIN 0 V=V(VOUTSH)-V(VREFM)+((V(VREFP)-V(VREFM))/16)
+Ngeneric:Invisible-Pin|pin@48||-62|-26.5|||||ART_message(C14;D6G2;)S[Spice Code used for Behavioral source,Level shift S/H output by 1/2 LSB and Vrefm,This moves the signal between ground and Vrefp-Vrefm]
+NWire_Pin|pin@51||-22.25|4.75||||
+NWire_Pin|pin@52||-22.25|1.75||||
+Ngeneric:Invisible-Pin|pin@53||-62|-16.25|||||ART_message(C14;D6G2;)SSetup common-mode voltage
+NResistor|res@0||-48|27|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-48|19|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+Awire|PIPIN|D5G1.5;X-7.25;||1800|pin@44||-21.75|31.25|pin@35||-11.75|31.25
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VCM|-18.75|-13.5|pin@4||-22.25|-13.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VCM|-18.75|1.75|pin@52||-22.25|1.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VCM|-18.75|17|pin@9||-22.25|17
+Awire|VDD|D5G1.5;Y2.5;||2700|ideal_Sa@0|VDD|-47|5.25|pin@38||-47|8.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VDD|-18.75|-7.75|pin@2||-22.25|-7.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VDD|-18.75|7.5|pin@11||-22.25|7.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VDD|-18.75|22.75|pin@7||-22.25|22.75
+Awire|VOUTSH|D5G1.5;X1.5;Y0.5;||1800|ideal_Sa@0|Voutsh|-40|0.25|pin@40||-32|0.25
+Awire|Vtrip|D5G1.5;X1.5;Y1;||1800|pin@36||-48|23|pin@37||-43.25|23
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|Vtrip|-18.75|-10.5|pin@3||-22.25|-10.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|Vtrip|-18.75|4.75|pin@51||-22.25|4.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|Vtrip|-18.75|20|pin@8||-22.25|20
+Awire|net@14|||2700|Ideal_AD@11|Vin|-11.75|-5.5|Ideal_AD@10|Vout|-11.75|-0.25
+Awire|net@15|||2700|Ideal_AD@10|Vin|-11.75|9.75|Ideal_AD@9|Vout|-11.75|15
+Awire|net@26|||2700|res@0|b|-48|29|conn@11|y|-48|31.5
+Awire|net@27|||900|res@0|a|-48|25|pin@36||-48|23
+Awire|net@28|||2700|res@1|b|-48|21|pin@36||-48|23
+Awire|net@29|||2700|gnd@0||-48|16|res@1|a|-48|17
+Awire|net@30|||900|ideal_Sa@0|Vclk|-47|-4.75|pin@41||-47|-8.5
+Awire|net@31|||0|pin@41||-47|-8.5|conn@12|y|-56|-8.5
+Awire|net@32|||1800|conn@13|y|-56|0.25|ideal_Sa@0|Vin|-54|0.25
+Awire|net@35|||0|conn@6|a|-3.25|-10.25|Ideal_AD@11|Bitout|-5.25|-10.25
+Awire|net@36|||0|conn@4|a|-3.25|20.25|Ideal_AD@9|Bitout|-5.25|20.25
+Awire|net@37|||0|conn@5|a|-3.25|5|Ideal_AD@10|Bitout|-5.25|5
+Awire|net@42|||900|pin@35||-11.75|31.25|Ideal_AD@9|Vin|-11.75|25
+EB0||D5FLeave alone;G1.5;X-2;|conn@6|y|O
+EB1||D5FLeave alone;G1.5;X-2;|conn@5|y|O
+EB2||D5FLeave alone;G1.5;X-2;|conn@4|y|O
+EVDD||D5FLeave alone;G1.5;RX1.75;|conn@11|a|I
+EVREFM||D5FLeave alone;G1;X1.75;|conn@14|a|I
+EVREFP||D5FLeave alone;G1;X1.75;|conn@15|a|I
+EVin||D5FLeave alone;G1.5;X-2.25;|conn@13|y|I
+Eclock||D5FLeave alone;G1.5;X1.75;|conn@12|a|I
+X
+
+# Cell Ideal_3Bit_DAC;1{ic}
+CIdeal_3Bit_DAC;1{ic}||artwork|1208234064604|1209518158175|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||0.25|0.375|10|15.25|X||SCHEM_function(D5G1;RY0.75;)S3Bit_Ideal_DAC|trace()V[-5/-7.625,-5/7.625,5/7.625,5/-7.625,-5/-7.625]
+Nschematic:Wire_Pin|pin@18||-2.5|-8.75|||X|
+Nschematic:Wire_Pin|pin@19||0|9.75|||X|
+Nschematic:Wire_Pin|pin@20||-6.75|2.75||||
+Nschematic:Bus_Pin|pin@21||-4.75|0.25||||
+Nschematic:Wire_Pin|pin@22||-6.75|0.25||||
+Nschematic:Bus_Pin|pin@23||-4.75|-2.25||||
+Nschematic:Wire_Pin|pin@24||-6.75|-2.25||||
+Nschematic:Bus_Pin|pin@25||0|8|||X|
+Nschematic:Bus_Pin|pin@26||-2.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@27||3.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@28||5.25|0.75||||
+Nschematic:Wire_Pin|pin@29||7.25|0.75||||
+Nschematic:Wire_Pin|pin@32||3.5|-8.75|||X|
+Nschematic:Bus_Pin|pin@33||-4.75|2.75||||
+Ngeneric:Invisible-Pin|pin@34||-3.75|-1.75|||||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@35||-3.75|0.25|||||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@36||-3.75|2.25|||||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@38||0|7|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@39||4|0.75|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@40||3.25|-6.5|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@41||-2.5|-6.5|||||ART_message(D5G1;)SVREFP
+Aschematic:wire|net@9|||1800|pin@20||-6.75|2.75|pin@33||-4.75|2.75
+Aschematic:wire|net@10|||900|pin@27||3.5|-7.25|pin@32||3.5|-8.75
+Aschematic:wire|net@11|||900|pin@26||-2.5|-7.25|pin@18||-2.5|-8.75
+Aschematic:wire|net@12|||2700|pin@25||0|8|pin@19||0|9.75
+Aschematic:wire|net@13|||1800|pin@22||-6.75|0.25|pin@21||-4.75|0.25
+Aschematic:wire|net@14|||1800|pin@24||-6.75|-2.25|pin@23||-4.75|-2.25
+Aschematic:wire|net@15|||0|pin@29||7.25|0.75|pin@28||5.25|0.75
+EB0||D5FLeave alone;G1;X-2.5;|pin@23||U
+EB1||D5FLeave alone;G1;X-2.5;|pin@21||U
+EB2||D5FLeave alone;G1;X-2.5;|pin@33||U
+EVDD||D5FLeave alone;G1;X0.25;Y2.25;|pin@25||U
+EVREFM||D5FLeave alone;G1;X0.25;Y-2.25;|pin@27||U
+EVREFP||D5FLeave alone;G1;Y-2.25;|pin@26||U
+EVout||D5FLeave alone;G1;X3.25;|pin@28||U
+X
+
+# Cell Ideal_3Bit_DAC;1{sch}
+CIdeal_3Bit_DAC;1{sch}||schematic|1207251661748|1209518173019|
+IIdeal_3Bit_DAC;1{ic}|Ideal_4B@0||14.75|23.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@3||-6.75|13|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@6||-6.75|-4.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@9||-6.75|-22.25|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@4||-17.5|-2.5||||
+NOff-Page|conn@7||-17.5|-20||||
+NOff-Page|conn@8||-38.5|-5||||
+NOff-Page|conn@9||-36.25|24.25|||RRR|
+NOff-Page|conn@10||7|4.5||||
+NOff-Page|conn@13||-38.5|-12.25||||
+NOff-Page|conn@15||-17.5|15.25||||
+NGround|gnd@0||-36.25|0.75||||
+NWire_Pin|pin@4||2.25|13||||
+NWire_Pin|pin@5||-16.5|-24||||
+NWire_Pin|pin@6||-7|-14.5||||
+NWire_Pin|pin@7||2.25|-22.25||||
+NWire_Pin|pin@9||-31.25|-5||||
+NWire_Pin|pin@11||-36.25|11.75||||
+NWire_Pin|pin@12||-7|3||||
+NWire_Pin|pin@13||-31.75|11.75||||
+Ngeneric:Invisible-Pin|pin@14||-41.25|-30.75|||||SIM_spice_card(D6G1.5;)SVone Vone 0 DC 1
+NWire_Pin|pin@23||2.25|-4.75||||
+NWire_Pin|pin@26||-16.5|11.25||||
+NWire_Pin|pin@27||-7|20.75||||
+NWire_Pin|pin@29||-31.25|-12.25||||
+Ngeneric:Invisible-Pin|pin@30||-41.25|-33.25|||||SIM_spice_card(D6G1.5;)SB1 Vout 0 V=((v(vrefp)-v(vrefm))/8)*(v(B2L)*4+v(B1L)*2+v(B0L))+v(vrefm)
+Ngeneric:Invisible-Pin|pin@31||-41.25|-35.5|||||ART_message(C14;D6G1.5;)SSpice Code used for Behavirol source
+NWire_Pin|pin@37||-16.5|-6.5||||
+NResistor|res@0||-36.25|16.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@1||-36.25|6.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@2||-31.25|-8.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+Awire|B0L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@9|Bitout|-0.75|-22.25|pin@7||2.25|-22.25
+Awire|B1L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@6|Bitout|-0.75|-4.75|pin@23||2.25|-4.75
+Awire|B2L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@3|Bitout|-0.75|13|pin@4||2.25|13
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@3|Vone|-7|18.75|pin@27||-7|20.75
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@6|Vone|-7|1|pin@12||-7|3
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@9|Vone|-7|-16.5|pin@6||-7|-14.5
+Awire|Vtrip|D5G1;X3.5;||1800|pin@11||-36.25|11.75|pin@13||-31.75|11.75
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@3|Vtrip|-13|11.25|pin@26||-16.5|11.25
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@6|Vtrip|-13|-6.5|pin@37||-16.5|-6.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@9|Vtrip|-13|-24|pin@5||-16.5|-24
+Awire|net@2|||900|pin@11||-36.25|11.75|res@1|b|-36.25|8.5
+Awire|net@3|||900|res@0|a|-36.25|14.5|pin@11||-36.25|11.75
+Awire|net@4|||2700|res@0|b|-36.25|18.5|conn@9|y|-36.25|22.25
+Awire|net@6|||2700|gnd@0||-36.25|2.75|res@1|a|-36.25|4.5
+Awire|net@9|||900|res@2|a|-31.25|-10.5|pin@29||-31.25|-12.25
+Awire|net@10|||0|pin@29||-31.25|-12.25|conn@13|y|-36.5|-12.25
+Awire|net@11|||1800|conn@15|y|-15.5|15.25|Ideal_DA@3|Bitin|-13|15.25
+Awire|net@13|||1800|conn@4|y|-15.5|-2.5|Ideal_DA@6|Bitin|-13|-2.5
+Awire|net@17|||1800|conn@7|y|-15.5|-20|Ideal_DA@9|Bitin|-13|-20
+Awire|net@18|||2700|res@2|b|-31.25|-6.5|pin@9||-31.25|-5
+Awire|net@19|||0|pin@9||-31.25|-5|conn@8|y|-36.5|-5
+EB0||D5FLeave alone;G1.5;X-1.5;|conn@7|a|U
+EB1||D5FLeave alone;G1.5;X-1.5;|conn@4|a|U
+EB2||D5FLeave alone;G1.5;X-1.5;|conn@15|a|U
+EVDD||D5G1.5;X-1;|conn@9|a|U
+EVREFM||D5FLeave alone;G1.5;X-2.75;|conn@13|a|U
+EVREFP||D5FLeave alone;G1.5;X-2.75;|conn@8|a|U
+EVout||D5G1.5;X1.75;|conn@10|y|U
+X
+
+# Cell Ideal_3Bit_DAC_w_error;1{ic}
+CIdeal_3Bit_DAC_w_error;1{ic}||artwork|1208234064604|1209518043847|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||0.25|0.375|10|15.25|X||SCHEM_function(D5G1;RY0.75;)S3Bit_Ideal_DAC_w/error|trace()V[-5/-7.625,-5/7.625,5/7.625,5/-7.625,-5/-7.625]
+Nschematic:Wire_Pin|pin@18||-2.5|-8.75|||X|
+Nschematic:Wire_Pin|pin@19||0|9.75|||X|
+Nschematic:Wire_Pin|pin@20||-6.75|2.75||||
+Nschematic:Bus_Pin|pin@21||-4.75|0.25||||
+Nschematic:Wire_Pin|pin@22||-6.75|0.25||||
+Nschematic:Bus_Pin|pin@23||-4.75|-2.25||||
+Nschematic:Wire_Pin|pin@24||-6.75|-2.25||||
+Nschematic:Bus_Pin|pin@25||0|8|||X|
+Nschematic:Bus_Pin|pin@26||-2.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@27||3.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@28||5.25|0.75||||
+Nschematic:Wire_Pin|pin@29||7.25|0.75||||
+Nschematic:Wire_Pin|pin@32||3.5|-8.75|||X|
+Nschematic:Bus_Pin|pin@33||-4.75|2.75||||
+Ngeneric:Invisible-Pin|pin@34||-3.75|-1.75|||||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@35||-3.75|0.25|||||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@36||-3.75|2.25|||||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@38||0|7|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@39||4|0.75|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@40||3.25|-6.5|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@41||-2.5|-6.5|||||ART_message(D5G1;)SVREFP
+Aschematic:wire|net@9|||1800|pin@20||-6.75|2.75|pin@33||-4.75|2.75
+Aschematic:wire|net@10|||900|pin@27||3.5|-7.25|pin@32||3.5|-8.75
+Aschematic:wire|net@11|||900|pin@26||-2.5|-7.25|pin@18||-2.5|-8.75
+Aschematic:wire|net@12|||2700|pin@25||0|8|pin@19||0|9.75
+Aschematic:wire|net@13|||1800|pin@22||-6.75|0.25|pin@21||-4.75|0.25
+Aschematic:wire|net@14|||1800|pin@24||-6.75|-2.25|pin@23||-4.75|-2.25
+Aschematic:wire|net@15|||0|pin@29||7.25|0.75|pin@28||5.25|0.75
+EB0||D5FLeave alone;G1;X-2.5;|pin@23||U
+EB1||D5FLeave alone;G1;X-2.5;|pin@21||U
+EB2||D5FLeave alone;G1;X-2.5;|pin@33||U
+EVDD||D5FLeave alone;G1;X0.25;Y2.25;|pin@25||U
+EVREFM||D5FLeave alone;G1;X0.25;Y-2.25;|pin@27||U
+EVREFP||D5FLeave alone;G1;Y-2.25;|pin@26||U
+EVout||D5FLeave alone;G1;X3.25;|pin@28||U
+X
+
+# Cell Ideal_3Bit_DAC_w_error;1{sch}
+CIdeal_3Bit_DAC_w_error;1{sch}||schematic|1207251661748|1209517972410|
+IIdeal_3Bit_DAC_w_error;1{ic}|Ideal_4B@0||14.75|23.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@3||-6.75|13|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@6||-6.75|-4.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@9||-6.75|-22.25|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@4||-17.5|-2.5||||
+NOff-Page|conn@7||-17.5|-20||||
+NOff-Page|conn@8||-38.5|-5||||
+NOff-Page|conn@9||-36.25|24.25|||RRR|
+NOff-Page|conn@10||7|4.5||||
+NOff-Page|conn@13||-38.5|-12.25||||
+NOff-Page|conn@15||-17.5|15.25||||
+NGround|gnd@0||-36.25|0.75||||
+NWire_Pin|pin@4||2.25|13||||
+NWire_Pin|pin@5||-16.5|-24||||
+NWire_Pin|pin@6||-7|-14.5||||
+NWire_Pin|pin@7||2.25|-22.25||||
+NWire_Pin|pin@9||-31.25|-5||||
+NWire_Pin|pin@11||-36.25|11.75||||
+NWire_Pin|pin@12||-7|3||||
+NWire_Pin|pin@13||-31.75|11.75||||
+Ngeneric:Invisible-Pin|pin@14||-41.25|-30.75|||||SIM_spice_card(D6G1.5;)SVone Vone 0 DC 1
+NWire_Pin|pin@23||2.25|-4.75||||
+NWire_Pin|pin@26||-16.5|11.25||||
+NWire_Pin|pin@27||-7|20.75||||
+NWire_Pin|pin@29||-31.25|-12.25||||
+Ngeneric:Invisible-Pin|pin@30||-41.25|-33.25|||||SIM_spice_card(D6G1.5;)SB1 Vout 0 V=((v(vrefp)-v(vrefm))/8)*(v(B2L)*3.8+v(B1L)*2.1+v(B0L))+v(vrefm)
+Ngeneric:Invisible-Pin|pin@31||-41.25|-35.5|||||ART_message(C14;D6G1.5;)SSpice Code used for Behavirol source
+NWire_Pin|pin@37||-16.5|-6.5||||
+Ngeneric:Invisible-Pin|pin@38||-10.75|-35.5|||||ART_message(C14;D6G1.5;)SAdded error here,  changed 4 to 3.8 and 2 to 2.1
+NResistor|res@0||-36.25|16.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@1||-36.25|6.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@2||-31.25|-8.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+Awire|B0L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@9|Bitout|-0.75|-22.25|pin@7||2.25|-22.25
+Awire|B1L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@6|Bitout|-0.75|-4.75|pin@23||2.25|-4.75
+Awire|B2L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@3|Bitout|-0.75|13|pin@4||2.25|13
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@3|Vone|-7|18.75|pin@27||-7|20.75
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@6|Vone|-7|1|pin@12||-7|3
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@9|Vone|-7|-16.5|pin@6||-7|-14.5
+Awire|Vtrip|D5G1;X3.5;||1800|pin@11||-36.25|11.75|pin@13||-31.75|11.75
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@3|Vtrip|-13|11.25|pin@26||-16.5|11.25
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@6|Vtrip|-13|-6.5|pin@37||-16.5|-6.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@9|Vtrip|-13|-24|pin@5||-16.5|-24
+Awire|net@2|||900|pin@11||-36.25|11.75|res@1|b|-36.25|8.5
+Awire|net@3|||900|res@0|a|-36.25|14.5|pin@11||-36.25|11.75
+Awire|net@4|||2700|res@0|b|-36.25|18.5|conn@9|y|-36.25|22.25
+Awire|net@6|||2700|gnd@0||-36.25|2.75|res@1|a|-36.25|4.5
+Awire|net@9|||900|res@2|a|-31.25|-10.5|pin@29||-31.25|-12.25
+Awire|net@10|||0|pin@29||-31.25|-12.25|conn@13|y|-36.5|-12.25
+Awire|net@11|||1800|conn@15|y|-15.5|15.25|Ideal_DA@3|Bitin|-13|15.25
+Awire|net@13|||1800|conn@4|y|-15.5|-2.5|Ideal_DA@6|Bitin|-13|-2.5
+Awire|net@17|||1800|conn@7|y|-15.5|-20|Ideal_DA@9|Bitin|-13|-20
+Awire|net@18|||2700|res@2|b|-31.25|-6.5|pin@9||-31.25|-5
+Awire|net@19|||0|pin@9||-31.25|-5|conn@8|y|-36.5|-5
+EB0||D5FLeave alone;G1.5;X-1.5;|conn@7|a|U
+EB1||D5FLeave alone;G1.5;X-1.5;|conn@4|a|U
+EB2||D5FLeave alone;G1.5;X-1.5;|conn@15|a|U
+EVDD||D5G1.5;X-1;|conn@9|a|U
+EVREFM||D5FLeave alone;G1.5;X-2.75;|conn@13|a|U
+EVREFP||D5FLeave alone;G1.5;X-2.75;|conn@8|a|U
+EVout||D5G1.5;X1.75;|conn@10|y|U
+X
+
+# Cell Ideal_4Bit_ADC;1{ic}
+CIdeal_4Bit_ADC;1{ic}||artwork|1208233117452|1209514818722|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||-14.375|-5.375|11.25|15.25|||SCHEM_function(D5G1;RY0.75;)S4Bit_Ideal_ADC|trace()V[-5.625/-7.625,-5.625/7.625,5.625/7.625,5.625/-7.625,-5.625/-7.625]
+Nschematic:Bus_Pin|pin@0||-8.75|-8|||RR|
+Nschematic:Wire_Pin|pin@1||-6.75|-8|||RR|
+Nschematic:Bus_Pin|pin@2||-8.75|-6|||RR|
+Nschematic:Wire_Pin|pin@3||-6.75|-6|||RR|
+Nschematic:Bus_Pin|pin@4||-8.75|-4|||RR|
+Nschematic:Wire_Pin|pin@5||-6.75|-4|||RR|
+Nschematic:Bus_Pin|pin@6||-8.75|-2|||RR|
+Nschematic:Wire_Pin|pin@7||-6.75|-2|||RR|
+Nschematic:Bus_Pin|pin@8||-14|2.25||||
+Nschematic:Bus_Pin|pin@10||-10.5|-13||||
+Nschematic:Bus_Pin|pin@12||-14.75|-13||||
+Nschematic:Bus_Pin|pin@14||-20|-5|||X|
+Nschematic:Wire_Pin|pin@15||-22|-5|||X|
+Nschematic:Bus_Pin|pin@16||-18.25|-13||||
+Nschematic:Wire_Pin|pin@18||-18.25|-14.5||||
+Nschematic:Wire_Pin|pin@19||-14.75|-14.5||||
+Nschematic:Wire_Pin|pin@20||-10.5|-14.5||||
+Nschematic:Wire_Pin|pin@21||-14|4||||
+Ngeneric:Invisible-Pin|pin@22||-18.25|-12.25|||||ART_message(D5G1;)Sclock
+Ngeneric:Invisible-Pin|pin@23||-14.75|-12.25|||||ART_message(D5G1;)SVREFP
+Ngeneric:Invisible-Pin|pin@24||-10.75|-12.25|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@25||-9.75|-2|||XRR||ART_message(D5G1;)SB3
+Ngeneric:Invisible-Pin|pin@26||-9.75|-4|||XRR||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@27||-9.75|-6|||XRR||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@28||-9.75|-8|||XRR||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@29||-19|-5|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@30||-14|1.5|||||ART_message(D5G1;)SVDD
+Aschematic:wire|net@0|||0|pin@1||-6.75|-8|pin@0||-8.75|-8
+Aschematic:wire|net@1|||0|pin@3||-6.75|-6|pin@2||-8.75|-6
+Aschematic:wire|net@2|||0|pin@5||-6.75|-4|pin@4||-8.75|-4
+Aschematic:wire|net@3|||0|pin@7||-6.75|-2|pin@6||-8.75|-2
+Aschematic:wire|net@7|||1800|pin@15||-22|-5|pin@14||-20|-5
+Aschematic:wire|net@9|||900|pin@16||-18.25|-13|pin@18||-18.25|-14.5
+Aschematic:wire|net@10|||900|pin@12||-14.75|-13|pin@19||-14.75|-14.5
+Aschematic:wire|net@11|||900|pin@10||-10.5|-13|pin@20||-10.5|-14.5
+Aschematic:wire|net@12|||2700|pin@8||-14|2.25|pin@21||-14|4
+EB0||D5FLeave alone;G1;X-2.75;|pin@0||O
+EB1||D5FLeave alone;G1;X-2.75;|pin@2||O
+EB2||D5FLeave alone;G1;X-2.75;|pin@4||O
+EB3||D5FLeave alone;G1;X-2.75;|pin@6||O
+EVDD||D5FLeave alone;G1;Y2.25;|pin@8||I
+EVREFM||D5FLeave alone;G1;Y-2;|pin@10||I
+EVREFP||D5FLeave alone;G1;Y-2;|pin@12||I
+EVin||D5FLeave alone;G1;X2.75;|pin@14||I
+Eclock||D5FLeave alone;G1;Y-2;|pin@16||I
+X
+
+# Cell Ideal_4Bit_ADC;1{sch}
+CIdeal_4Bit_ADC;1{sch}||schematic|1207195820362|1209514818722|
+IIdeal_ADCbit;1{ic}|Ideal_AD@8||-12|35.25|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@9||-12|20|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@10||-12|4.75|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@11||-12|-10.5|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@3||-1.25|35.5||||
+NOff-Page|conn@4||-1.25|20.25||||
+NOff-Page|conn@5||-1.25|5||||
+NOff-Page|conn@6||-1.25|-10.25||||
+NOff-Page|conn@11||-48|38.5|||RRR|
+NOff-Page|conn@12||-58|-8.5||||
+NOff-Page|conn@13||-58|0.25||||
+NOff-Page|conn@14||-33.75|19||||
+NOff-Page|conn@15||-33.75|13.75||||
+NGround|gnd@0||-48|19||||
+IIdeal_Sample&Hold;1{ic}|ideal_Sa@0||-47|0.25|||D5G4;
+NWire_Pin|pin@2||-22.25|-7.75||||
+NWire_Pin|pin@3||-22.25|-10.5||||
+NWire_Pin|pin@4||-22.25|-13.5||||
+NWire_Pin|pin@5||-22.25|35.25||||
+NWire_Pin|pin@6||-22.25|32.25||||
+NWire_Pin|pin@7||-22.25|22.75||||
+NWire_Pin|pin@8||-22.25|20||||
+NWire_Pin|pin@9||-22.25|17||||
+NWire_Pin|pin@11||-22.25|7.5||||
+NWire_Pin|pin@35||-11.75|42.75||||
+NWire_Pin|pin@36||-48|28||||
+NWire_Pin|pin@37||-43.25|28||||
+NWire_Pin|pin@38||-47|8.75||||
+NWire_Pin|pin@40||-32|0.25||||
+NWire_Pin|pin@41||-47|-8.5||||
+NWire_Pin|pin@44||-21.75|42.75||||
+Ngeneric:Invisible-Pin|pin@46||-62|-13.75|||||SIM_spice_card(D6G1.5;)SB1 VCM 0 V=(V(VREFP)-V(VREFM))/2
+Ngeneric:Invisible-Pin|pin@47||-62|-21.25|||||SIM_spice_card(D6G1.5;)SBPIP PIPIN 0 V=V(VOUTSH)-V(VREFM)+((V(VREFP)-V(VREFM))/32)
+Ngeneric:Invisible-Pin|pin@48||-62|-26.5|||||ART_message(C14;D6G2;)S[Spice Code used for Behavioral source,Level shift S/H output by 1/2 LSB and Vrefm,This moves the signal between ground and Vrefp-Vrefm]
+NWire_Pin|pin@50||-22.25|38||||
+NWire_Pin|pin@51||-22.25|4.75||||
+NWire_Pin|pin@52||-22.25|1.75||||
+Ngeneric:Invisible-Pin|pin@53||-62|-16.25|||||ART_message(C14;D6G2;)SSetup common-mode voltage
+NResistor|res@0||-48|32|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-48|24|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+Awire|PIPIN|D5G1.5;X-7.25;||1800|pin@44||-21.75|42.75|pin@35||-11.75|42.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VCM|-18.75|-13.5|pin@4||-22.25|-13.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VCM|-18.75|1.75|pin@52||-22.25|1.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VCM|-18.75|17|pin@9||-22.25|17
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@8|VCM|-18.75|32.25|pin@6||-22.25|32.25
+Awire|VDD|D5G1.5;Y2.5;||2700|ideal_Sa@0|VDD|-47|5.25|pin@38||-47|8.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|VDD|-18.75|-7.75|pin@2||-22.25|-7.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|VDD|-18.75|7.5|pin@11||-22.25|7.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|VDD|-18.75|22.75|pin@7||-22.25|22.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@8|VDD|-18.75|38|pin@50||-22.25|38
+Awire|VOUTSH|D5G1.5;X1.5;Y0.5;||1800|ideal_Sa@0|Voutsh|-40|0.25|pin@40||-32|0.25
+Awire|Vtrip|D5G1.5;X1.5;Y1;||1800|pin@36||-48|28|pin@37||-43.25|28
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@11|Vtrip|-18.75|-10.5|pin@3||-22.25|-10.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@10|Vtrip|-18.75|4.75|pin@51||-22.25|4.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@9|Vtrip|-18.75|20|pin@8||-22.25|20
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@8|Vtrip|-18.75|35.25|pin@5||-22.25|35.25
+Awire|net@14|||2700|Ideal_AD@11|Vin|-11.75|-5.5|Ideal_AD@10|Vout|-11.75|-0.25
+Awire|net@15|||2700|Ideal_AD@10|Vin|-11.75|9.75|Ideal_AD@9|Vout|-11.75|15
+Awire|net@16|||2700|Ideal_AD@9|Vin|-11.75|25|Ideal_AD@8|Vout|-11.75|30.25
+Awire|net@21|||900|pin@35||-11.75|42.75|Ideal_AD@8|Vin|-11.75|40.25
+Awire|net@26|||2700|res@0|b|-48|34|conn@11|y|-48|36.5
+Awire|net@27|||900|res@0|a|-48|30|pin@36||-48|28
+Awire|net@28|||2700|res@1|b|-48|26|pin@36||-48|28
+Awire|net@29|||2700|gnd@0||-48|21|res@1|a|-48|22
+Awire|net@30|||900|ideal_Sa@0|Vclk|-47|-4.75|pin@41||-47|-8.5
+Awire|net@31|||0|pin@41||-47|-8.5|conn@12|y|-56|-8.5
+Awire|net@32|||1800|conn@13|y|-56|0.25|ideal_Sa@0|Vin|-54|0.25
+Awire|net@34|||0|conn@3|a|-3.25|35.5|Ideal_AD@8|Bitout|-5.25|35.5
+Awire|net@35|||0|conn@6|a|-3.25|-10.25|Ideal_AD@11|Bitout|-5.25|-10.25
+Awire|net@36|||0|conn@4|a|-3.25|20.25|Ideal_AD@9|Bitout|-5.25|20.25
+Awire|net@37|||0|conn@5|a|-3.25|5|Ideal_AD@10|Bitout|-5.25|5
+EB0||D5FLeave alone;G1.5;X-2;|conn@6|y|O
+EB1||D5FLeave alone;G1.5;X-2;|conn@5|y|O
+EB2||D5FLeave alone;G1.5;X-2;|conn@4|y|O
+EB3||D5FLeave alone;G1.5;X-2;|conn@3|y|O
+EVDD||D5FLeave alone;G1.5;RX1.75;|conn@11|a|I
+EVREFM||D5FLeave alone;G1;X1.75;|conn@14|a|I
+EVREFP||D5FLeave alone;G1;X1.75;|conn@15|a|I
+EVin||D5FLeave alone;G1.5;X-2.25;|conn@13|y|I
+Eclock||D5FLeave alone;G1.5;X1.75;|conn@12|a|I
+X
+
+# Cell Ideal_4Bit_DAC;1{ic}
+CIdeal_4Bit_DAC;1{ic}||artwork|1208234064604|1209514813535|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||0.25|0.375|10|15.25|X||SCHEM_function(D5G1;RY0.75;)S4Bit_Ideal_DAC|trace()V[-5/-7.625,-5/7.625,5/7.625,5/-7.625,-5/-7.625]
+Nschematic:Bus_Pin|pin@16||-4.75|3.75||||
+Nschematic:Wire_Pin|pin@17||-6.75|3.75||||
+Nschematic:Wire_Pin|pin@18||-2.5|-8.75|||X|
+Nschematic:Wire_Pin|pin@19||0|9.75|||X|
+Nschematic:Wire_Pin|pin@20||-6.75|1.75||||
+Nschematic:Bus_Pin|pin@21||-4.75|-0.25||||
+Nschematic:Wire_Pin|pin@22||-6.75|-0.25||||
+Nschematic:Bus_Pin|pin@23||-4.75|-2.25||||
+Nschematic:Wire_Pin|pin@24||-6.75|-2.25||||
+Nschematic:Bus_Pin|pin@25||0|8|||X|
+Nschematic:Bus_Pin|pin@26||-2.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@27||3.5|-7.25|||X|
+Nschematic:Bus_Pin|pin@28||5.25|0.75||||
+Nschematic:Wire_Pin|pin@29||7.25|0.75||||
+Nschematic:Wire_Pin|pin@32||3.5|-8.75|||X|
+Nschematic:Bus_Pin|pin@33||-4.75|1.75||||
+Ngeneric:Invisible-Pin|pin@34||-3.75|-2.25|||||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@35||-3.75|-0.25|||||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@36||-3.75|1.75|||||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@37||-3.75|3.75|||||ART_message(D5G1;)SB3
+Ngeneric:Invisible-Pin|pin@38||0|7|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@39||4|0.75|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@40||3.25|-6.5|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@41||-2.5|-6.5|||||ART_message(D5G1;)SVREFP
+Aschematic:wire|net@8|||1800|pin@17||-6.75|3.75|pin@16||-4.75|3.75
+Aschematic:wire|net@9|||1800|pin@20||-6.75|1.75|pin@33||-4.75|1.75
+Aschematic:wire|net@10|||900|pin@27||3.5|-7.25|pin@32||3.5|-8.75
+Aschematic:wire|net@11|||900|pin@26||-2.5|-7.25|pin@18||-2.5|-8.75
+Aschematic:wire|net@12|||2700|pin@25||0|8|pin@19||0|9.75
+Aschematic:wire|net@13|||1800|pin@22||-6.75|-0.25|pin@21||-4.75|-0.25
+Aschematic:wire|net@14|||1800|pin@24||-6.75|-2.25|pin@23||-4.75|-2.25
+Aschematic:wire|net@15|||0|pin@29||7.25|0.75|pin@28||5.25|0.75
+EB0||D5FLeave alone;G1;X-2.5;|pin@23||U
+EB1||D5FLeave alone;G1;X-2.5;|pin@21||U
+EB2||D5FLeave alone;G1;X-2.5;|pin@33||U
+EB3||D5FLeave alone;G1;X-2.5;|pin@16||U
+EVDD||D5FLeave alone;G1;X0.25;Y2.25;|pin@25||U
+EVREFM||D5FLeave alone;G1;X0.25;Y-2.25;|pin@27||U
+EVREFP||D5FLeave alone;G1;Y-2.25;|pin@26||U
+EVout||D5FLeave alone;G1;X3.25;|pin@28||U
+X
+
+# Cell Ideal_4Bit_DAC;1{sch}
+CIdeal_4Bit_DAC;1{sch}||schematic|1207251661748|1209514813535|
+IIdeal_4Bit_DAC;1{ic}|Ideal_4B@0||22.75|23.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@3||-6.75|13|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@6||-6.75|-4.75|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@9||-6.75|-22.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@10||-6.75|30|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@4||-17.5|-2.5||||
+NOff-Page|conn@7||-17.5|-20||||
+NOff-Page|conn@8||-38.5|-5||||
+NOff-Page|conn@9||-39.75|31.75|||RRR|
+NOff-Page|conn@10||12|4.5||||
+NOff-Page|conn@11||-17.5|32.25||||
+NOff-Page|conn@13||-38.5|-12.25||||
+NOff-Page|conn@15||-17.5|15.25||||
+NGround|gnd@0||-39.75|8.25||||
+NWire_Pin|pin@1||2.25|30||||
+NWire_Pin|pin@4||2.25|13||||
+NWire_Pin|pin@5||-16.5|-24||||
+NWire_Pin|pin@6||-7|-14.5||||
+NWire_Pin|pin@7||2.25|-22.25||||
+NWire_Pin|pin@9||-31.25|-5||||
+NWire_Pin|pin@11||-39.75|19.25||||
+NWire_Pin|pin@12||-7|3||||
+NWire_Pin|pin@13||-35.25|19.25||||
+Ngeneric:Invisible-Pin|pin@14||-41.25|-30.75|||||SIM_spice_card(D6G1.5;)SVone Vone 0 DC 1
+NWire_Pin|pin@19||-16.5|28.25||||
+NWire_Pin|pin@20||-7|37.75||||
+NWire_Pin|pin@23||2.25|-4.75||||
+NWire_Pin|pin@26||-16.5|11.25||||
+NWire_Pin|pin@27||-7|20.75||||
+NWire_Pin|pin@29||-31.25|-12.25||||
+Ngeneric:Invisible-Pin|pin@30||-41.25|-33.25|||||SIM_spice_card(D6G1.5;)SB1 Vout 0 V=((v(vrefp)-v(vrefm))/16)*(v(B3L)*8+v(B2L)*4+v(B1L)*2+v(B0L))+v(vrefm)
+Ngeneric:Invisible-Pin|pin@31||-41.25|-35.5|||||ART_message(C14;D6G1.5;)SSpice Code used for Behavirol source
+NWire_Pin|pin@37||-16.5|-6.5||||
+NResistor|res@0||-39.75|24|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@1||-39.75|14|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@2||-31.25|-8.5|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+Awire|B0L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@9|Bitout|-0.75|-22.25|pin@7||2.25|-22.25
+Awire|B1L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@6|Bitout|-0.75|-4.75|pin@23||2.25|-4.75
+Awire|B2L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@3|Bitout|-0.75|13|pin@4||2.25|13
+Awire|B3L|D5FLeave alone;G1;X2.25;||1800|Ideal_DA@10|Bitout|-0.75|30|pin@1||2.25|30
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@10|Vone|-7|35.75|pin@20||-7|37.75
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@3|Vone|-7|18.75|pin@27||-7|20.75
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@6|Vone|-7|1|pin@12||-7|3
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@9|Vone|-7|-16.5|pin@6||-7|-14.5
+Awire|Vtrip|D5G1;X3.5;||1800|pin@11||-39.75|19.25|pin@13||-35.25|19.25
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@10|Vtrip|-13|28.25|pin@19||-16.5|28.25
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@3|Vtrip|-13|11.25|pin@26||-16.5|11.25
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@6|Vtrip|-13|-6.5|pin@37||-16.5|-6.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@9|Vtrip|-13|-24|pin@5||-16.5|-24
+Awire|net@2|||900|pin@11||-39.75|19.25|res@1|b|-39.75|16
+Awire|net@3|||900|res@0|a|-39.75|22|pin@11||-39.75|19.25
+Awire|net@4|||2700|res@0|b|-39.75|26|conn@9|y|-39.75|29.75
+Awire|net@6|||2700|gnd@0||-39.75|10.25|res@1|a|-39.75|12
+Awire|net@9|||900|res@2|a|-31.25|-10.5|pin@29||-31.25|-12.25
+Awire|net@10|||0|pin@29||-31.25|-12.25|conn@13|y|-36.5|-12.25
+Awire|net@11|||1800|conn@15|y|-15.5|15.25|Ideal_DA@3|Bitin|-13|15.25
+Awire|net@13|||1800|conn@4|y|-15.5|-2.5|Ideal_DA@6|Bitin|-13|-2.5
+Awire|net@16|||1800|conn@11|y|-15.5|32.25|Ideal_DA@10|Bitin|-13|32.25
+Awire|net@17|||1800|conn@7|y|-15.5|-20|Ideal_DA@9|Bitin|-13|-20
+Awire|net@18|||2700|res@2|b|-31.25|-6.5|pin@9||-31.25|-5
+Awire|net@19|||0|pin@9||-31.25|-5|conn@8|y|-36.5|-5
+EB0||D5FLeave alone;G1.5;X-1.5;|conn@7|a|U
+EB1||D5FLeave alone;G1.5;X-1.5;|conn@4|a|U
+EB2||D5FLeave alone;G1.5;X-1.5;|conn@15|a|U
+EB3||D5FLeave alone;G1.5;X-5.75;|conn@11|y|U
+EVDD||D5G1.5;X-1;|conn@9|a|U
+EVREFM||D5FLeave alone;G1.5;X-2.75;|conn@13|a|U
+EVREFP||D5FLeave alone;G1.5;X-2.75;|conn@8|a|U
+EVout||D5G1.5;X1.75;|conn@10|y|U
+X
+
+# Cell Ideal_10Bit_ADC;1{ic}
+CIdeal_10Bit_ADC;1{ic}||artwork|1207081984083|1228361887671|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||-17.375|6.875|10.25|22.25|||SCHEM_function(D5G1;R)S10Bit_Ideal_ADC|trace()V[-5.125/-11.125,-5.125/11.125,5.125/11.125,5.125/-11.125,-5.125/-11.125]
+Nschematic:Bus_Pin|pin@22||-17|19.5||||
+Nschematic:Bus_Pin|pin@23||-17.5|-5.75||||
+Nschematic:Bus_Pin|pin@24||-13.75|-5.75||||
+Nschematic:Bus_Pin|pin@25||-24.5|7.5||||
+Nschematic:Wire_Pin|pin@26||-22.5|7.5||||
+Nschematic:Bus_Pin|pin@27||-20.75|-5.75||||
+Nschematic:Wire_Pin|pin@28||-17|18||||
+Nschematic:Wire_Pin|pin@29||-12.25|10.5||||
+Nschematic:Wire_Pin|pin@30||-12.25|8.5||||
+Nschematic:Wire_Pin|pin@31||-12.25|6.5||||
+Nschematic:Wire_Pin|pin@32||-12.25|2.5||||
+Nschematic:Wire_Pin|pin@33||-12.25|0.5||||
+Nschematic:Bus_Pin|pin@34||-10.75|6.5||||
+Nschematic:Wire_Pin|pin@35||-12.25|-1.5||||
+Nschematic:Wire_Pin|pin@42||-20.75|-4.25||||
+Nschematic:Wire_Pin|pin@43||-17.5|-4.25||||
+Nschematic:Wire_Pin|pin@44||-13.75|-4.25||||
+Nschematic:Bus_Pin|pin@45||-10.75|2.5||||
+Nschematic:Bus_Pin|pin@46||-10.75|0.5||||
+Nschematic:Bus_Pin|pin@47||-10.75|10.5||||
+Nschematic:Bus_Pin|pin@48||-10.75|-1.5||||
+Nschematic:Bus_Pin|pin@53||-10.75|8.5||||
+Nschematic:Bus_Pin|pin@54||-10.75|4.5||||
+Nschematic:Bus_Pin|pin@56||-10.75|12.5||||
+Nschematic:Bus_Pin|pin@58||-10.75|16.5||||
+Nschematic:Bus_Pin|pin@60||-10.75|14.5||||
+Nschematic:Wire_Pin|pin@62||-12.25|4.5||||
+Nschematic:Wire_Pin|pin@63||-12.25|12.5||||
+Nschematic:Wire_Pin|pin@64||-12.25|14.5||||
+Nschematic:Wire_Pin|pin@65||-12.25|16.5||||
+Ngeneric:Invisible-Pin|pin@66||-21|-3.5|||||ART_message(D5G1;)Sclock
+Ngeneric:Invisible-Pin|pin@67||-17.75|-3.5|||||ART_message(D5G1;)SVREFP
+Ngeneric:Invisible-Pin|pin@68||-14|-3.5|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@69||-13.25|-1.5|||||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@70||-13.25|0.5|||||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@71||-13.25|2.5|||||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@72||-13.25|4.5|||||ART_message(D5G1;)SB3
+Ngeneric:Invisible-Pin|pin@73||-13.25|6.5|||||ART_message(D5G1;)SB4
+Ngeneric:Invisible-Pin|pin@74||-13.25|8.5|||||ART_message(D5G1;)SB5
+Ngeneric:Invisible-Pin|pin@75||-13.25|10.5|||||ART_message(D5G1;)SB6
+Ngeneric:Invisible-Pin|pin@76||-13.25|12.5|||||ART_message(D5G1;)SB7
+Ngeneric:Invisible-Pin|pin@77||-13.25|14.5|||||ART_message(D5G1;)SB8
+Ngeneric:Invisible-Pin|pin@78||-13.25|16.5|||||ART_message(D5G1;)SB9
+Ngeneric:Invisible-Pin|pin@79||-17|17.25|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@80||-21.25|7.5|||||ART_message(D5G1;)SVin
+Aschematic:wire|net@11|||0|pin@26||-22.5|7.5|pin@25||-24.5|7.5
+Aschematic:wire|net@12|||900|pin@22||-17|19.5|pin@28||-17|18
+Aschematic:wire|net@13|||0|pin@47||-10.75|10.5|pin@29||-12.25|10.5
+Aschematic:wire|net@14|||0|pin@53||-10.75|8.5|pin@30||-12.25|8.5
+Aschematic:wire|net@15|||0|pin@34||-10.75|6.5|pin@31||-12.25|6.5
+Aschematic:wire|net@16|||0|pin@45||-10.75|2.5|pin@32||-12.25|2.5
+Aschematic:wire|net@17|||0|pin@46||-10.75|0.5|pin@33||-12.25|0.5
+Aschematic:wire|net@18|||0|pin@48||-10.75|-1.5|pin@35||-12.25|-1.5
+Aschematic:wire|net@25|||2700|pin@27||-20.75|-5.75|pin@42||-20.75|-4.25
+Aschematic:wire|net@26|||2700|pin@23||-17.5|-5.75|pin@43||-17.5|-4.25
+Aschematic:wire|net@27|||2700|pin@24||-13.75|-5.75|pin@44||-13.75|-4.25
+Aschematic:wire|net@32|||0|pin@54||-10.75|4.5|pin@62||-12.25|4.5
+Aschematic:wire|net@33|||0|pin@56||-10.75|12.5|pin@63||-12.25|12.5
+Aschematic:wire|net@34|||0|pin@60||-10.75|14.5|pin@64||-12.25|14.5
+Aschematic:wire|net@35|||0|pin@58||-10.75|16.5|pin@65||-12.25|16.5
+EB0||D5FLeave alone;G1;X0.75;|pin@48||U
+EB1||D5FLeave alone;G1;X0.75;|pin@46||U
+EB2||D5FLeave alone;G1;X0.75;|pin@45||U
+EB3||D5G1;X0.75;|pin@54||U
+EB4||D5FLeave alone;G1;X0.75;|pin@34||U
+EB5||D5FLeave alone;G1;X0.75;|pin@53||U
+EB6||D5FLeave alone;G1;X0.75;|pin@47||U
+EB7||D5FLeave alone;G1;X0.75;|pin@56||U
+EB8||D5FLeave alone;G1;X0.75;|pin@60||U
+EB9||D5FLeave alone;G1;X0.75;|pin@58||U
+EVDD||D5FLeave alone;G1;Y0.5;|pin@22||U
+EVREFM||D5FLeave alone;G1;Y-0.5;|pin@24||U
+EVREFP||D5FLeave alone;G1;Y-0.5;|pin@23||U
+EVin||D5FLeave alone;G1;X-0.75;|pin@25||U
+Eclock||D5FLeave alone;G1;Y-0.5;|pin@27||U
+X
+
+# Cell Ideal_10Bit_ADC;1{sch}
+CIdeal_10Bit_ADC;1{sch}||schematic|1207081371503|1228362052843|
+IIdeal_ADCbit;1{ic}|18_Ideal@0||5.25|28.75|||D5G4;
+IIdeal_ADCbit;1{ic}|18_Ideal@1||5.25|13.5|||D5G4;
+IIdeal_ADCbit;1{ic}|18_Ideal@6||5.25|-2|||D5G4;
+IIdeal_ADCbit;1{ic}|18_Ideal@8||40.75|28.75|||D5G4;
+IIdeal_ADCbit;1{ic}|18_Ideal@9||40.75|13.5|||D5G4;
+IIdeal_ADCbit;1{ic}|18_Ideal@10||40.75|-1.75|||D5G4;
+IIdeal_10Bit_ADC;1{ic}|24_Ideal@0||-12.75|34.25|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@0||5.25|44.5|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@1||40.75|44.5|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@2||-28.75|13.5|||D5G4;
+IIdeal_ADCbit;1{ic}|Ideal_AD@3||-28.75|-2|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||16|29||||
+NOff-Page|conn@1||16|13.75||||
+NOff-Page|conn@3||51.5|29||||
+NOff-Page|conn@4||51.5|13.75||||
+NOff-Page|conn@5||51.5|-1.5||||
+NOff-Page|conn@11||-62.75|32.25|||RRR|
+NOff-Page|conn@12||-72.75|-14.75||||
+NOff-Page|conn@13||-72.75|-6||||
+NOff-Page|conn@14||-49.75|10.75||||
+NOff-Page|conn@15||-49.75|5.5||||
+NOff-Page|conn@16||16|-1.75||||
+NOff-Page|conn@17||15.75|44.75||||
+NOff-Page|conn@18||51.5|44.75||||
+NOff-Page|conn@19||-18|13.75||||
+NOff-Page|conn@20||-17.75|-1.75||||
+NGround|gnd@0||-62.75|12.75||||
+IIdeal_Sample&Hold;1{ic}|ideal_sa@0||-61.75|-6|||D5G4;
+NWire_Pin|pin@0||-5|31.5||||
+NWire_Pin|pin@1||-5|-2||||
+NWire_Pin|pin@2||-5|-5||||
+NWire_Pin|pin@6||30.5|31.5||||
+NWire_Pin|pin@7||30.5|-1.75||||
+NWire_Pin|pin@8||30.5|-4.75||||
+NWire_Pin|pin@9||-5|28.75||||
+NWire_Pin|pin@13||30.5|28.75||||
+NWire_Pin|pin@14||30.5|25.75||||
+NWire_Pin|pin@15||30.5|16.25||||
+NWire_Pin|pin@16||30.5|13.5||||
+NWire_Pin|pin@17||30.5|10.5||||
+NWire_Pin|pin@18||-5|25.75||||
+NWire_Pin|pin@19||30.5|1||||
+NWire_Pin|pin@34||-5|16.25||||
+NWire_Pin|pin@37||5.5|-12.5||||
+NWire_Pin|pin@38||23.25|-12.5||||
+NWire_Pin|pin@41||-62.75|21.75||||
+NWire_Pin|pin@42||-58|21.75||||
+NWire_Pin|pin@43||-61.75|2.5||||
+NWire_Pin|pin@44||-5|13.5||||
+NWire_Pin|pin@45||-46.75|-6||||
+NWire_Pin|pin@46||-61.75|-14.75||||
+NWire_Pin|pin@47||-5|10.5||||
+Ngeneric:Invisible-Pin|pin@50||-70.75|-20.5|||||SIM_spice_card(D6G1.5;)SB1 VCM 0 V=(V(VREFP)-V(VREFM))/2
+Ngeneric:Invisible-Pin|pin@51||-70.75|-23.25|||||SIM_spice_card(D6G1.5;)SBPIP PIPIN 0 V=V(VOUTSH)-V(VREFM)+((V(VREFP)-V(VREFM))/2048)
+Ngeneric:Invisible-Pin|pin@52||-54.75|-26.75|||||ART_message(C14;D5G2;)SSpice Code used for Behavirol source
+NWire_Pin|pin@53||-5|0.75||||
+NWire_Pin|pin@54||-5.25|47.25||||
+NWire_Pin|pin@55||-5.25|41.5||||
+NWire_Pin|pin@58||-5.25|44.5||||
+NWire_Pin|pin@59||30.5|47.25||||
+NWire_Pin|pin@60||30.5|41.5||||
+NWire_Pin|pin@61||41|51||||
+NWire_Pin|pin@63||30.5|44.5||||
+NWire_Pin|pin@64||-39|16.25||||
+NWire_Pin|pin@65||-39|10.5||||
+NWire_Pin|pin@66||-28.5|20||||
+NWire_Pin|pin@67||-38.25|20||||
+NWire_Pin|pin@68||-39|13.5||||
+NWire_Pin|pin@69||-38.75|0.75||||
+NWire_Pin|pin@70||-38.75|-5||||
+NWire_Pin|pin@73||-38.75|-2||||
+NWire_Pin|pin@75||23.25|51||||
+NWire_Pin|pin@76||-28.5|-12.5||||
+NWire_Pin|pin@78||-12|-12.5||||
+NWire_Pin|pin@79||-12|51||||
+NWire_Pin|pin@80||5.5|51||||
+NResistor|res@0||-62.75|25.75|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-62.75|17.75|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+Awire|PIPIN|D5G1.5;X-6.75;||0|pin@66||-28.5|20|pin@67||-38.25|20
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@3|VCM|-35.5|-5|pin@70||-38.75|-5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@0|VCM|-1.5|25.75|pin@18||-5|25.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@1|VCM|-1.5|10.5|pin@47||-5|10.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@6|VCM|-1.5|-5|pin@2||-5|-5
+Awire|VCM|D5FLeave alone;G1.5;X-3.75;||0|18_Ideal@8|VCM|34|25.75|pin@14||30.5|25.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@9|VCM|34|10.5|pin@17||30.5|10.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@10|VCM|34|-4.75|pin@8||30.5|-4.75
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@0|VCM|-1.5|41.5|pin@55||-5.25|41.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@1|VCM|34|41.5|pin@60||30.5|41.5
+Awire|VCM|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@2|VCM|-35.5|10.5|pin@65||-39|10.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@3|VDD|-35.5|0.75|pin@69||-38.75|0.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@0|VDD|-1.5|31.5|pin@0||-5|31.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@1|VDD|-1.5|16.25|pin@34||-5|16.25
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@6|VDD|-1.5|0.75|pin@53||-5|0.75
+Awire|VDD|D5FLeave alone;G1.5;X-3.75;||0|18_Ideal@8|VDD|34|31.5|pin@6||30.5|31.5
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@9|VDD|34|16.25|pin@15||30.5|16.25
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@10|VDD|34|1|pin@19||30.5|1
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@0|VDD|-1.5|47.25|pin@54||-5.25|47.25
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@1|VDD|34|47.25|pin@59||30.5|47.25
+Awire|VDD|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@2|VDD|-35.5|16.25|pin@64||-39|16.25
+Awire|VDD|D5G1.5;Y2.5;||2700|ideal_sa@0|VDD|-61.75|-1|pin@43||-61.75|2.5
+Awire|VOUTSH|D5G1.5;X1;Y0.75;||1800|ideal_sa@0|Voutsh|-54.75|-6|pin@45||-46.75|-6
+Awire|Vtrip|D5G1.5;X1.5;Y1;||1800|pin@41||-62.75|21.75|pin@42||-58|21.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@3|Vtrip|-35.5|-2|pin@73||-38.75|-2
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@0|Vtrip|-1.5|28.75|pin@9||-5|28.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@1|Vtrip|-1.5|13.5|pin@44||-5|13.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@6|Vtrip|-1.5|-2|pin@1||-5|-2
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.75;||0|18_Ideal@8|Vtrip|34|28.75|pin@13||30.5|28.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@9|Vtrip|34|13.5|pin@16||30.5|13.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|18_Ideal@10|Vtrip|34|-1.75|pin@7||30.5|-1.75
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@0|Vtrip|-1.5|44.5|pin@58||-5.25|44.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@1|Vtrip|34|44.5|pin@63||30.5|44.5
+Awire|Vtrip|D5FLeave alone;G1.5;X-3.5;||0|Ideal_AD@2|Vtrip|-35.5|13.5|pin@68||-39|13.5
+Awire|net@0|||0|conn@1|a|14|13.75|18_Ideal@1|Bitout|12|13.75
+Awire|net@1|||0|conn@0|a|14|29|18_Ideal@0|Bitout|12|29
+Awire|net@12|||0|conn@16|a|14|-1.75|18_Ideal@6|Bitout|12|-1.75
+Awire|net@15|||2700|18_Ideal@10|Vin|41|3.25|18_Ideal@9|Vout|41|8.5
+Awire|net@16|||2700|18_Ideal@9|Vin|41|18.5|18_Ideal@8|Vout|41|23.75
+Awire|net@18|||1800|pin@37||5.5|-12.5|pin@38||23.25|-12.5
+Awire|net@24|||2700|18_Ideal@6|Vin|5.5|3|18_Ideal@1|Vout|5.5|8.5
+Awire|net@25|||2700|18_Ideal@1|Vin|5.5|18.5|18_Ideal@0|Vout|5.5|23.75
+Awire|net@26|||2700|res@0|b|-62.75|27.75|conn@11|y|-62.75|30.25
+Awire|net@27|||900|res@0|a|-62.75|23.75|pin@41||-62.75|21.75
+Awire|net@28|||2700|res@1|b|-62.75|19.75|pin@41||-62.75|21.75
+Awire|net@29|||2700|gnd@0||-62.75|14.75|res@1|a|-62.75|15.75
+Awire|net@30|||900|ideal_sa@0|Vclk|-61.75|-11|pin@46||-61.75|-14.75
+Awire|net@31|||0|pin@46||-61.75|-14.75|conn@12|y|-70.75|-14.75
+Awire|net@32|||1800|conn@13|y|-70.75|-6|ideal_sa@0|Vin|-68.75|-6
+Awire|net@34|||0|conn@3|a|49.5|29|18_Ideal@8|Bitout|47.5|29
+Awire|net@36|||0|conn@4|a|49.5|13.75|18_Ideal@9|Bitout|47.5|13.75
+Awire|net@37|||0|conn@5|a|49.5|-1.5|18_Ideal@10|Bitout|47.5|-1.5
+Awire|net@40|||2700|pin@37||5.5|-12.5|18_Ideal@6|Vout|5.5|-7
+Awire|net@42|||0|conn@17|a|13.75|44.75|Ideal_AD@0|Bitout|12|44.75
+Awire|net@45|||0|conn@18|a|49.5|44.75|Ideal_AD@1|Bitout|47.5|44.75
+Awire|net@46|||2700|Ideal_AD@1|Vin|41|49.5|pin@61||41|51
+Awire|net@47|||0|conn@19|a|-20|13.75|Ideal_AD@2|Bitout|-22|13.75
+Awire|net@48|||2700|Ideal_AD@2|Vin|-28.5|18.5|pin@66||-28.5|20
+Awire|net@49|||0|conn@20|a|-19.75|-1.75|Ideal_AD@3|Bitout|-22|-1.75
+Awire|net@51|||2700|18_Ideal@8|Vin|41|33.75|Ideal_AD@1|Vout|41|39.5
+Awire|net@54|||1800|pin@75||23.25|51|pin@61||41|51
+Awire|net@56|||2700|pin@38||23.25|-12.5|pin@75||23.25|51
+Awire|net@57|||2700|18_Ideal@0|Vin|5.5|33.75|Ideal_AD@0|Vout|5.5|39.5
+Awire|net@59|||2700|Ideal_AD@3|Vin|-28.5|3|Ideal_AD@2|Vout|-28.5|8.5
+Awire|net@60|||900|Ideal_AD@3|Vout|-28.5|-7|pin@76||-28.5|-12.5
+Awire|net@61|||1800|pin@76||-28.5|-12.5|pin@78||-12|-12.5
+Awire|net@63|||2700|pin@78||-12|-12.5|pin@79||-12|51
+Awire|net@64|||1800|pin@79||-12|51|pin@80||5.5|51
+Awire|net@65|||900|pin@80||5.5|51|Ideal_AD@0|Vin|5.5|49.5
+EB0||D5FLeave alone;G1.5;X1.5;|conn@5|y|U
+EB1||D5FLeave alone;G1.5;X5.5;|conn@4|a|U
+EB2||D5FLeave alone;G1.5;X5.5;|conn@3|a|U
+EB3||D5G1.5;X1.25;|conn@18|y|U
+EB4||D5FLeave alone;G1.5;X1.5;|conn@16|y|U
+EB5||D5FLeave alone;G1.5;X1.5;|conn@1|y|U
+EB6||D5FLeave alone;G1.5;X1.5;|conn@0|y|U
+EB7||D5G1.5;X1.75;|conn@17|y|U
+EB8||D5FLeave alone;G1.5;X1.25;|conn@20|y|U
+EB9||D5FLeave alone;G1.5;X1.25;|conn@19|y|U
+EVDD||D5G1.5;X-5;|conn@11|y|U
+EVREFM||D5FLeave alone;G1;X1.75;|conn@14|a|U
+EVREFP||D5FLeave alone;G1;X1.75;|conn@15|a|U
+EVin||D5FLeave alone;G1.5;X1.75;|conn@13|a|U
+Eclock||D5FLeave alone;G1.5;X1.75;|conn@12|a|U
+X
+
+# Cell Ideal_10Bit_DAC;1{ic}
+CIdeal_10Bit_DAC;1{ic}||artwork|1207173103647|1209513645816|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@4||-0.125|-1.75|9.75|22|||SCHEM_function(D5G1;RY1;)S10Bit_Ideal_DAC|trace()V[4.875/-11,4.875/11,-4.875/11,-4.875/-11,4.875/-11]
+Nschematic:Bus_Pin|pin@74||-0.25|10.75|||X|
+Nschematic:Bus_Pin|pin@76||-2.5|-14.25|||X|
+Nschematic:Bus_Pin|pin@77||6.75|-1.25|||X|
+Nschematic:Wire_Pin|pin@78||4.75|-1.25|||X|
+Nschematic:Bus_Pin|pin@79||2.5|-14.25|||X|
+Nschematic:Wire_Pin|pin@80||-0.25|9.25|||X|
+Nschematic:Wire_Pin|pin@81||-5|1.75|||X|
+Nschematic:Wire_Pin|pin@82||-5|-0.25|||X|
+Nschematic:Wire_Pin|pin@83||-5|-2.25|||X|
+Nschematic:Wire_Pin|pin@84||-5|-6.25|||X|
+Nschematic:Wire_Pin|pin@85||-5|-8.25|||X|
+Nschematic:Bus_Pin|pin@86||-6.5|-2.25|||X|
+Nschematic:Wire_Pin|pin@87||-5|-10.25|||X|
+Nschematic:Wire_Pin|pin@88||2.5|-12.75|||X|
+Nschematic:Wire_Pin|pin@90||-2.5|-12.75|||X|
+Nschematic:Bus_Pin|pin@91||-6.5|-6.25|||X|
+Nschematic:Bus_Pin|pin@92||-6.5|-8.25|||X|
+Nschematic:Bus_Pin|pin@93||-6.5|1.75|||X|
+Nschematic:Bus_Pin|pin@94||-6.5|-10.25|||X|
+Nschematic:Bus_Pin|pin@95||-6.5|-0.25|||X|
+Nschematic:Bus_Pin|pin@96||-6.5|-4.25|||X|
+Nschematic:Bus_Pin|pin@97||-6.5|3.75|||X|
+Nschematic:Bus_Pin|pin@98||-6.5|7.75|||X|
+Nschematic:Bus_Pin|pin@99||-6.5|5.75|||X|
+Nschematic:Wire_Pin|pin@100||-5|-4.25|||X|
+Nschematic:Wire_Pin|pin@101||-5|3.75|||X|
+Nschematic:Wire_Pin|pin@102||-5|5.75|||X|
+Nschematic:Wire_Pin|pin@103||-5|7.75|||X|
+Ngeneric:Invisible-Pin|pin@104||-2.5|-12|||||ART_message(D5G1;)SVREFP
+Ngeneric:Invisible-Pin|pin@105||2.25|-12|||||ART_message(D5G1;)SVREFM
+Ngeneric:Invisible-Pin|pin@106||3.5|-1.25|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@107||-4|-10.25|||||ART_message(D5G1;)SB0
+Ngeneric:Invisible-Pin|pin@108||-4|-8.25|||||ART_message(D5G1;)SB1
+Ngeneric:Invisible-Pin|pin@109||-4|-6.25|||||ART_message(D5G1;)SB2
+Ngeneric:Invisible-Pin|pin@110||-4|-4.25|||||ART_message(D5G1;)SB3
+Ngeneric:Invisible-Pin|pin@111||-4|-2.25|||||ART_message(D5G1;)SB4
+Ngeneric:Invisible-Pin|pin@112||-4|-0.25|||||ART_message(D5G1;)SB5
+Ngeneric:Invisible-Pin|pin@113||-4|1.75|||||ART_message(D5G1;)SB6
+Ngeneric:Invisible-Pin|pin@114||-4|3.75|||||ART_message(D5G1;)SB7
+Ngeneric:Invisible-Pin|pin@115||-4|5.75|||||ART_message(D5G1;)SB8
+Ngeneric:Invisible-Pin|pin@116||-4|7.75|||||ART_message(D5G1;)SB9
+Ngeneric:Invisible-Pin|pin@117||-0.25|8.5|||||ART_message(D5G1;)SVDD
+Aschematic:wire|net@35|||1800|pin@93||-6.5|1.75|pin@81||-5|1.75
+Aschematic:wire|net@36|||1800|pin@95||-6.5|-0.25|pin@82||-5|-0.25
+Aschematic:wire|net@37|||1800|pin@86||-6.5|-2.25|pin@83||-5|-2.25
+Aschematic:wire|net@38|||1800|pin@91||-6.5|-6.25|pin@84||-5|-6.25
+Aschematic:wire|net@39|||1800|pin@92||-6.5|-8.25|pin@85||-5|-8.25
+Aschematic:wire|net@40|||1800|pin@94||-6.5|-10.25|pin@87||-5|-10.25
+Aschematic:wire|net@41|||2700|pin@79||2.5|-14.25|pin@88||2.5|-12.75
+Aschematic:wire|net@43|||2700|pin@76||-2.5|-14.25|pin@90||-2.5|-12.75
+Aschematic:wire|net@44|||1800|pin@96||-6.5|-4.25|pin@100||-5|-4.25
+Aschematic:wire|net@45|||1800|pin@97||-6.5|3.75|pin@101||-5|3.75
+Aschematic:wire|net@46|||1800|pin@99||-6.5|5.75|pin@102||-5|5.75
+Aschematic:wire|net@47|||1800|pin@98||-6.5|7.75|pin@103||-5|7.75
+Aschematic:wire|net@48|||1800|pin@78||4.75|-1.25|pin@77||6.75|-1.25
+Aschematic:wire|net@49|||900|pin@74||-0.25|10.75|pin@80||-0.25|9.25
+EB0||D5FLeave alone;G1;X0.75;|pin@94||U
+EB1||D5FLeave alone;G1;X0.75;|pin@92||U
+EB2||D5FLeave alone;G1;X0.75;|pin@91||U
+EB3||D5FLeave alone;G1;X0.75;|pin@96||U
+EB4||D5FLeave alone;G1;X0.75;|pin@86||U
+EB5||D5FLeave alone;G1;X0.75;|pin@95||U
+EB6||D5FLeave alone;G1;X0.75;|pin@93||U
+EB7||D5FLeave alone;G1;X0.75;|pin@97||U
+EB8||D5FLeave alone;G1;X0.75;|pin@99||U
+EB9||D5FLeave alone;G1;X0.75;|pin@98||U
+EVDD||D5FLeave alone;G1;Y0.5;|pin@74||U
+EVREFM||D5FLeave alone;G1;Y-0.75;|pin@79||U
+EVREFP||D5FLeave alone;G1;Y-0.75;|pin@76||U
+EVout||D5FLeave alone;G1;X-1.25;|pin@77||U
+X
+
+# Cell Ideal_10Bit_DAC;1{sch}
+CIdeal_10Bit_DAC;1{sch}||schematic|1207170695925|1245885287354|
+IIdeal_10Bit_DAC;1{ic}|Ideal_6B@0||-8.25|46.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@0||23.5|32.5|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@1||53|32.5|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@2||23.25|-0.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@3||52.75|-0.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@4||23.5|16.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@5||53|16.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@6||23.5|48.5|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@7||52.5|48.5|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@8||-8.25|16.25|||D5G4;
+IIdeal_DACbit;1{ic}|Ideal_DA@9||-8.25|-0.25|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||12.5|34.75||||
+NOff-Page|conn@1||42.5|34.75||||
+NOff-Page|conn@2||42.5|18.5||||
+NOff-Page|conn@3||12.25|2||||
+NOff-Page|conn@4||42.25|2||||
+NOff-Page|conn@5||-39|11.75||||
+NOff-Page|conn@6||-37.75|43.5|||RRR|
+NOff-Page|conn@7||69|25||||
+NOff-Page|conn@9||12.5|18.5||||
+NOff-Page|conn@10||-39|3.75||||
+NOff-Page|conn@11||12.5|50.75||||
+NOff-Page|conn@12||41.5|50.75||||
+NOff-Page|conn@13||-19.25|18.5||||
+NOff-Page|conn@14||-19.25|2||||
+NGround|gnd@2||-37.75|20.75||||
+NWire_Pin|pin@0||13.75|14.5||||
+NWire_Pin|pin@1||23.25|40.25||||
+NWire_Pin|pin@2||23.25|24||||
+NWire_Pin|pin@4||32.75|32.5||||
+NWire_Pin|pin@5||-37.75|31.5||||
+NWire_Pin|pin@6||-33.25|31.5||||
+Ngeneric:Invisible-Pin|pin@7||-40|-9.5|||||SIM_spice_card(D6G1.5;)SVone Vone 0 DC 1
+Ngeneric:Invisible-Pin|pin@8||-40|-13|||||SIM_spice_card(D6G1.5;)SB1 Vout 0 V=((v(vrefp)-v(vrefm))/1024)*(v(B9L)*512+v(B8L)*256+v(B7L)*128+v(B6L)*64+v(B5L)*32+v(B4L)*16+v(B3L)*8+v(B2L)*4+v(B1L)*2+v(B0L))+v(vrefm)
+Ngeneric:Invisible-Pin|pin@9||-28|-16.5|||||ART_message(C14;D5G1.5;)SSpice Code used for Behavirol source
+NWire_Pin|pin@10||43.25|30.75||||
+NWire_Pin|pin@11||52.75|40.25||||
+NWire_Pin|pin@12||62.25|32.5||||
+NWire_Pin|pin@13||32.75|16.25||||
+NWire_Pin|pin@14||43.25|14.5||||
+NWire_Pin|pin@15||52.75|24||||
+NWire_Pin|pin@16||62.25|16.25||||
+NWire_Pin|pin@17||13.75|30.75||||
+NWire_Pin|pin@18||13.5|-2||||
+NWire_Pin|pin@19||23|7.5||||
+NWire_Pin|pin@20||32.5|-0.25||||
+NWire_Pin|pin@21||43|-2||||
+NWire_Pin|pin@22||52.5|7.5||||
+NWire_Pin|pin@23||62|-0.25||||
+NWire_Pin|pin@24||-32.5|11.75||||
+NWire_Pin|pin@25||-32.5|3.75||||
+NWire_Pin|pin@26||23.25|56.25||||
+NWire_Pin|pin@27||13.75|46.75||||
+NWire_Pin|pin@28||32.75|48.5||||
+NWire_Pin|pin@29||52.25|56.25||||
+NWire_Pin|pin@30||42.75|46.75||||
+NWire_Pin|pin@31||61.75|48.5||||
+NWire_Pin|pin@32||-8.5|24||||
+NWire_Pin|pin@33||-18|14.5||||
+NWire_Pin|pin@34||1|16.25||||
+NWire_Pin|pin@35||-8.5|7.5||||
+NWire_Pin|pin@36||-18|-2||||
+NWire_Pin|pin@37||1|-0.25||||
+NResistor|res@0||-37.75|36.25|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@1||-37.75|26.25|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+NResistor|res@2||-32.5|8.25|||R||SCHEM_resistance(D5G1;RRRY-3;)S100MEG
+Awire|B0L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@3|Bitout|58.75|-0.25|pin@23||62|-0.25
+Awire|B1L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@5|Bitout|59|16.25|pin@16||62.25|16.25
+Awire|B2L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@1|Bitout|59|32.5|pin@12||62.25|32.5
+Awire|B3L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@7|Bitout|58.5|48.5|pin@31||61.75|48.5
+Awire|B4L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@2|Bitout|29.25|-0.25|pin@20||32.5|-0.25
+Awire|B5L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@4|Bitout|29.5|16.25|pin@13||32.75|16.25
+Awire|B6L|D5FLeave alone;G1.5;X3;||1800|Ideal_DA@0|Bitout|29.5|32.5|pin@4||32.75|32.5
+Awire|B7L|D5FLeave alone;G1.5;X3.25;||1800|Ideal_DA@6|Bitout|29.5|48.5|pin@28||32.75|48.5
+Awire|B8L|D5FLeave alone;G1.5;X3.75;||1800|Ideal_DA@9|Bitout|-2.25|-0.25|pin@37||1|-0.25
+Awire|B9L|D5FLeave alone;G1.5;X3.75;||1800|Ideal_DA@8|Bitout|-2.25|16.25|pin@34||1|16.25
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@4|Vone|23.25|22|pin@2||23.25|24
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@0|Vone|23.25|38.25|pin@1||23.25|40.25
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@2|Vone|23|5.5|pin@19||23|7.5
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@3|Vone|52.5|5.5|pin@22||52.5|7.5
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@5|Vone|52.75|22|pin@15||52.75|24
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@1|Vone|52.75|38.25|pin@11||52.75|40.25
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@6|Vone|23.25|54.25|pin@26||23.25|56.25
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@7|Vone|52.25|54.25|pin@29||52.25|56.25
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@8|Vone|-8.5|22|pin@32||-8.5|24
+Awire|Vone|D5G1;RY2.25;||2700|Ideal_DA@9|Vone|-8.5|5.5|pin@35||-8.5|7.5
+Awire|Vtrip|D5G1;X3.5;||1800|pin@5||-37.75|31.5|pin@6||-33.25|31.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@4|Vtrip|17.25|14.5|pin@0||13.75|14.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@0|Vtrip|17.25|30.75|pin@17||13.75|30.75
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@2|Vtrip|17|-2|pin@18||13.5|-2
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@3|Vtrip|46.5|-2|pin@21||43|-2
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@5|Vtrip|46.75|14.5|pin@14||43.25|14.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@1|Vtrip|46.75|30.75|pin@10||43.25|30.75
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@8|Vtrip|-14.5|14.5|pin@33||-18|14.5
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@9|Vtrip|-14.5|-2|pin@36||-18|-2
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@6|Vtrip|17.25|46.75|pin@27||13.75|46.75
+Awire|Vtrip|D5FLeave alone;G1;X-3.25;||0|Ideal_DA@7|Vtrip|46.25|46.75|pin@30||42.75|46.75
+Awire|net@0|||2700|res@0|b|-37.75|38.25|conn@6|y|-37.75|41.5
+Awire|net@1|||2700|gnd@2||-37.75|22.75|res@1|a|-37.75|24.25
+Awire|net@3|||1800|conn@3|y|14.25|2|Ideal_DA@2|Bitin|17|2
+Awire|net@7|||1800|conn@4|y|44.25|2|Ideal_DA@3|Bitin|46.5|2
+Awire|net@12|||1800|conn@1|y|44.5|34.75|Ideal_DA@1|Bitin|46.75|34.75
+Awire|net@16|||900|pin@5||-37.75|31.5|res@1|b|-37.75|28.25
+Awire|net@17|||900|res@0|a|-37.75|34.25|pin@5||-37.75|31.5
+Awire|net@19|||1800|conn@0|y|14.5|34.75|Ideal_DA@0|Bitin|17.25|34.75
+Awire|net@20|||1800|conn@9|y|14.5|18.5|Ideal_DA@4|Bitin|17.25|18.5
+Awire|net@24|||1800|conn@2|y|44.5|18.5|Ideal_DA@5|Bitin|46.75|18.5
+Awire|net@26|||900|pin@24||-32.5|11.75|res@2|b|-32.5|10.25
+Awire|net@27|||1800|conn@10|y|-37|3.75|pin@25||-32.5|3.75
+Awire|net@28|||2700|pin@25||-32.5|3.75|res@2|a|-32.5|6.25
+Awire|net@29|||1800|conn@5|y|-37|11.75|pin@24||-32.5|11.75
+Awire|net@30|||1800|conn@11|y|14.5|50.75|Ideal_DA@6|Bitin|17.25|50.75
+Awire|net@31|||1800|conn@12|y|43.5|50.75|Ideal_DA@7|Bitin|46.25|50.75
+Awire|net@32|||1800|conn@13|y|-17.25|18.5|Ideal_DA@8|Bitin|-14.5|18.5
+Awire|net@33|||1800|conn@14|y|-17.25|2|Ideal_DA@9|Bitin|-14.5|2
+EB0||D5FLeave alone;G1.5;X-1.5;Y0.25;|conn@4|a|U
+EB1||D5FLeave alone;G1.5;X-1.25;|conn@2|a|U
+EB2||D5FLeave alone;G1.5;X-1.5;|conn@1|a|U
+EB3||D5G1.5;X-1.25;|conn@12|a|U
+EB4||D5FLeave alone;G1.5;X-1.5;|conn@3|a|U
+EB5||D5FLeave alone;G1.5;X-1.5;|conn@9|a|U
+EB6||D5FLeave alone;G1.5;X-5.75;|conn@0|y|U
+EB7||D5G1.5;X-1.25;|conn@11|a|U
+EB8||D5FLeave alone;G1.5;X-1.25;|conn@14|a|U
+EB9||D5FLeave alone;G1.5;X-1.25;|conn@13|a|U
+EVDD||D5G1.5;X-5.25;|conn@6|y|U
+EVREFM||D5FLeave alone;G1.5;X-3;|conn@10|a|U
+EVREFP||D5FLeave alone;G1.5;X-2.75;|conn@5|a|U
+EVout||D5G1.5;X1.75;|conn@7|y|U
+X
+
+# Cell Ideal_ADCbit;1{ic}
+CIdeal_ADCbit;1{ic}||artwork|1205541922207|1209513640550|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|13.5|10|||trace()V[-6.75/-5,-6.75/5,6.75/5,6.75/2.5,6.75/0.75,6.75/-5,2.5/-5,-6.75/-5]
+Nschematic:Bus_Pin|pin@0||6.75|0.25||||
+Nschematic:Bus_Pin|pin@2||-6.75|-3||||
+Nschematic:Wire_Pin|pin@3||-6.75|-3||||
+Nschematic:Bus_Pin|pin@4||-6.75|2.75||||
+Nschematic:Bus_Pin|pin@6||0.25|5||||
+Nschematic:Bus_Pin|pin@8||0.25|-5||||
+Nschematic:Bus_Pin|pin@10||-6.75|0||||
+Nschematic:Wire_Pin|pin@12||-7.75|2.75||||
+Nschematic:Wire_Pin|pin@13||-6.75|0||||
+Nschematic:Wire_Pin|pin@14||6.75|0.25||||
+Nschematic:Wire_Pin|pin@15||0.25|-5||||
+Nschematic:Wire_Pin|pin@16||0.25|5||||
+Ngeneric:Invisible-Pin|pin@17||0.25|0.25|||RRR||ART_message(D5G1;R)SADC_Bit
+Nschematic:Wire_Pin|pin@19||-7.75|0||||
+Nschematic:Wire_Pin|pin@20||-7.75|-3||||
+Nschematic:Wire_Pin|pin@21||8|0.25||||
+Nschematic:Wire_Pin|pin@22||0.25|6||||
+Nschematic:Wire_Pin|pin@23||0.25|-6||||
+Ngeneric:Invisible-Pin|pin@24||-5.5|2.75|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@25||-5.5|0|||||ART_message(D5G1;)SVtrip
+Ngeneric:Invisible-Pin|pin@26||-5.5|-3|||||ART_message(D5G1;)SVCM
+Ngeneric:Invisible-Pin|pin@27||0.25|-4.25|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@28||0.25|4.25|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@29||5.25|0.25|||||ART_message(D5G1;)SBitout
+Aschematic:wire|net@1|||1800|pin@3||-6.75|-3|pin@2||-6.75|-3
+Aschematic:wire|net@6|||0|pin@4||-6.75|2.75|pin@12||-7.75|2.75
+Aschematic:wire|net@7|||0|pin@10||-6.75|0|pin@13||-6.75|0
+Aschematic:wire|net@8|||1800|pin@0||6.75|0.25|pin@14||6.75|0.25
+Aschematic:wire|net@9|||2700|pin@8||0.25|-5|pin@15||0.25|-5
+Aschematic:wire|net@10|||2700|pin@6||0.25|5|pin@16||0.25|5
+Aschematic:wire|net@12|||0|pin@10||-6.75|0|pin@19||-7.75|0
+Aschematic:wire|net@13|||0|pin@2||-6.75|-3|pin@20||-7.75|-3
+Aschematic:wire|net@14|||1800|pin@0||6.75|0.25|pin@21||8|0.25
+Aschematic:wire|net@15|||2700|pin@6||0.25|5|pin@22||0.25|6
+Aschematic:wire|net@16|||900|pin@8||0.25|-5|pin@23||0.25|-6
+EBitout||D5FLeave alone;G1;X2.5;|pin@0||U
+EVCM||D5FLeave alone;G1;X-2.25;|pin@2||U
+EVDD||D5FLeave alone;G1;X-2.25;|pin@4||U
+EVin||D5FLeave alone;G1;Y1.5;|pin@6||U
+EVout||D5FLeave alone;G1;Y-1.5;|pin@8||U
+EVtrip||D5FLeave alone;G1;X-2.25;|pin@10||U
+X
+
+# Cell Ideal_ADCbit;1{sch}
+CIdeal_ADCbit;1{sch}||schematic|1205539408192|1209520285097|
+IIdeal_ADCbit;1{ic}|ADCbit@0||-19|45.5|||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@0||-47|27|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@1||-47|15.75|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@4||3|30|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@5||3|18|RRR||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||11|24||||
+NOff-Page|conn@1||-4|28.25||||
+NOff-Page|conn@2||-54|28.75||||
+NOff-Page|conn@3||-54|25.25||||
+NOff-Page|conn@4||-47|33|||RRR|
+NOff-Page|conn@5||-40|21.5||||
+NGround|gnd@0||-20|24.75||||
+NGround|gnd@1||-20|5.75||||
+NGround|gnd@2||-27|7.75||||
+NGround|gnd@3||-47|9||||
+IIdeal_Differencer_2;1{ic}|ideal_co@0||-20|30.75|||D5G4;
+IIdeal_Differencer_2;1{ic}|ideal_co@1||-20|12.75|||D5G4;
+NWire_Pin|pin@0||3|13||||
+NWire_Pin|pin@1||3|35||||
+NWire_Pin|pin@2||3|24||||
+NWire_Pin|pin@4||-2|31.75||||
+NWire_Pin|pin@5||-2|19.75||||
+NWire_Pin|pin@6||-2|16.25||||
+NWire_Pin|pin@8||-47|21.5||||
+NWire_Pin|pin@11||-52|17.5||||
+NWire_Pin|pin@12||-52|14||||
+NWire_Pin|pin@15||-27.25|29||||
+NWire_Pin|pin@16||-27.25|33||||
+NWire_Pin|pin@17||-16.5|36||||
+NWire_Pin|pin@20||-27|15||||
+NWire_Pin|pin@21||-16.75|18||||
+NWire_Pin|pin@24||-20|36||||
+NWire_Pin|pin@28||-20|18||||
+NWire_Pin|pin@31||-27|11||||
+Awire|Bitout|D5G1.5;X-3.25;||0|Ideal_sw@4|contrlp|0.75|31.75|pin@4||-2|31.75
+Awire|Bitout|D5FLeave alone;G1.5;X-3.25;||0|Ideal_sw@5|contrlm|0.75|16.25|pin@6||-2|16.25
+Awire|VCM|D5FLeave alone;G1.5;X-3.25;||0|Ideal_sw@1|contrlp|-49.25|17.5|pin@11||-52|17.5
+Awire|VCM|D5G1;X-0.75;Y0.5;||1800|pin@15||-27.25|29|ideal_co@0|im|-24|29
+Awire|Vin|D5FLeave alone;G1.5;X-2.75;||0|Ideal_sw@1|contrlm|-49.25|14|pin@12||-52|14
+Awire|Vin|D5G1;X-1;Y0.5;||1800|pin@16||-27.25|33|ideal_co@0|ip|-24.25|33
+Awire|Vin|D5G1;X-0.75;Y0.75;||1800|pin@20||-27|15|ideal_co@1|ip|-24.25|15
+Awire|Vinh|D5G1;X0.75;Y0.5;||0|pin@17||-16.5|36|pin@24||-20|36
+Awire|Vinh|D5G1.5;Y1.75;||2700|Ideal_sw@4|in|3|33|pin@1||3|35
+Awire|Vinl|D5G1;X0.75;Y0.5;||0|pin@21||-16.75|18|pin@28||-20|18
+Awire|Vinl|D5G1.5;Y-1.5;||900|Ideal_sw@5|out|3|15|pin@0||3|13
+Awire|Vtrip|D5FLeave alone;G1.5;X-3;||0|Ideal_sw@5|contrlp|0.75|19.75|pin@5||-2|19.75
+Awire|net@0|||2700|Ideal_sw@1|in|-47|18.75|pin@8||-47|21.5
+Awire|net@1|||900|pin@2||3|24|Ideal_sw@5|in|3|21
+Awire|net@4|||900|Ideal_sw@4|out|3|27|pin@2||3|24
+Awire|net@5|||0|conn@0|a|9|24|pin@2||3|24
+Awire|net@8|||1800|conn@1|y|-2|28.25|Ideal_sw@4|contrlm|0.75|28.25
+Awire|net@12|||1800|conn@3|y|-52|25.25|Ideal_sw@0|contrlm|-49.25|25.25
+Awire|net@15|||0|Ideal_sw@0|contrlp|-49.25|28.75|conn@2|y|-52|28.75
+Awire|net@16|||2700|pin@8||-47|21.5|Ideal_sw@0|out|-47|24
+Awire|net@17|||0|conn@5|a|-42|21.5|pin@8||-47|21.5
+Awire|net@26|||900|conn@4|y|-47|31|Ideal_sw@0|in|-47|30
+Awire|net@38|||2700|gnd@3||-47|11|Ideal_sw@1|out|-47|12.75
+Awire|net@44|||2700|gnd@0||-20|26.75|ideal_co@0|om|-20|27
+Awire|net@47|||2700|gnd@2||-27|9.75|pin@31||-27|11
+Awire|net@48|||1800|pin@31||-27|11|ideal_co@1|im|-24|11
+Awire|net@49|||2700|gnd@1||-20|7.75|ideal_co@1|om|-20|9
+Awire|net@55|||900|pin@24||-20|36|ideal_co@0|op|-20|35
+Awire|net@56|||900|pin@28||-20|18|ideal_co@1|op|-20|17
+EBitout||D5G1.5;X2;|conn@5|y|U
+EVCM||D5FLeave alone;G1.5;X-2;|conn@3|a|U
+EVDD||D5G1.5;X-1;|conn@4|a|U
+EVin||D5FLeave alone;G1.5;X-1.5;|conn@2|a|U
+EVout||D5G1.5;X1.75;|conn@0|y|U
+EVtrip||D5G1.5;X-5.75;|conn@1|y|U
+X
+
+# Cell Ideal_ADCbit_w/error;1{ic}
+CIdeal_ADCbit_w/error;1{ic}||artwork|1205541922207|1209522147050|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|13.5|10|||trace()V[-6.75/-5,-6.75/5,6.75/5,6.75/2.5,6.75/0.75,6.75/-5,2.5/-5,-6.75/-5]
+Nschematic:Bus_Pin|pin@0||6.75|0.25||||
+Nschematic:Bus_Pin|pin@2||-6.75|-3||||
+Nschematic:Wire_Pin|pin@3||-6.75|-3||||
+Nschematic:Bus_Pin|pin@4||-6.75|2.75||||
+Nschematic:Bus_Pin|pin@6||0.25|5||||
+Nschematic:Bus_Pin|pin@8||0.25|-5||||
+Nschematic:Bus_Pin|pin@10||-6.75|0||||
+Nschematic:Wire_Pin|pin@12||-7.75|2.75||||
+Nschematic:Wire_Pin|pin@13||-6.75|0||||
+Nschematic:Wire_Pin|pin@14||6.75|0.25||||
+Nschematic:Wire_Pin|pin@15||0.25|-5||||
+Nschematic:Wire_Pin|pin@16||0.25|5||||
+Ngeneric:Invisible-Pin|pin@17||0.25|0.25|||RRR||ART_message(D5G1;R)SADC_Bit_w/error
+Nschematic:Wire_Pin|pin@19||-7.75|0||||
+Nschematic:Wire_Pin|pin@20||-7.75|-3||||
+Nschematic:Wire_Pin|pin@21||8|0.25||||
+Nschematic:Wire_Pin|pin@22||0.25|6||||
+Nschematic:Wire_Pin|pin@23||0.25|-6||||
+Ngeneric:Invisible-Pin|pin@24||-5.5|2.75|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@25||-5.5|0|||||ART_message(D5G1;)SVtrip
+Ngeneric:Invisible-Pin|pin@26||-5.5|-3|||||ART_message(D5G1;)SVCM
+Ngeneric:Invisible-Pin|pin@27||0.25|-4.25|||||ART_message(D5G1;)SVout
+Ngeneric:Invisible-Pin|pin@28||0.25|4.25|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@29||5.25|0.25|||||ART_message(D5G1;)SBitout
+Aschematic:wire|net@1|||1800|pin@3||-6.75|-3|pin@2||-6.75|-3
+Aschematic:wire|net@6|||0|pin@4||-6.75|2.75|pin@12||-7.75|2.75
+Aschematic:wire|net@7|||0|pin@10||-6.75|0|pin@13||-6.75|0
+Aschematic:wire|net@8|||1800|pin@0||6.75|0.25|pin@14||6.75|0.25
+Aschematic:wire|net@9|||2700|pin@8||0.25|-5|pin@15||0.25|-5
+Aschematic:wire|net@10|||2700|pin@6||0.25|5|pin@16||0.25|5
+Aschematic:wire|net@12|||0|pin@10||-6.75|0|pin@19||-7.75|0
+Aschematic:wire|net@13|||0|pin@2||-6.75|-3|pin@20||-7.75|-3
+Aschematic:wire|net@14|||1800|pin@0||6.75|0.25|pin@21||8|0.25
+Aschematic:wire|net@15|||2700|pin@6||0.25|5|pin@22||0.25|6
+Aschematic:wire|net@16|||900|pin@8||0.25|-5|pin@23||0.25|-6
+EBitout||D5FLeave alone;G1;X2.5;|pin@0||U
+EVCM||D5FLeave alone;G1;X-2.25;|pin@2||U
+EVDD||D5FLeave alone;G1;X-2.25;|pin@4||U
+EVin||D5FLeave alone;G1;Y1.5;|pin@6||U
+EVout||D5FLeave alone;G1;Y-1.5;|pin@8||U
+EVtrip||D5FLeave alone;G1;X-2.25;|pin@10||U
+X
+
+# Cell Ideal_ADCbit_w/error;1{sch}
+CIdeal_ADCbit_w/error;1{sch}||schematic|1205539408192|1209527966644|
+IIdeal_ADCbit_w/error;1{ic}|ADCbit@0||-19|45.5|||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@0||-47|27|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@1||-47|15.75|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@4||3|30|RRR||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@5||3|18|RRR||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||11|24||||
+NOff-Page|conn@1||-4|28.25||||
+NOff-Page|conn@2||-54|28.75||||
+NOff-Page|conn@3||-54|25.25||||
+NOff-Page|conn@4||-47|33|||RRR|
+NOff-Page|conn@5||-40|21.5||||
+NGround|gnd@0||-20|24.75||||
+NGround|gnd@1||-20|5.75||||
+NGround|gnd@2||-27|7.75||||
+NGround|gnd@3||-47|9||||
+IIdeal_Differencer_2_5;1{ic}|ideal_co@0||-20|30.75|||D5G4;
+IIdeal_Differencer_1_9;1{ic}|ideal_co@1||-20|12.75|||D5G4;
+NWire_Pin|pin@0||3|13||||
+NWire_Pin|pin@1||3|35||||
+NWire_Pin|pin@2||3|24||||
+NWire_Pin|pin@4||-2|31.75||||
+NWire_Pin|pin@5||-2|19.75||||
+NWire_Pin|pin@6||-2|16.25||||
+NWire_Pin|pin@8||-47|21.5||||
+NWire_Pin|pin@11||-52|17.5||||
+NWire_Pin|pin@12||-52|14||||
+NWire_Pin|pin@15||-27.25|29||||
+NWire_Pin|pin@16||-27.25|33||||
+NWire_Pin|pin@17||-16.5|36||||
+NWire_Pin|pin@20||-27|15||||
+NWire_Pin|pin@21||-16.75|18||||
+NWire_Pin|pin@24||-20|36||||
+NWire_Pin|pin@28||-20|18||||
+NWire_Pin|pin@31||-27|11||||
+Ngeneric:Invisible-Pin|pin@32||-21.25|0.75|||||ART_message(D5G2;)SAdd error here, 2 changed to 1.9 and 2.5
+Awire|Bitout|D5G1.5;X-3.25;||0|Ideal_sw@4|contrlp|0.75|31.75|pin@4||-2|31.75
+Awire|Bitout|D5FLeave alone;G1.5;X-3.25;||0|Ideal_sw@5|contrlm|0.75|16.25|pin@6||-2|16.25
+Awire|VCM|D5FLeave alone;G1.5;X-3.25;||0|Ideal_sw@1|contrlp|-49.25|17.5|pin@11||-52|17.5
+Awire|VCM|D5G1;X-0.75;Y0.5;||1800|pin@15||-27.25|29|ideal_co@0|im|-24|29
+Awire|Vin|D5FLeave alone;G1.5;X-2.75;||0|Ideal_sw@1|contrlm|-49.25|14|pin@12||-52|14
+Awire|Vin|D5G1;X-1;Y0.5;||1800|pin@16||-27.25|33|ideal_co@0|ip|-24.25|33
+Awire|Vin|D5G1;X-0.75;Y0.75;||1800|pin@20||-27|15|ideal_co@1|ip|-24.25|15
+Awire|Vinh|D5G1;X0.75;Y0.5;||0|pin@17||-16.5|36|pin@24||-20|36
+Awire|Vinh|D5G1.5;Y1.75;||2700|Ideal_sw@4|in|3|33|pin@1||3|35
+Awire|Vinl|D5G1;X0.75;Y0.5;||0|pin@21||-16.75|18|pin@28||-20|18
+Awire|Vinl|D5G1.5;Y-1.5;||900|Ideal_sw@5|out|3|15|pin@0||3|13
+Awire|Vtrip|D5FLeave alone;G1.5;X-3;||0|Ideal_sw@5|contrlp|0.75|19.75|pin@5||-2|19.75
+Awire|net@0|||2700|Ideal_sw@1|in|-47|18.75|pin@8||-47|21.5
+Awire|net@1|||900|pin@2||3|24|Ideal_sw@5|in|3|21
+Awire|net@4|||900|Ideal_sw@4|out|3|27|pin@2||3|24
+Awire|net@5|||0|conn@0|a|9|24|pin@2||3|24
+Awire|net@8|||1800|conn@1|y|-2|28.25|Ideal_sw@4|contrlm|0.75|28.25
+Awire|net@12|||1800|conn@3|y|-52|25.25|Ideal_sw@0|contrlm|-49.25|25.25
+Awire|net@15|||0|Ideal_sw@0|contrlp|-49.25|28.75|conn@2|y|-52|28.75
+Awire|net@16|||2700|pin@8||-47|21.5|Ideal_sw@0|out|-47|24
+Awire|net@17|||0|conn@5|a|-42|21.5|pin@8||-47|21.5
+Awire|net@26|||900|conn@4|y|-47|31|Ideal_sw@0|in|-47|30
+Awire|net@38|||2700|gnd@3||-47|11|Ideal_sw@1|out|-47|12.75
+Awire|net@44|||2700|gnd@0||-20|26.75|ideal_co@0|om|-20|27
+Awire|net@47|||2700|gnd@2||-27|9.75|pin@31||-27|11
+Awire|net@48|||1800|pin@31||-27|11|ideal_co@1|im|-24|11
+Awire|net@49|||2700|gnd@1||-20|7.75|ideal_co@1|om|-20|9
+Awire|net@55|||900|pin@24||-20|36|ideal_co@0|op|-20|35
+Awire|net@56|||900|pin@28||-20|18|ideal_co@1|op|-20|17
+EBitout||D5G1.5;X2;|conn@5|y|U
+EVCM||D5FLeave alone;G1.5;X-2;|conn@3|a|U
+EVDD||D5G1.5;X-1;|conn@4|a|U
+EVin||D5FLeave alone;G1.5;X-1.5;|conn@2|a|U
+EVout||D5G1.5;X1.75;|conn@0|y|U
+EVtrip||D5G1.5;X-5.75;|conn@1|y|U
+X
+
+# Cell Ideal_DACbit;1{ic}
+CIdeal_DACbit;1{ic}||artwork|1207066459220|1209513330566|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||-0.25|0.125|9|8.25|||trace()V[-4.5/-4.125,-4.5/4.125,4.5/4.125,4.5/-4.125,-4.5/-4.125]
+Nschematic:Bus_Pin|pin@0||-6.25|2.25||||
+Nschematic:Bus_Pin|pin@2||6|0||||
+Nschematic:Bus_Pin|pin@4||-0.25|5.75||||
+Nschematic:Bus_Pin|pin@6||-6.25|-1.75||||
+Nschematic:Wire_Pin|pin@8||-4.75|-1.75||||
+Nschematic:Wire_Pin|pin@9||-4.75|2.25||||
+Nschematic:Wire_Pin|pin@10||-0.25|4.25||||
+Nschematic:Wire_Pin|pin@11||4.25|0||||
+Ngeneric:Invisible-Pin|pin@12||-0.5|0.25|||||ART_message(D5G1;)SDAC_Bit
+Ngeneric:Invisible-Pin|pin@13||-3.75|2.25|||||ART_message(D5G0.75;)SBitin
+Ngeneric:Invisible-Pin|pin@14||-3.75|-1.75|||||ART_message(D5G0.75;)SVtrip
+Ngeneric:Invisible-Pin|pin@15||-0.25|3.75|||||ART_message(D5G0.75;)SVone
+Ngeneric:Invisible-Pin|pin@16||3.25|0|||||ART_message(D5G0.75;)SBitout
+Aschematic:wire|net@4|||1800|pin@6||-6.25|-1.75|pin@8||-4.75|-1.75
+Aschematic:wire|net@5|||1800|pin@0||-6.25|2.25|pin@9||-4.75|2.25
+Aschematic:wire|net@6|||900|pin@4||-0.25|5.75|pin@10||-0.25|4.25
+Aschematic:wire|net@7|||0|pin@2||6|0|pin@11||4.25|0
+EBitin||D5FLeave alone;G1;X-1;|pin@0||U
+EBitout||D5FLeave alone;G1;X1.5;|pin@2||U
+EVone||D5FLeave alone;G1;Y0.5;|pin@4||U
+EVtrip||D5FLeave alone;G1;X-1.25;|pin@6||U
+X
+
+# Cell Ideal_DACbit;1{sch}
+CIdeal_DACbit;1{sch}||schematic|1206444515682|1209514799144|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@1||-20|6.25||||
+NOff-Page|conn@2||-20|9.75||||
+NOff-Page|conn@5||-13|26|||RRR|
+NOff-Page|conn@6||-6|14||||
+NGround|gnd@0||-13|2||||
+IIdeal_DACbit;1{ic}|ideal_DA@0||5|21.25|||D5G4;
+IIdeal_Switch;1{ic}|ideal_sw@0||-13|8|RRR||D5G4;
+IIdeal_Switch;1{ic}|ideal_sw@1||-13|19.5|RRR||D5G4;
+NWire_Pin|pin@0||-18|21.25||||
+NWire_Pin|pin@1||-18|17.75||||
+NWire_Pin|pin@5||-13|14||||
+Awire|Bitin|D5G1;X-2.5;||0|ideal_sw@1|contrlp|-15.25|21.25|pin@0||-18|21.25
+Awire|Vtrip|D5G1;X-2.75;||0|ideal_sw@1|contrlm|-15.25|17.75|pin@1||-18|17.75
+Awire|net@9|||0|ideal_sw@0|contrlp|-15.25|9.75|conn@2|y|-18|9.75
+Awire|net@12|||0|ideal_sw@0|contrlm|-15.25|6.25|conn@1|y|-18|6.25
+Awire|net@13|||900|conn@5|y|-13|24|ideal_sw@1|in|-13|22.5
+Awire|net@14|||2700|gnd@0||-13|4|ideal_sw@0|out|-13|5
+Awire|net@23|||2700|pin@5||-13|14|ideal_sw@1|out|-13|16.5
+Awire|net@24|||2700|ideal_sw@0|in|-13|11|pin@5||-13|14
+Awire|net@27|||1800|pin@5||-13|14|conn@6|a|-8|14
+EBitin||D5FLeave alone;G1;X-1.25;|conn@1|a|U
+EBitout||D5G1;X1.5;|conn@6|y|U
+EVone||D5G1;X-0.75;|conn@5|a|U
+EVtrip||D5FLeave alone;G1;X-1.25;|conn@2|a|U
+X
+
+# Cell Ideal_Differencer_1;1{ic}
+CIdeal_Differencer_1;1{ic}||artwork|1206428849903|1209520317004|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCircle|art@2||0|0.25|6|6||
+NOpened-Polygon|art@3||0|2.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@4||0|2.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@6||-3.25|1.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@7||-3.25|1.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@8||-3.25|-1.5||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@9||0|-2.25||0.5|R||trace()V[0/-0.25,0/0.25]
+Nschematic:Bus_Pin|pin@0||-4|-1.75||||
+Nschematic:Bus_Pin|pin@2||-4.25|2.25||||
+Nschematic:Bus_Pin|pin@4||0|-3.75||||
+Nschematic:Bus_Pin|pin@6||0|4.25||||
+Nschematic:Wire_Pin|pin@7||0|-2.75||||
+Nschematic:Wire_Pin|pin@8||0|3.25||||
+Nschematic:Wire_Pin|pin@9||-2.25|2.25||||
+Nschematic:Wire_Pin|pin@10||-2.25|-1.75||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G2;)SG=1
+Aschematic:wire|net@0|||2700|pin@4||0|-3.75|pin@7||0|-2.75
+Aschematic:wire|net@1|||900|pin@6||0|4.25|pin@8||0|3.25
+Aschematic:wire|net@2|||1800|pin@2||-4.25|2.25|pin@9||-2.25|2.25
+Aschematic:wire|net@3|||1800|pin@0||-4|-1.75|pin@10||-2.25|-1.75
+Eim||D5FLeave alone;G1;X-0.5;|pin@0||U
+Eip||D5FLeave alone;G1;X-0.5;|pin@2||U
+Eom||D5G1;Y-0.25;|pin@4||U
+Eop||D5G1;Y0.5;|pin@6||U
+X
+
+# Cell Ideal_Differencer_1;1{sch}
+CIdeal_Differencer_1;1{sch}||schematic|1206428684318|1209520317004|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-22|10||||
+NOff-Page|conn@1||-22|3.5||||
+NOff-Page|conn@2||-8|10.25||||
+NOff-Page|conn@3||-8|3.5||||
+IIdeal_Differencer_1;1{ic}|ideal_co@0||-1.25|18.25|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||-15|7.5|||||SIM_spice_card(D5G1;)SE  op  om  ip  im  1
+Eim||D5G2;X-5.25;|conn@1|y|U
+Eip||D5G2;X-5;|conn@0|y|U
+Eom||D5G2;X5.5;Y0.25;|conn@3|a|U
+Eop||D5G2;X1.25;|conn@2|y|U
+X
+
+# Cell Ideal_Differencer_1_9;1{ic}
+CIdeal_Differencer_1_9;1{ic}||artwork|1206428849903|1209520242832|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCircle|art@2||0|0.25|6|6||
+NOpened-Polygon|art@3||0|2.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@4||0|2.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@6||-3.25|1.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@7||-3.25|1.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@8||-3.25|-1.5||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@9||0|-2.25||0.5|R||trace()V[0/-0.25,0/0.25]
+Nschematic:Bus_Pin|pin@0||-4|-1.75||||
+Nschematic:Bus_Pin|pin@2||-4.25|2.25||||
+Nschematic:Bus_Pin|pin@4||0|-3.75||||
+Nschematic:Bus_Pin|pin@6||0|4.25||||
+Nschematic:Wire_Pin|pin@7||0|-2.75||||
+Nschematic:Wire_Pin|pin@8||0|3.25||||
+Nschematic:Wire_Pin|pin@9||-2.25|2.25||||
+Nschematic:Wire_Pin|pin@10||-2.25|-1.75||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G2;)SG=1.9
+Aschematic:wire|net@0|||2700|pin@4||0|-3.75|pin@7||0|-2.75
+Aschematic:wire|net@1|||900|pin@6||0|4.25|pin@8||0|3.25
+Aschematic:wire|net@2|||1800|pin@2||-4.25|2.25|pin@9||-2.25|2.25
+Aschematic:wire|net@3|||1800|pin@0||-4|-1.75|pin@10||-2.25|-1.75
+Eim||D5FLeave alone;G1;X-0.5;|pin@0||U
+Eip||D5FLeave alone;G1;X-0.5;|pin@2||U
+Eom||D5G1;Y-0.25;|pin@4||U
+Eop||D5G1;Y0.5;|pin@6||U
+X
+
+# Cell Ideal_Differencer_1_9;1{sch}
+CIdeal_Differencer_1_9;1{sch}||schematic|1206428684318|1209520234879|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-22|10||||
+NOff-Page|conn@1||-22|3.5||||
+NOff-Page|conn@2||-8|10.25||||
+NOff-Page|conn@3||-8|3.5||||
+IIdeal_Differencer_1_9;1{ic}|ideal_co@0||-1.25|18.25|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||-15|7.5|||||SIM_spice_card(D5G1;)SE  op  om  ip  im  1.9
+Eim||D5G2;X-5.25;|conn@1|y|U
+Eip||D5G2;X-5;|conn@0|y|U
+Eom||D5G2;X5.5;Y0.25;|conn@3|a|U
+Eop||D5G2;X1.25;|conn@2|y|U
+X
+
+# Cell Ideal_Differencer_2;1{ic}
+CIdeal_Differencer_2;1{ic}||artwork|1206428849903|1209520285097|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCircle|art@2||0|0.25|6|6||
+NOpened-Polygon|art@3||0|2.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@4||0|2.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@6||-3.25|1.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@7||-3.25|1.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@8||-3.25|-1.5||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@9||0|-2.25||0.5|R||trace()V[0/-0.25,0/0.25]
+Nschematic:Bus_Pin|pin@0||-4|-1.75||||
+Nschematic:Bus_Pin|pin@2||-4.25|2.25||||
+Nschematic:Bus_Pin|pin@4||0|-3.75||||
+Nschematic:Bus_Pin|pin@6||0|4.25||||
+Nschematic:Wire_Pin|pin@7||0|-2.75||||
+Nschematic:Wire_Pin|pin@8||0|3.25||||
+Nschematic:Wire_Pin|pin@9||-2.25|2.25||||
+Nschematic:Wire_Pin|pin@10||-2.25|-1.75||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G2;)SG=2
+Aschematic:wire|net@0|||2700|pin@4||0|-3.75|pin@7||0|-2.75
+Aschematic:wire|net@1|||900|pin@6||0|4.25|pin@8||0|3.25
+Aschematic:wire|net@2|||1800|pin@2||-4.25|2.25|pin@9||-2.25|2.25
+Aschematic:wire|net@3|||1800|pin@0||-4|-1.75|pin@10||-2.25|-1.75
+Eim||D5FLeave alone;G1;X-0.5;|pin@0||U
+Eip||D5FLeave alone;G1;X-0.5;|pin@2||U
+Eom||D5G1;Y-0.25;|pin@4||U
+Eop||D5G1;Y0.5;|pin@6||U
+X
+
+# Cell Ideal_Differencer_2;1{sch}
+CIdeal_Differencer_2;1{sch}||schematic|1206428684318|1209520285097|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-22|10||||
+NOff-Page|conn@1||-22|3.5||||
+NOff-Page|conn@2||-8|10.25||||
+NOff-Page|conn@3||-8|3.5||||
+IIdeal_Differencer_2;1{ic}|ideal_co@0||-1.25|18.25|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||-15|7.5|||||SIM_spice_card(D5G1;)SE  op  om  ip  im  2
+Eim||D5G2;X-5.25;|conn@1|y|U
+Eip||D5G2;X-5;|conn@0|y|U
+Eom||D5G2;X5.5;Y0.25;|conn@3|a|U
+Eop||D5G2;X1.25;|conn@2|y|U
+X
+
+# Cell Ideal_Differencer_2_5;1{ic}
+CIdeal_Differencer_2_5;1{ic}||artwork|1206428849903|1209520248629|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCircle|art@2||0|0.25|6|6||
+NOpened-Polygon|art@3||0|2.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@4||0|2.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@6||-3.25|1.75||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@7||-3.25|1.75||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@8||-3.25|-1.5||0.5|R||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@9||0|-2.25||0.5|R||trace()V[0/-0.25,0/0.25]
+Nschematic:Bus_Pin|pin@0||-4|-1.75||||
+Nschematic:Bus_Pin|pin@2||-4.25|2.25||||
+Nschematic:Bus_Pin|pin@4||0|-3.75||||
+Nschematic:Bus_Pin|pin@6||0|4.25||||
+Nschematic:Wire_Pin|pin@7||0|-2.75||||
+Nschematic:Wire_Pin|pin@8||0|3.25||||
+Nschematic:Wire_Pin|pin@9||-2.25|2.25||||
+Nschematic:Wire_Pin|pin@10||-2.25|-1.75||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G2;)SG=2.5
+Aschematic:wire|net@0|||2700|pin@4||0|-3.75|pin@7||0|-2.75
+Aschematic:wire|net@1|||900|pin@6||0|4.25|pin@8||0|3.25
+Aschematic:wire|net@2|||1800|pin@2||-4.25|2.25|pin@9||-2.25|2.25
+Aschematic:wire|net@3|||1800|pin@0||-4|-1.75|pin@10||-2.25|-1.75
+Eim||D5FLeave alone;G1;X-0.5;|pin@0||U
+Eip||D5FLeave alone;G1;X-0.5;|pin@2||U
+Eom||D5G1;Y-0.25;|pin@4||U
+Eop||D5G1;Y0.5;|pin@6||U
+X
+
+# Cell Ideal_Differencer_2_5;1{sch}
+CIdeal_Differencer_2_5;1{sch}||schematic|1206428684318|1209520254082|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-22|10||||
+NOff-Page|conn@1||-22|3.5||||
+NOff-Page|conn@2||-8|10.25||||
+NOff-Page|conn@3||-8|3.5||||
+IIdeal_Differencer_2_5;1{ic}|ideal_co@0||-1.25|18.25|||D5G4;
+Ngeneric:Invisible-Pin|pin@0||-15|7.5|||||SIM_spice_card(D5G1;)SE  op  om  ip  im  2.5
+Eim||D5G2;X-5.25;|conn@1|y|U
+Eip||D5G2;X-5;|conn@0|y|U
+Eom||D5G2;X5.5;Y0.25;|conn@3|a|U
+Eop||D5G2;X1.25;|conn@2|y|U
+X
+
+# Cell Ideal_Opamp;2{ic}
+CIdeal_Opamp;2{ic}||artwork|1205536202412|1209514804285|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NTriangle|art@2||0.25|0|10|10|RRR|
+NOpened-Polygon|art@9||-3.5|3||1|||trace()V[0/-0.5,0/0.5]
+NOpened-Polygon|art@10||-3.5|3||1|R||trace()V[0/-0.5,0/0.5]
+NOpened-Polygon|art@11||-3.5|-3||1|R||trace()V[0/-0.5,0/0.5]
+Nschematic:Bus_Pin|pin@0||-6.25|-3||||
+Nschematic:Wire_Pin|pin@1||-4.75|-3||||
+Nschematic:Bus_Pin|pin@2||6.5|0||||
+Nschematic:Bus_Pin|pin@4||-6.25|3||||
+Nschematic:Wire_Pin|pin@5||-4.75|3||||
+Nschematic:Wire_Pin|pin@6||5.25|0||||
+Ngeneric:Invisible-Pin|pin@7||-1|0|||||ART_message(D5G1;)SIdeal_opamp
+Aschematic:wire|net@0|||0|pin@1||-4.75|-3|pin@0||-6.25|-3
+Aschematic:wire|net@2|||0|pin@5||-4.75|3|pin@4||-6.25|3
+Aschematic:wire|net@3|||0|pin@2||6.5|0|pin@6||5.25|0
+EVm||D5FLeave alone;G1;X-0.75;|pin@0||U
+EVo||D5FLeave alone;G1;X0.75;|pin@2||U
+EVp||D5FLeave alone;G1;X-0.75;|pin@4||U
+X
+
+# Cell Ideal_Opamp;2{sch}
+CIdeal_Opamp;2{sch}||schematic|1205535471371|1209514804285|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-28|10||||
+NOff-Page|conn@1||-28|1||||
+NOff-Page|conn@2||-6|10|||X|
+NGround|gnd@0||-14|-1||||
+IIdeal_Opamp;2{ic}|ideal_op@0||0.5|18|||D5G4;
+NWire_Pin|pin@0||-20|10||||
+NWire_Pin|pin@1||-20|1||||
+NWire_Pin|pin@2||-14|10|||X|
+Ngeneric:Invisible-Pin|pin@4||-17.5|13|||||SIM_spice_card(D5G1;)SG1 Vo 0  Vp  Vm 100MEG
+NResistor|res@0||-20|5.75|||R||SCHEM_resistance(D5G1;RRRY2;)S10G
+NResistor|res@1||-14|5.75|||XR||SCHEM_resistance(D5G1;RRRY1.25;)S1
+Awire|net@0|||2700|res@0|b|-20|7.75|pin@0||-20|10
+Awire|net@1|||0|pin@0||-20|10|conn@0|y|-26|10
+Awire|net@2|||900|res@0|a|-20|3.75|pin@1||-20|1
+Awire|net@3|||0|pin@1||-20|1|conn@1|y|-26|1
+Awire|net@4|||2700|res@1|b|-14|7.75|pin@2||-14|10
+Awire|net@5|||1800|pin@2||-14|10|conn@2|y|-8|10
+Awire|net@9|||900|res@1|a|-14|3.75|gnd@0||-14|1
+EVm||D5FLeave alone;G1;X-1.5;|conn@1|a|U
+EVo||D5G1;X-0.75;|conn@2|a|U
+EVp||D5FLeave alone;G1;X-1.25;|conn@0|a|U
+X
+
+# Cell Ideal_Sample&Hold;1{ic}
+CIdeal_Sample&Hold;1{ic}||artwork|1205538765598|1209513703441|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|14|10|||trace()V[-7/-5,-7/5,7/5,7/-5,-7/-5]
+Nschematic:Bus_Pin|pin@0||0|5||||
+Nschematic:Wire_Pin|pin@1||0|6||||
+Nschematic:Bus_Pin|pin@2||0|-5||||
+Nschematic:Bus_Pin|pin@4||-7|0||||
+Nschematic:Bus_Pin|pin@6||7|0||||
+Nschematic:Wire_Pin|pin@8||8|0||||
+Nschematic:Wire_Pin|pin@9||-8|0||||
+Nschematic:Wire_Pin|pin@10||0|-6||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G1;)SS/H
+Ngeneric:Invisible-Pin|pin@12||-5.75|0|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@13||0|4|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@14||5.25|0|||||ART_message(D5G1;)SVoutsh
+Ngeneric:Invisible-Pin|pin@15||0|-4|||||ART_message(D5G1;)SVclk
+Aschematic:wire|net@0|||900|pin@1||0|6|pin@0||0|5
+Aschematic:wire|net@4|||1800|pin@6||7|0|pin@8||8|0
+Aschematic:wire|net@5|||0|pin@4||-7|0|pin@9||-8|0
+Aschematic:wire|net@6|||900|pin@2||0|-5|pin@10||0|-6
+EVDD||D5G1;Y1.5;|pin@0||U
+EVclk||D5G1;Y-1.5;|pin@2||U
+EVin||D5G1;X-1.75;|pin@4||U
+EVoutsh||D5G1;X2.75;|pin@6||U
+X
+
+# Cell Ideal_Sample&Hold;1{sch}
+CIdeal_Sample&Hold;1{sch}||schematic|1205537275626|1209524841910|
+IIdeal_Switch;1{ic}|Ideal_sw@0||-2.25|4|||D5G4;
+IIdeal_Switch;1{ic}|Ideal_sw@1||12.75|4|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||5|-3|||||SCHEM_capacitance(D5G1;X2;Y-1.5;)S100p
+NCapacitor|cap@1||19|-3|||||SCHEM_capacitance(D5G1;X1.5;Y-1.25;)S0.1f
+NOff-Page|conn@0||-0.5|-3|||R|
+NOff-Page|conn@3||42|1||||
+NOff-Page|conn@4||-28.5|7||||
+NOff-Page|conn@5||-20|33.75|||RRR|
+NGround|gnd@0||5|-8||||
+NGround|gnd@3||19|-8||||
+NGround|gnd@4||-20|14.25||||
+IIdeal_Opamp;2{ic}|ideal_op@0||32.25|1|||D5G4;
+IIdeal_Opamp;2{ic}|ideal_op@1||-17.5|4|||D5G4;
+NWire_Pin|pin@1||-4|-1||||
+NWire_Pin|pin@2||11|-1||||
+NWire_Pin|pin@3||14.5|-1||||
+NWire_Pin|pin@4||5|4||||
+NWire_Pin|pin@17||19|4||||
+Ngeneric:Invisible-Pin|pin@18||-17.25|9.75|||||ART_message(D5G1;)SInputBuf
+Ngeneric:Invisible-Pin|pin@19||33.75|6|||||ART_message(D5G1;)SOutputBuf
+NWire_Pin|pin@20||-20|23.25||||
+NWire_Pin|pin@21||-15.25|23.25||||
+NWire_Pin|pin@22||-11|-3||||
+NWire_Pin|pin@23||-23.75|-3||||
+NWire_Pin|pin@26||26|-5||||
+NWire_Pin|pin@27||38.75|-5||||
+NResistor|res@0||-20|27.25|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-20|19.25|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+IIdeal_Sample&Hold;1{ic}|smp&hld@0||14.25|15.75|||D5G4;
+Awire|Vclk|D5G1;Y-1.75;||900|Ideal_sw@1|contrlp|11|1.75|pin@2||11|-1
+Awire|Vinb|D5G1;X0.75;Y1.75;||0|Ideal_sw@0|in|-5.25|4|ideal_op@1|Vo|-11|4
+Awire|Vins|D5G1;X2.5;Y1.75;||1800|Ideal_sw@0|out|0.75|4|pin@4||5|4
+Awire|Vtrip|D5G1;X1.5;Y1;||1800|pin@20||-20|23.25|pin@21||-15.25|23.25
+Awire|Vtrip|D5G1;Y-1.5;||900|Ideal_sw@0|contrlp|-4|1.75|pin@1||-4|-1
+Awire|Vtrip|D5G1;Y-1.75;||900|Ideal_sw@1|contrlm|14.5|1.75|pin@3||14.5|-1
+Awire|net@1|||2700|conn@0|y|-0.5|-1|Ideal_sw@0|contrlm|-0.5|1.75
+Awire|net@5|||1800|pin@4||5|4|Ideal_sw@1|in|9.75|4
+Awire|net@7|||2700|cap@0|a|5|-1|pin@4||5|4
+Awire|net@8|||2700|gnd@0||5|-6|cap@0|b|5|-5
+Awire|net@32|||2700|cap@1|a|19|-1|pin@17||19|4
+Awire|net@33|||2700|gnd@3||19|-6|cap@1|b|19|-5
+Awire|net@34|||1800|Ideal_sw@1|out|15.75|4|pin@17||19|4
+Awire|net@36|||2700|res@0|b|-20|29.25|conn@5|y|-20|31.75
+Awire|net@37|||900|res@0|a|-20|25.25|pin@20||-20|23.25
+Awire|net@39|||2700|res@1|b|-20|21.25|pin@20||-20|23.25
+Awire|net@40|||2700|gnd@4||-20|16.25|res@1|a|-20|17.25
+Awire|net@43|||900|ideal_op@1|Vo|-11|4|pin@22||-11|-3
+Awire|net@44|||0|pin@22||-11|-3|pin@23||-23.75|-3
+Awire|net@50|||1800|pin@26||26|-5|pin@27||38.75|-5
+Awire|net@53|||2700|pin@27||38.75|-5|ideal_op@0|Vo|38.75|1
+Awire|net@54|||900|ideal_op@0|Vm|26|-2|pin@26||26|-5
+Awire|net@55|||2700|pin@23||-23.75|-3|ideal_op@1|Vm|-23.75|1
+Awire|net@64|||1800|conn@4|y|-26.5|7|ideal_op@1|Vp|-23.75|7
+Awire|net@65|||1800|ideal_op@0|Vo|38.75|1|conn@3|a|40|1
+Awire|net@66|||0|ideal_op@0|Vp|26|4|pin@17||19|4
+EVDD||D5G1;X-4.75;|conn@5|y|U
+EVclk||D5G1;X-0.75;|conn@0|a|U
+EVin||D5G1;X-1;|conn@4|a|U
+EVoutsh||D5G1;X1.5;|conn@3|y|U
+X
+
+# Cell Ideal_Switch;1{ic}
+CIdeal_Switch;1{ic}||artwork|1205472538040|1209514799144|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCircle|art@3||0|0|4|4||L
+NOpened-Polygon|art@4||-1.625|0|0.75||||trace()V[-0.375/0,0.375/0]
+NOpened-Polygon|art@5||1|0.5|2|1|||trace()V[-1/0.5,1/-0.5]
+NCircle|art@6||-1.1|0|0.3|0.3||
+NCircle|art@7||-0.15|1.01|0.3|0.3||
+NOpened-Polygon|art@11||-1.25|-1||0.5|||trace()V[0/-0.25,0/0.25]
+NOpened-Polygon|art@12||-1.25|-1|0.5||||trace()V[0.25/0,-0.25/0]
+NOpened-Polygon|art@13||1.25|-1|0.5||||trace()V[0.25/0,-0.25/0]
+Nschematic:Bus_Pin|pin@0||-1.75|-2.25||||
+Nschematic:Bus_Pin|pin@2||1.75|-2.25||||
+Nschematic:Bus_Pin|pin@4||-3|0||||
+Nschematic:Wire_Pin|pin@5||-2|0||||
+Nschematic:Bus_Pin|pin@6||3|0||||
+Nschematic:Wire_Pin|pin@9||2|0||||
+Nschematic:Wire_Pin|pin@10||-1.75|-1||||
+Nschematic:Wire_Pin|pin@11||1.75|-1||||
+Ngeneric:Invisible-Pin|pin@12||0|0|||||ART_message(D5G0.5;)SIdeal
+Aschematic:wire|net@2|||0|pin@5||-2|0|pin@4||-3|0
+Aschematic:wire|net@5|||0|pin@6||3|0|pin@9||2|0
+Aschematic:wire|net@6|||2700|pin@0||-1.75|-2.25|pin@10||-1.75|-1
+Aschematic:wire|net@7|||2700|pin@2||1.75|-2.25|pin@11||1.75|-1
+Econtrlm||D5FLeave alone;G0.5;X0.25;Y-0.25;|pin@2||U
+Econtrlp||D5FLeave alone;G0.5;Y-0.25;|pin@0||U
+Ein||D5FLeave alone;G0.5;X-0.25;|pin@4||U
+Eout||D5FLeave alone;G0.5;X0.5;|pin@6||U
+X
+
+# Cell Ideal_Switch;1{sch}
+CIdeal_Switch;1{sch}||schematic|1205468128199|1209514799144|
+IIdeal_Switch;1{ic}|Ideal_sw@0||6.5|21.75|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-14|15.75||||
+NOff-Page|conn@1||-9.75|9.75|||R|
+NOff-Page|conn@2||-1.75|15.75||||
+NOff-Page|conn@3||-9.75|21.5|||RRR|
+NSwitch|node@2||-7.75|15.75||4||
+Ngeneric:Invisible-Pin|pin@11||2.25|11|||||SIM_spice_card(D5FLeave alone;G1;)S[Sswitch  in out  contrlp contrlm  switmod,.model switmod sw]
+Awire|net@15|||2700|conn@1|y|-9.75|11.75|node@2|a|-9.75|13.75
+Awire|net@16|||2700|node@2|a|-9.75|17.75|conn@3|y|-9.75|19.5
+Awire|net@17|||0|node@2|a|-9.75|15.75|conn@0|y|-12|15.75
+Awire|net@18|||0|conn@2|a|-3.75|15.75|node@2|y|-5.75|15.75
+Econtrlm||D5FLeave alone;G1;X-1;|conn@3|a|U
+Econtrlp||D5FLeave alone;G1;X-1;|conn@1|a|U
+Ein||D5FLeave alone;G1;X-1;|conn@0|a|U
+Eout||D5FLeave alone;G1;X1.5;|conn@2|y|U
+X
+
+# Cell Ideal_Track&Hold;1{ic}
+CIdeal_Track&Hold;1{ic}||artwork|1205538765598|1209526183050|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|14|10|||trace()V[-7/-5,-7/5,7/5,7/-5,-7/-5]
+Nschematic:Bus_Pin|pin@0||0|5||||
+Nschematic:Wire_Pin|pin@1||0|6||||
+Nschematic:Bus_Pin|pin@2||0|-5||||
+Nschematic:Bus_Pin|pin@4||-7|0||||
+Nschematic:Bus_Pin|pin@6||7|0||||
+Nschematic:Wire_Pin|pin@8||8|0||||
+Nschematic:Wire_Pin|pin@9||-8|0||||
+Nschematic:Wire_Pin|pin@10||0|-6||||
+Ngeneric:Invisible-Pin|pin@11||0|0|||||ART_message(D5G1;)ST/H
+Ngeneric:Invisible-Pin|pin@12||-5.75|0|||||ART_message(D5G1;)SVin
+Ngeneric:Invisible-Pin|pin@13||0|4|||||ART_message(D5G1;)SVDD
+Ngeneric:Invisible-Pin|pin@14||5.25|0|||||ART_message(D5G1;)SVoutsh
+Ngeneric:Invisible-Pin|pin@15||0|-4|||||ART_message(D5G1;)SVclk
+Aschematic:wire|net@0|||900|pin@1||0|6|pin@0||0|5
+Aschematic:wire|net@4|||1800|pin@6||7|0|pin@8||8|0
+Aschematic:wire|net@5|||0|pin@4||-7|0|pin@9||-8|0
+Aschematic:wire|net@6|||900|pin@2||0|-5|pin@10||0|-6
+EVDD||D5G1;Y1.5;|pin@0||U
+EVclk||D5G1;Y-1.5;|pin@2||U
+EVin||D5G1;X-1.75;|pin@4||U
+EVoutsh||D5G1;X2.75;|pin@6||U
+X
+
+# Cell Ideal_Track&Hold;1{sch}
+CIdeal_Track&Hold;1{sch}||schematic|1205537275626|1228361758109|
+IIdeal_Switch;1{ic}|Ideal_sw@0||-2.25|4|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||5|-3|||||SCHEM_capacitance(D5G1;X2;Y-1.5;)S100p
+NOff-Page|conn@0||-0.5|-3|||R|
+NOff-Page|conn@3||42|1||||
+NOff-Page|conn@4||-28.5|7||||
+NOff-Page|conn@5||-20|33.75|||RRR|
+NGround|gnd@0||5|-8||||
+NGround|gnd@4||-20|14.25||||
+IIdeal_Opamp;2{ic}|ideal_op@0||32.25|1|||D5G4;
+IIdeal_Opamp;2{ic}|ideal_op@1||-17.5|4|||D5G4;
+NWire_Pin|pin@1||-4|-1||||
+NWire_Pin|pin@4||5|4||||
+Ngeneric:Invisible-Pin|pin@18||-17.25|9.75|||||ART_message(D5G1;)SInputBuf
+Ngeneric:Invisible-Pin|pin@19||33.75|6|||||ART_message(D5G1;)SOutputBuf
+NWire_Pin|pin@20||-20|23.25||||
+NWire_Pin|pin@21||-15.25|23.25||||
+NWire_Pin|pin@22||-11|-3||||
+NWire_Pin|pin@23||-23.75|-3||||
+NWire_Pin|pin@26||26|-5||||
+NWire_Pin|pin@27||38.75|-5||||
+NResistor|res@0||-20|27.25|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+NResistor|res@1||-20|19.25|||R||SCHEM_resistance(D5G1;Y2.75;)S100MEG
+IIdeal_Track&Hold;1{ic}|smp&hld@0||14.25|15.75|||D5G4;
+Awire|Vinb|D5G1;X0.75;Y1.75;||0|Ideal_sw@0|in|-5.25|4|ideal_op@1|Vo|-11|4
+Awire|Vins|D5G1;X2.5;Y1.75;||1800|Ideal_sw@0|out|0.75|4|pin@4||5|4
+Awire|Vtrip|D5G1;X1.5;Y1;||1800|pin@20||-20|23.25|pin@21||-15.25|23.25
+Awire|Vtrip|D5G1;Y-1.5;||900|Ideal_sw@0|contrlp|-4|1.75|pin@1||-4|-1
+Awire|net@1|||2700|conn@0|y|-0.5|-1|Ideal_sw@0|contrlm|-0.5|1.75
+Awire|net@7|||2700|cap@0|a|5|-1|pin@4||5|4
+Awire|net@8|||2700|gnd@0||5|-6|cap@0|b|5|-5
+Awire|net@36|||2700|res@0|b|-20|29.25|conn@5|y|-20|31.75
+Awire|net@37|||900|res@0|a|-20|25.25|pin@20||-20|23.25
+Awire|net@39|||2700|res@1|b|-20|21.25|pin@20||-20|23.25
+Awire|net@40|||2700|gnd@4||-20|16.25|res@1|a|-20|17.25
+Awire|net@43|||900|ideal_op@1|Vo|-11|4|pin@22||-11|-3
+Awire|net@44|||0|pin@22||-11|-3|pin@23||-23.75|-3
+Awire|net@50|||1800|pin@26||26|-5|pin@27||38.75|-5
+Awire|net@53|||2700|pin@27||38.75|-5|ideal_op@0|Vo|38.75|1
+Awire|net@54|||900|ideal_op@0|Vm|26|-2|pin@26||26|-5
+Awire|net@55|||2700|pin@23||-23.75|-3|ideal_op@1|Vm|-23.75|1
+Awire|net@64|||1800|conn@4|y|-26.5|7|ideal_op@1|Vp|-23.75|7
+Awire|net@65|||1800|ideal_op@0|Vo|38.75|1|conn@3|a|40|1
+Awire|net@72|||1800|pin@4||5|4|ideal_op@0|Vp|26|4
+EVDD||D5G1;X-4.75;|conn@5|y|U
+EVclk||D5G1;X-0.75;|conn@0|a|U
+EVin||D5G1;X-1;|conn@4|a|U
+EVoutsh||D5G1;X1.5;|conn@3|y|U
+X

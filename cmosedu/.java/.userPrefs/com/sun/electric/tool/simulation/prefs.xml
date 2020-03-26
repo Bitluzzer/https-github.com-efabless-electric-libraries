@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<map MAP_XML_VERSION="1.0">
+  <entry key="ParasiticsExtractsC" value="true"/>
+  <entry key="SpiceEngine" value="1"/>
+  <entry key="SpiceHeaderCardInfo" value="N O N E "/>
+  <entry key="SpiceLevel" value="3"/>
+  <entry key="SpiceOverwriteOutputFile" value="true"/>
+  <entry key="SpiceParasiticsLevel" value="1"/>
+  <entry key="SpicePartsLibrary" value="spicepartsS3"/>
+  <entry key="SpiceRunChoice" value="1"/>
+  <entry key="SpiceRunDir" value="../ngspice/run"/>
+  <entry key="SpiceRunProgram" value="xterm -bg black -fg white -geometry 100x20 -e ngspice"/>
+  <entry key="SpiceRunProgramArgs" value="-b ${FILENAME} -r ${FILENAME}.raw"/>
+  <entry key="SpiceTrailerCardInfo" value="N O N E "/>
+  <entry key="SpiceUseCellParameters" value="true"/>
+  <entry key="SpiceUseRunDir" value="true"/>
+</map>

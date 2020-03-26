@@ -1,0 +1,176 @@
+Electric Version 9.06.0702
+--------------- 0 --------------
+  Thu Mar 26 18:07:27 UTC 2020
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Thu Mar 26 18:08:20 UTC 2020
+ProcessKeyBinding 401 when=1585246100457 modifiers=40 code=10 char=ffff false false
+--------------- 2 --------------
+  Thu Mar 26 18:08:20 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 3 --------------
+  Thu Mar 26 18:08:20 UTC 2020
+ProcessKeyBinding 400 when=1585246100772 modifiers=40 code=0 char=58(X) false false
+--------------- 4 --------------
+  Thu Mar 26 18:08:20 UTC 2020
+ProcessKeyBinding 402 when=1585246100905 modifiers=0 code=10 char=ffff false false
+--------------- 5 --------------
+  Thu Mar 26 18:08:22 UTC 2020
+ProcessKeyBinding 401 when=1585246102471 modifiers=40 code=10 char=ffff false false
+--------------- 6 --------------
+  Thu Mar 26 18:08:22 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:jtagControl{sch}': 'jtag:jtagIRControl{ic}[jtagIRCo@0].phi1_fb'
+--------------- 7 --------------
+  Thu Mar 26 18:08:22 UTC 2020
+ProcessKeyBinding 400 when=1585246102525 modifiers=40 code=0 char=58(X) false false
+--------------- 8 --------------
+  Thu Mar 26 18:08:22 UTC 2020
+ProcessKeyBinding 402 when=1585246102713 modifiers=0 code=10 char=ffff false false
+--------------- 9 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+ProcessKeyBinding 401 when=1585246103246 modifiers=40 code=10 char=ffff false false
+--------------- 10 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+ProcessKeyBinding 402 when=1585246103525 modifiers=0 code=10 char=ffff false false
+--------------- 11 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+ProcessKeyBinding 401 when=1585246103694 modifiers=40 code=10 char=ffff false false
+--------------- 12 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:jtagIRControl{sch}': 'jtag:capture_ctl{ic}[capture_@0].out'
+--------------- 13 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+ProcessKeyBinding 400 when=1585246103781 modifiers=40 code=0 char=58(X) false false
+--------------- 14 --------------
+  Thu Mar 26 18:08:23 UTC 2020
+ProcessKeyBinding 402 when=1585246103941 modifiers=0 code=10 char=ffff false false
+--------------- 15 --------------
+  Thu Mar 26 18:08:24 UTC 2020
+ProcessKeyBinding 401 when=1585246104609 modifiers=40 code=10 char=ffff false false
+--------------- 16 --------------
+  Thu Mar 26 18:08:24 UTC 2020
+ProcessKeyBinding 402 when=1585246104884 modifiers=0 code=10 char=ffff false false
+--------------- 17 --------------
+  Thu Mar 26 18:08:25 UTC 2020
+ProcessKeyBinding 401 when=1585246105076 modifiers=440 code=10 char=ffff false false
+--------------- 18 --------------
+  Thu Mar 26 18:08:25 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:capture_ctl{sch}': 'scanChain:scanL{ic}[scanL@0].out'
+--------------- 19 --------------
+  Thu Mar 26 18:08:25 UTC 2020
+ProcessKeyBinding 400 when=1585246105148 modifiers=40 code=0 char=58(X) false false
+--------------- 20 --------------
+  Thu Mar 26 18:08:25 UTC 2020
+ProcessKeyBinding 402 when=1585246105301 modifiers=0 code=10 char=ffff false false
+--------------- 21 --------------
+  Thu Mar 26 18:08:27 UTC 2020
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'scanChain:scanL{sch}': 'Off-Page[conn@0].y'
+--------------- 22 --------------
+  Thu Mar 26 18:08:27 UTC 2020
+ProcessKeyBinding 400 when=1585246107146 modifiers=0 code=0 char=75(u) false false
+--------------- 23 --------------
+  Thu Mar 26 18:08:27 UTC 2020
+ProcessKeyBinding 402 when=1585246107988 modifiers=0 code=1b char=1b false false
+--------------- 24 --------------
+  Thu Mar 26 18:08:29 UTC 2020
+ProcessKeyBinding 401 when=1585246109094 modifiers=80 code=11 char=ffff false false
+--------------- 25 --------------
+  Thu Mar 26 18:08:29 UTC 2020
+ProcessKeyBinding 402 when=1585246109182 modifiers=0 code=11 char=ffff false false
+--------------- 26 --------------
+  Thu Mar 26 18:08:29 UTC 2020
+ProcessKeyBinding 401 when=1585246109691 modifiers=80 code=11 char=ffff false false
+--------------- 27 --------------
+  Thu Mar 26 18:08:29 UTC 2020
+ProcessKeyBinding 402 when=1585246109797 modifiers=0 code=11 char=ffff false false
+--------------- 28 --------------
+  Thu Mar 26 18:08:39 UTC 2020
+ProcessKeyBinding 401 when=1585246119285 modifiers=40 code=10 char=ffff false false
+--------------- 29 --------------
+  Thu Mar 26 18:08:39 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'scanChain:scanL{sch}': 'Off-Page[conn@0].y'
+--------------- 30 --------------
+  Thu Mar 26 18:08:39 UTC 2020
+ProcessKeyBinding 400 when=1585246119847 modifiers=40 code=0 char=42(B) false false
+--------------- 31 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:capture_ctl{sch}': 'scanChain:scanL{ic}[scanL@0].out'
+--------------- 32 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120187 modifiers=40 code=0 char=42(B) false false
+--------------- 33 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:jtagIRControl{sch}': 'jtag:capture_ctl{ic}[capture_@0].out'
+--------------- 34 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120372 modifiers=40 code=0 char=42(B) false false
+--------------- 35 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'jtag:jtagControl{sch}': 'jtag:jtagIRControl{ic}[jtagIRCo@0].read'
+--------------- 36 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120501 modifiers=40 code=0 char=42(B) false false
+--------------- 37 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 38 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120662 modifiers=40 code=0 char=42(B) false false
+--------------- 39 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 40 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120783 modifiers=40 code=0 char=42(B) false false
+--------------- 41 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 42 --------------
+  Thu Mar 26 18:08:40 UTC 2020
+ProcessKeyBinding 400 when=1585246120917 modifiers=40 code=0 char=42(B) false false
+--------------- 43 --------------
+  Thu Mar 26 18:08:41 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 44 --------------
+  Thu Mar 26 18:08:41 UTC 2020
+ProcessKeyBinding 400 when=1585246121064 modifiers=40 code=0 char=42(B) false false
+--------------- 45 --------------
+  Thu Mar 26 18:08:41 UTC 2020
+Menu Activated: Cell | Up Hierarchy | Up Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'qThreeTop_for_steve_wont_ncc{sch}': 'jtag:jtagControl{ic}[jtagCont@0].ExTest'
+--------------- 46 --------------
+  Thu Mar 26 18:08:41 UTC 2020
+ProcessKeyBinding 400 when=1585246121198 modifiers=40 code=0 char=42(B) false false
+--------------- 47 --------------
+  Thu Mar 26 18:08:41 UTC 2020
+ProcessKeyBinding 402 when=1585246121337 modifiers=0 code=10 char=ffff false false
+--------------- 48 --------------
+  Thu Mar 26 18:08:55 UTC 2020
+Menu Activated: File | Preferences...

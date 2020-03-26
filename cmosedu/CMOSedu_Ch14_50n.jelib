@@ -1,0 +1,128 @@
+# header information:
+HCMOSedu_Ch14_50n|9.00q
+
+# Views:
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D25.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell Fig14_2;1{sch}
+CFig14_2;1{sch}||schematic|1181256676472|1286665610280|
+NTransistor|M1|D5G1;X1;Y-3;|-13|6.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G1;X-1.5;Y-3;)SN_50n
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||-11|-0.25||||
+NWire_Pin|pin@1||-18.5|6.5||||
+Ngeneric:Invisible-Pin|pin@7||-19|11|||||SIM_spice_card(D5G0.5;)S[VGND GND 0 DC 0,VVGS VGS 0 DC 0,VVDD VDD 0 DC 1,.dc VVGS -0.1 1 1m,.include cmosedu_models.txt,*.options post]
+Ngeneric:Invisible-Pin|pin@8||-13.75|16.5|||||ART_message(D5G1;)SPlot log(Id) or log 10(Id) for LTSpice
+NPower|pwr@0||-11|12.5||||
+Awire|VGS|D5G1;X0.25;Y1;||0|M1|g|-14|6.5|pin@1||-18.5|6.5
+Awire|net@22|||2700|gnd@0||-11|1.75|M1|s|-11|4.5
+Awire|net@28|||2700|M1|d|-11|8.5|pwr@0||-11|12.5
+X
+
+# Cell Fig14_2_PMOS;1{sch}
+CFig14_2_PMOS;1{sch}||schematic|1181256676472|1290387352184|
+NTransistor|M1|D5G1;X2;Y-3.25;|-13|6.25|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G1;X-0.5;Y-3.5;)SP_50n
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||-11|-0.25||||
+Ngeneric:Invisible-Pin|pin@7||-19|11|||||SIM_spice_card(D5G0.5;)S[VGND GND 0 DC 0,VSG VDD VG DC 0,VDD VDD 0 DC 1,.dc VSG -0.1 1 1m,.include cmosedu_models.txt,*.options post]
+Ngeneric:Invisible-Pin|pin@8||-13.75|16.5|||||ART_message(D5G1;)SPlot log(Id) or log 10(Id) for LTSpice
+NWire_Pin|pin@9||-17.5|6.25||||
+NPower|pwr@0||-11|12.5||||
+Awire|VG|D5G1;X-0.75;Y0.5;||0|M1|g|-14|6.25|pin@9||-17.5|6.25
+Awire|net@29|||2700|M1|d|-11|8.25|pwr@0||-11|12.5
+Awire|net@30|||900|M1|s|-11|4.25|gnd@0||-11|1.75
+X
+
+# Cell Fig14_4;1{sch}
+CFig14_4;1{sch}||schematic|1181259653193|1286665644969|
+NTransistor|M1|D5G0.5;X1.25;Y-2;|-25|-3|||RR||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G0.5;X-0.75;Y-2;)SN_50n
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||-20|-3.5|||||SCHEM_capacitance(D5G1;X3;)S50fF
+NGround|gnd@1||-25|-6||||
+NGround|gnd@2||-20|-8||||
+NGround|gnd@3||-30|-4||||
+NWire_Pin|pin@7||-20|-1||||
+NWire_Pin|pin@8||-30|-1||||
+Ngeneric:Invisible-Pin|pin@9||-34.75|-0.75|||||SIM_spice_card(D5G0.5;)S[VGND GND 0 DC 0,.tran 10n 40u,.ic V(Vout)=1v,.include cmosedu_models.txt,*.options post]
+Ngeneric:Invisible-Pin|pin@10||-26|2.5|||||ART_message(D5G1;)SPlot Vout
+Awire|Vout|D5G1;X0.75;Y0.5;||1800|M1|s|-23|-1|pin@7||-20|-1
+Awire|net@11|||2700|gnd@2||-20|-6|cap@0|b|-20|-5.5
+Awire|net@12|||2700|cap@0|a|-20|-1.5|pin@7||-20|-1
+Awire|net@15|||900|pin@8||-30|-1|gnd@3||-30|-2
+Awire|net@20|||1800|pin@8||-30|-1|M1|d|-27|-1
+Awire|net@21|||2700|gnd@1||-25|-4|M1|g|-25|-4
+X
+
+# Cell Fig14_5;1{sch}
+CFig14_5;1{sch}||schematic|1181259943579|1286665665817|
+NTransistor|M1|D5G0.5;X1.25;Y-2;|-14.25|2.25|||RR||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G0.5;X-0.75;Y-2;)SN_50n
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@1||-9.25|1.75|||||SCHEM_capacitance(D5G1;X3.25;)S50fF
+NGround|gnd@2||-14.25|-0.75||||
+NGround|gnd@3||-9.25|-2.75||||
+Ngeneric:Invisible-Pin|pin@3||-24|3.25|||||SIM_spice_card(D5G0.5;)S[VGND GND 0 DC 0,Vin Vin 0 DC .5V,.tran 40u,.ic V(Vout)=1v,*.options post,.include cmosedu_models.txt]
+Ngeneric:Invisible-Pin|pin@7||-16|8|||||ART_message(D5G1;)SPlot Vin and Vout
+NWire_Pin|pin@8||-9.25|4.25||||
+NWire_Pin|pin@9||-19.25|4.25||||
+Awire|Vin|D5G1;Y0.75;||1800|pin@9||-19.25|4.25|M1|d|-16.25|4.25
+Awire|Vout|D5G1;X0.75;Y0.5;||1800|M1|s|-12.25|4.25|pin@8||-9.25|4.25
+Awire|net@10|||2700|gnd@3||-9.25|-0.75|cap@1|b|-9.25|-0.25
+Awire|net@11|||2700|cap@1|a|-9.25|3.75|pin@8||-9.25|4.25
+Awire|net@13|||2700|gnd@2||-14.25|1.25|M1|g|-14.25|1.25
+X
+
+# Cell Fig14_7;1{sch}
+CFig14_7;1{sch}||schematic|1181260147626|1286665688186|
+NTransistor|M1|D5G1;X0.75;Y-3.25;|-9|3.25|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D40.0|SIM_spice_model(D5G1;X-0.75;Y-3;)SP_50n
+NTransistor|M2|D5G1;X1;Y-3;|-9|-4.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G1;X-1;Y-3.25;)SN_50n
+NTransistor|M5|D5G0.5;X1.25;Y-2;|-19.75|-2.25|||RR||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G0.5;X-0.75;Y-2;)SN_50n
+NTransistor|M6|D5G1;X1.25;Y-2.75;|6.75|3.25|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D40.0|SIM_spice_model(D5G1;X-1;Y-3;)SP_50n
+NTransistor|M7|D5G1;X1;Y-3;|6.75|-4.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)D20.0|SIM_spice_model(D5G1;X-1;Y-3.25;)SN_50n
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@3||-19.75|-5.25||||
+NGround|gnd@4||-7|-10.25||||
+NGround|gnd@5||8.75|-10.25||||
+NWire_Pin|pin@2||0.25|-0.25||||
+NWire_Pin|pin@25||0.25|-12.75||||
+NWire_Pin|pin@26||15|-12.75||||
+Ngeneric:Invisible-Pin|pin@36||-23|9|||||SIM_spice_card(D5G1;)S[VGND GND 0 DC 0,.tran 200n,*.options post,.ic V(STOR)=1v,.include cmosedu_models.txt]
+Ngeneric:Invisible-Pin|pin@38||1|12.5|||||ART_message(D5G2;)SPlot v(stor)
+NWire_Pin|pin@40||-24.75|-0.25||||
+NWire_Pin|pin@44||-12.5|3.25||||
+NWire_Pin|pin@45||-12.5|-4.5||||
+NWire_Pin|pin@46||-7|-0.25||||
+NWire_Pin|pin@48||-12.5|-0.25||||
+NWire_Pin|pin@49||3.25|-0.25||||
+NWire_Pin|pin@51||3.25|3.25||||
+NWire_Pin|pin@52||3.25|-4.5||||
+NWire_Pin|pin@53||8.75|-0.25||||
+NWire_Pin|pin@54||15.5|-0.25||||
+NPower|pwr@2||-7|8||||
+NPower|pwr@3||8.75|8||||
+Awire|D|D5G1;Y0.75;||1800|pin@40||-24.75|-0.25|M5|d|-21.75|-0.25
+Awire|Q|D5G1;X2.5;Y0.25;||1800|pin@53||8.75|-0.25|pin@54||15.5|-0.25
+Awire|Qbar|D5G1;X6.5;Y0.5;||1800|pin@25||0.25|-12.75|pin@26||15|-12.75
+Awire|STOR|D5G1;X0.75;Y0.5;||1800|M5|s|-17.75|-0.25|pin@48||-12.5|-0.25
+Awire|net@35|||900|pin@2||0.25|-0.25|pin@25||0.25|-12.75
+Awire|net@57|||2700|gnd@3||-19.75|-3.25|M5|g|-19.75|-3.25
+Awire|net@60|||1800|pin@45||-12.5|-4.5|M2|g|-10|-4.5
+Awire|net@61|||2700|M2|d|-7|-2.5|pin@46||-7|-0.25
+Awire|net@62|||2700|M1|d|-7|5.25|pwr@2||-7|8
+Awire|net@63|||2700|gnd@4||-7|-8.25|M2|s|-7|-6.5
+Awire|net@64|||0|M1|g|-10|3.25|pin@44||-12.5|3.25
+Awire|net@66|||2700|pin@46||-7|-0.25|M1|s|-7|1.25
+Awire|net@70|||2700|pin@45||-12.5|-4.5|pin@48||-12.5|-0.25
+Awire|net@71|||2700|pin@48||-12.5|-0.25|pin@44||-12.5|3.25
+Awire|net@74|||1800|pin@52||3.25|-4.5|M7|g|5.75|-4.5
+Awire|net@75|||2700|M7|d|8.75|-2.5|pin@53||8.75|-0.25
+Awire|net@76|||2700|M6|d|8.75|5.25|pwr@3||8.75|8
+Awire|net@77|||2700|gnd@5||8.75|-8.25|M7|s|8.75|-6.5
+Awire|net@78|||0|M6|g|5.75|3.25|pin@51||3.25|3.25
+Awire|net@79|||900|pin@49||3.25|-0.25|pin@52||3.25|-4.5
+Awire|net@80|||2700|pin@53||8.75|-0.25|M6|s|8.75|1.25
+Awire|net@81|||900|pin@51||3.25|3.25|pin@49||3.25|-0.25
+Awire|net@87|||0|pin@49||3.25|-0.25|pin@2||0.25|-0.25
+Awire|net@88|||1800|pin@46||-7|-0.25|pin@2||0.25|-0.25
+X

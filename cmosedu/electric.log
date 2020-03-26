@@ -1,0 +1,176 @@
+Electric Version 9.06.0702
+--------------- 0 --------------
+  Thu Mar 26 18:21:10 UTC 2020
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Thu Mar 26 18:21:20 UTC 2020
+ProcessKeyBinding 401 when=1585246880281 modifiers=40 code=10 char=ffff false false
+--------------- 2 --------------
+  Thu Mar 26 18:21:20 UTC 2020
+ProcessKeyBinding 401 when=1585246880396 modifiers=40 code=58 char=58(X) false false
+--------------- 3 --------------
+  Thu Mar 26 18:21:20 UTC 2020
+ProcessKeyBinding 400 when=1585246880396 modifiers=40 code=0 char=58(X) false false
+--------------- 4 --------------
+  Thu Mar 26 18:21:20 UTC 2020
+ProcessKeyBinding 402 when=1585246880514 modifiers=0 code=10 char=ffff false false
+--------------- 5 --------------
+  Thu Mar 26 18:21:20 UTC 2020
+ProcessKeyBinding 402 when=1585246880514 modifiers=0 code=58 char=78(x) false false
+--------------- 6 --------------
+  Thu Mar 26 18:21:22 UTC 2020
+ProcessKeyBinding 401 when=1585246882216 modifiers=40 code=10 char=ffff false false
+--------------- 7 --------------
+  Thu Mar 26 18:21:22 UTC 2020
+ProcessKeyBinding 401 when=1585246882399 modifiers=40 code=58 char=58(X) false false
+--------------- 8 --------------
+  Thu Mar 26 18:21:22 UTC 2020
+ProcessKeyBinding 400 when=1585246882399 modifiers=40 code=0 char=58(X) false false
+--------------- 9 --------------
+  Thu Mar 26 18:21:22 UTC 2020
+ProcessKeyBinding 402 when=1585246882501 modifiers=40 code=58 char=58(X) false false
+--------------- 10 --------------
+  Thu Mar 26 18:21:22 UTC 2020
+ProcessKeyBinding 402 when=1585246882552 modifiers=0 code=10 char=ffff false false
+--------------- 11 --------------
+  Thu Mar 26 18:21:23 UTC 2020
+Menu Activated: Tools | Simulation (Built-in) | Set Signal Undefined at Main Time
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sim_band_gap{sch}': 'band_gap_ref{ic}[band_gap@0].gnd'
+--------------- 12 --------------
+  Thu Mar 26 18:21:23 UTC 2020
+ProcessKeyBinding 400 when=1585246883693 modifiers=0 code=0 char=78(x) false false
+--------------- 13 --------------
+  Thu Mar 26 18:21:31 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sim_band_gap{sch}': 'band_gap_ref{ic}[band_gap@0].gnd'
+--------------- 14 --------------
+  Thu Mar 26 18:21:36 UTC 2020
+ProcessKeyBinding 401 when=1585246896142 modifiers=0 code=55 char=75(u) false false
+--------------- 15 --------------
+  Thu Mar 26 18:21:36 UTC 2020
+ProcessKeyBinding 400 when=1585246896142 modifiers=0 code=0 char=75(u) false false
+--------------- 16 --------------
+  Thu Mar 26 18:21:36 UTC 2020
+ProcessKeyBinding 402 when=1585246896213 modifiers=0 code=55 char=75(u) false false
+--------------- 17 --------------
+  Thu Mar 26 18:21:37 UTC 2020
+ProcessKeyBinding 401 when=1585246897417 modifiers=80 code=11 char=ffff false false
+--------------- 18 --------------
+  Thu Mar 26 18:21:37 UTC 2020
+ProcessKeyBinding 402 when=1585246897553 modifiers=0 code=11 char=ffff false false
+--------------- 19 --------------
+  Thu Mar 26 18:21:37 UTC 2020
+ProcessKeyBinding 401 when=1585246897910 modifiers=80 code=11 char=ffff false false
+--------------- 20 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+Menu Activated: Edit | Undo
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'band_gap_ref{sch}': 'Wire_Pin[pin@107].wire'
+--------------- 21 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 400 when=1585246898027 modifiers=80 code=0 char=1a false false
+--------------- 22 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 402 when=1585246898240 modifiers=0 code=11 char=ffff false false
+--------------- 23 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 401 when=1585246898275 modifiers=80 code=11 char=ffff false false
+--------------- 24 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 402 when=1585246898452 modifiers=0 code=11 char=ffff false false
+--------------- 25 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 401 when=1585246898696 modifiers=80 code=11 char=ffff false false
+--------------- 26 --------------
+  Thu Mar 26 18:21:38 UTC 2020
+ProcessKeyBinding 402 when=1585246898696 modifiers=0 code=11 char=ffff false false
+--------------- 27 --------------
+  Thu Mar 26 18:21:44 UTC 2020
+ProcessKeyBinding 401 when=1585246904761 modifiers=40 code=10 char=ffff false false
+--------------- 28 --------------
+  Thu Mar 26 18:21:45 UTC 2020
+ProcessKeyBinding 401 when=1585246905428 modifiers=40 code=58 char=58(X) false false
+--------------- 29 --------------
+  Thu Mar 26 18:21:45 UTC 2020
+ProcessKeyBinding 400 when=1585246905428 modifiers=40 code=0 char=58(X) false false
+--------------- 30 --------------
+  Thu Mar 26 18:21:45 UTC 2020
+ProcessKeyBinding 402 when=1585246905505 modifiers=40 code=58 char=58(X) false false
+--------------- 31 --------------
+  Thu Mar 26 18:21:46 UTC 2020
+ProcessKeyBinding 402 when=1585246906040 modifiers=0 code=10 char=ffff false false
+--------------- 32 --------------
+  Thu Mar 26 18:21:47 UTC 2020
+ProcessKeyBinding 401 when=1585246907137 modifiers=40 code=10 char=ffff false false
+--------------- 33 --------------
+  Thu Mar 26 18:21:47 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy In Place To Object
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'band_gap_ref{sch}': 'diode_parasitic_pnp{sch}[diode_pa@9].A'
+--------------- 34 --------------
+  Thu Mar 26 18:21:47 UTC 2020
+ProcessKeyBinding 400 when=1585246907519 modifiers=40 code=0 char=44(D) false false
+--------------- 35 --------------
+  Thu Mar 26 18:21:47 UTC 2020
+ProcessKeyBinding 402 when=1585246907811 modifiers=0 code=10 char=ffff false false
+--------------- 36 --------------
+  Thu Mar 26 18:21:48 UTC 2020
+Menu Activated: Cell | Down Hierarchy | Down Hierarchy In Place
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'band_gap_ref{sch}': 'diode_parasitic_pnp{sch}[diode_pa@9].A'
+--------------- 37 --------------
+  Thu Mar 26 18:21:48 UTC 2020
+ProcessKeyBinding 400 when=1585246908262 modifiers=0 code=0 char=64(d) false false
+--------------- 38 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 401 when=1585246909456 modifiers=0 code=1b char=1b false false
+--------------- 39 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 400 when=1585246909456 modifiers=0 code=0 char=1b false false
+--------------- 40 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 402 when=1585246909562 modifiers=0 code=1b char=1b false false
+--------------- 41 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 401 when=1585246909637 modifiers=0 code=1b char=1b false false
+--------------- 42 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 400 when=1585246909637 modifiers=0 code=0 char=1b false false
+--------------- 43 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 402 when=1585246909814 modifiers=0 code=1b char=1b false false
+--------------- 44 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 401 when=1585246909819 modifiers=0 code=1b char=1b false false
+--------------- 45 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 400 when=1585246909819 modifiers=0 code=0 char=1b false false
+--------------- 46 --------------
+  Thu Mar 26 18:21:49 UTC 2020
+ProcessKeyBinding 402 when=1585246909996 modifiers=0 code=1b char=1b false false
+--------------- 47 --------------
+  Thu Mar 26 18:21:50 UTC 2020
+ProcessKeyBinding 401 when=1585246910866 modifiers=0 code=1b char=1b false false
+--------------- 48 --------------
+  Thu Mar 26 18:21:50 UTC 2020
+ProcessKeyBinding 400 when=1585246910866 modifiers=0 code=0 char=1b false false
+--------------- 49 --------------
+  Thu Mar 26 18:21:50 UTC 2020
+ProcessKeyBinding 402 when=1585246910905 modifiers=0 code=1b char=1b false false
+--------------- 50 --------------
+  Thu Mar 26 18:21:51 UTC 2020
+ProcessKeyBinding 401 when=1585246911054 modifiers=0 code=1b char=1b false false
+--------------- 51 --------------
+  Thu Mar 26 18:21:51 UTC 2020
+ProcessKeyBinding 400 when=1585246911054 modifiers=0 code=0 char=1b false false
+--------------- 52 --------------
+  Thu Mar 26 18:21:51 UTC 2020
+ProcessKeyBinding 402 when=1585246911095 modifiers=0 code=1b char=1b false false
+--------------- 53 --------------
+  Thu Mar 26 18:21:52 UTC 2020
+ProcessKeyBinding 401 when=1585246912639 modifiers=80 code=11 char=ffff false false
+--------------- 54 --------------
+  Thu Mar 26 18:21:52 UTC 2020
+ProcessKeyBinding 402 when=1585246912825 modifiers=0 code=11 char=ffff false false

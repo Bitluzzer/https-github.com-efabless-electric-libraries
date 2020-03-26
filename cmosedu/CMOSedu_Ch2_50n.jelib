@@ -1,0 +1,95 @@
+# header information:
+HCMOSedu_Ch2_50n|8.11
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D25.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell Fig2_19;1{sch}
+CFig2_19;1{sch}||schematic|1181931511312|1286662559029|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NDiode|diode|D5G1;X-2.75;Y1;|-0.25|-2.5|||RR||SCHEM_diode(D5G1;Y-0.25;)S""
+NGround|gnd@0||-0.25|-9.25||||
+Ngeneric:Invisible-Pin|pin@0||-15.5|-1.75|||||SIM_spice_card(D5G0.75;)S[Vgnd gnd 0 DC 0,Vin Vin 0 DC 0 PULSE 10 -10 10n 0.1n 0.1n 20n 40n,.model diode D is=1e-15 tt=10E-9 cj0=1e-12 vj=0.7 m=0.33,.tran 0 25n,*.options post]
+NWire_Pin|pin@1||-0.25|2.75||||
+NWire_Pin|pin@2||-21.25|2.75||||
+Ngeneric:Invisible-Pin|pin@3||-11.25|7.75|||||ART_message(D5G1;)SPlot Vin,VD and ID
+NResistor|res@0||-11.25|2.75|||||SCHEM_resistance(D5G2;Y1.5;)S1k
+Awire|D1|D5G1;X2.25;Y-3.25;||900|pin@1||-0.25|2.75|diode|b|-0.25|-0.5
+Awire|VD|D5G2;X2;Y1;||1800|res@0|b|-9.25|2.75|pin@1||-0.25|2.75
+Awire|Vin|D5G2;X-5.5;Y1;||0|res@0|a|-13.25|2.75|pin@2||-21.25|2.75
+Awire|net@0|||2700|gnd@0||-0.25|-7.25|diode|a|-0.25|-4.5
+X
+
+# Cell Fig2_23;1{sch}
+CFig2_23;1{sch}||schematic|1181931521046|1286662616933|
+ITRC;2{ic}|O1|D5G4;X-5.5;Y-1;|-11|-1.25|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||-23|-9||||
+NGround|gnd@1||-0.25|-9||||
+NGround|gnd@2||8.75|-13||||
+Ngeneric:Invisible-Pin|pin@0||-28.25|7.25|||||SIM_spice_card(D5G1;)S[Vgnd gnd 0 DC 0,.model TRC ltra R=5k C=5f len=50,Vin Vin 0 DC 0 PULSE 0 1 5n,.tran 0 100n,*.options post]
+Ngeneric:Invisible-Pin|pin@1||-11|7.5|||||ART_message(D5G2;)SPlot Vin and Vout
+NWire_Pin|pin@4||-28.25|1.75||||
+NWire_Pin|pin@5||8.75|1.5||||
+NWire_Pin|pin@7||-2|1.5||||
+NWire_Pin|pin@10||-0.25|-6.25||||
+NWire_Pin|pin@11||-23|-6.25||||
+NResistor|res@0||8.75|-4.5|||R||SCHEM_resistance(D5G2;Y-2.5;)S1G
+Awire|Vin|D5G1;Y0.75;||1800|pin@4||-28.25|1.75|O1|a|-20|1.75
+Awire|Vout|D5G1;Y0.75;||0|pin@5||8.75|1.5|pin@7||-2|1.5
+Awire|net@0|||2700|res@0|b|8.75|-2.5|pin@5||8.75|1.5
+Awire|net@2|||900|res@0|a|8.75|-6.5|gnd@2||8.75|-11
+Awire|net@33|||900|O1|b|-2|1.75|pin@7||-2|1.5
+Awire|net@34|||2700|gnd@1||-0.25|-7|pin@10||-0.25|-6.25
+Awire|net@35|||0|pin@10||-0.25|-6.25|O1|gndR|-3|-6.25
+Awire|net@36|||0|O1|gndL|-19|-6.25|pin@11||-23|-6.25
+Awire|net@37|||900|pin@11||-23|-6.25|gnd@0||-23|-7
+X
+
+# Cell TRC;2{ic}
+CTRC;2{ic}||artwork|1181325801208|1236119972671|E|ATTR_SPICE_template(D5G1;NTX-2;Y7.5;)S$(node_name) $(a)  $(gndL) $(b)  $(gndR) TRC
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Polygon|art@1||0|3|18|6|||trace()V[-9/0,-7.75/-3,-7.75/-3,-6/3,-4/-3,-2/3,0/-3,2/3,4/-3,6/3,8/-3,9/0]
+NPin|pin@0||-1.5|-3.75|1|1||
+NPin|pin@1||1.5|-3.75|1|1||
+Nschematic:Wire_Pin|pin@2||-9|3||||
+Nschematic:Wire_Pin|pin@3||9|3||||
+Nschematic:Wire_Pin|pin@4||-8|-5||||
+Nschematic:Wire_Pin|pin@5||8|-5||||
+NPin|pin@8||-8.5|0|1|1||
+NPin|pin@9||8.5|0|1|1||
+NPin|pin@10||0|-2.5|1|1||
+NPin|pin@11||0|0|1|1||
+NPin|pin@12||-1.5|-2.5|1|1||
+NPin|pin@13||1.5|-2.5|1|1||
+NPin|pin@14||-1.5|-6.75|1|1||
+NPin|pin@15||0|-8.5|1|1||
+NPin|pin@16||1.5|-6.75|1|1||
+NPin|pin@17||0|-6.75|1|1||
+NPin|pin@18||0|-3.75|1|1||
+NPin|pin@19||0|-5|1|1||
+NPin|pin@20||-8|-5|1|1||
+NPin|pin@21||8|-5|1|1||
+AThicker|net@0|||FS1800|pin@11||0|0|pin@9||8.5|0
+AThicker|net@1|||FS1800|pin@8||-8.5|0|pin@11||0|0
+AThicker|net@2|||FS2700|pin@10||0|-2.5|pin@11||0|0
+ASolid|net@3|||FS1800|pin@12||-1.5|-2.5|pin@13||1.5|-2.5
+ASolid|net@4|||FS1800|pin@18||0|-3.75|pin@1||1.5|-3.75
+AThicker|net@7|||FS1306|pin@14||-1.5|-6.75|pin@15||0|-8.5
+AThicker|net@8|||FS2294|pin@15||0|-8.5|pin@16||1.5|-6.75
+AThicker|net@10|||FS1800|pin@17||0|-6.75|pin@16||1.5|-6.75
+AThicker|net@11|||FS1800|pin@14||-1.5|-6.75|pin@17||0|-6.75
+ASolid|net@12|||FS1800|pin@0||-1.5|-3.75|pin@18||0|-3.75
+AThicker|net@13|||FS2700|pin@17||0|-6.75|pin@19||0|-5
+AThicker|net@14|||FS2700|pin@19||0|-5|pin@18||0|-3.75
+AThicker|net@15|||FS0|pin@19||0|-5|pin@20||-8|-5
+AThicker|net@16|||FS1800|pin@19||0|-5|pin@21||8|-5
+Ea||D5G2;|pin@2||U
+Eb||D5G2;|pin@3||U
+EgndL||D5G2;|pin@4||U
+EgndR||D5G2;|pin@5||U
+X

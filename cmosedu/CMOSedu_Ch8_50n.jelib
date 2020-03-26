@@ -1,0 +1,168 @@
+# header information:
+HCMOSedu_Ch8_50n|9.01
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# External Libraries:
+
+Lspiceparts|spiceparts
+
+# Technologies:
+Tmocmos|ScaleFORmocmos()D25.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell Ex8_5;1{sch}
+CEx8_5;1{sch}||schematic|1181413965468|1286663280101|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||3|-2.25||||
+NGround|gnd@1||16|-2.25||||
+Ispiceparts:ACVoltage;1{ic}|in|D5G1;|3|6|||D5G4;|ATTR_ACVoltage(D5G1;NPY1;)S1V|ATTR_DCVoltage(D5G0.5;NPY1.5;)S1V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+NWire_Pin|pin@0||16|11.75||||
+NWire_Pin|pin@1||3|11.75||||
+Ngeneric:Invisible-Pin|pin@3||10|-7.75|||||SIM_spice_card(D5G2;)S[VGND GND 0 DC 0,".noise v(_2,0) vin dec 100 1 1k",*.options post]
+NResistor|res@0||16|8|||R||SCHEM_resistance(D5G1;Y-2.5;)S10kohm
+NResistor|res@1||16|2|||R||SCHEM_resistance(D5G1;Y-2.25;)S1kohm
+Awire|1|D5G2;Y1;||0|pin@0||16|11.75|pin@1||3|11.75
+Awire|2|D5G2;X1;Y0.25;||2700|res@1|b|16|4|res@0|a|16|6
+Awire|net@0|||2700|gnd@0||3|-0.25|in|minus|3|3
+Awire|net@1|||2700|gnd@1||16|-0.25|res@1|a|16|0
+Awire|net@3|||2700|res@0|b|16|10|pin@0||16|11.75
+Awire|net@5|||900|pin@1||3|11.75|in|plus|3|9
+X
+
+# Cell Ex8_6;1{sch}
+CEx8_6;1{sch}||schematic|1181413965468|1286663307331|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||16|2.75|||||SCHEM_capacitance(D5G1;X2.75;)S1pF
+NGround|gnd@0||3|-2.25||||
+NGround|gnd@1||16|-2.25||||
+Ispiceparts:ACVoltage;1{ic}|in|D5G1;|3|6|||D5G4;|ATTR_ACVoltage(D5G1;NPY1;)S1V|ATTR_DCVoltage(D5G0.5;NPY1.5;)S1V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+NWire_Pin|pin@0||16|11.75||||
+NWire_Pin|pin@1||3|11.75||||
+Ngeneric:Invisible-Pin|pin@3||10|-8|||||SIM_spice_card(D5G2;)S[VGND GND 0 DC 0,".noise v(_2,0) vin dec 100 1 1G",*.options post]
+NResistor|res@0||16|8|||R||SCHEM_resistance(D5G1;X0.25;Y-2.75;)S10kohm
+Awire|1|D5G2;Y1;||0|pin@0||16|11.75|pin@1||3|11.75
+Awire|2|D5G2;X0.75;||2700|cap@0|a|16|4.75|res@0|a|16|6
+Awire|net@0|||2700|gnd@0||3|-0.25|in|minus|3|3
+Awire|net@3|||2700|res@0|b|16|10|pin@0||16|11.75
+Awire|net@5|||900|pin@1||3|11.75|in|plus|3|9
+Awire|net@6|||900|cap@0|b|16|0.75|gnd@1||16|-0.25
+X
+
+# Cell Ex8_10;1{sch}
+CEx8_10;1{sch}||schematic|1181413965468|1318906577393|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||2.25|1||||
+NWire_Pin|pin@0||15.5|20.25||||
+NWire_Pin|pin@1||2.25|20.25||||
+Ngeneric:Invisible-Pin|pin@3||10|-6.25|||||SIM_spice_card(D5G2;)S[VGND GND 0 DC 0,GL Vout 0 Vout 0 1e-3,".noise v(vout,0) vs dec 100 1 1k",*.options post]
+NWire_Pin|pin@28||15.5|8||||
+NResistor|res@0||15.5|16.5|||R||SCHEM_resistance(D5G1;Y-2.5;)S10kohm
+Ispiceparts:ACVoltage;1{ic}|s|D5G1;|2.25|12.5|||D5G4;|ATTR_ACVoltage(D5G1;NPY1;)S1V|ATTR_DCVoltage(D5G0.5;NPY1.5;)S1V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+Awire|Vout|D5G1;||2700|pin@28||15.5|8|res@0|a|15.5|14.5
+Awire|Vs|D5G2;Y1;||0|pin@0||15.5|20.25|pin@1||2.25|20.25
+Awire|net@0|||2700|gnd@0||2.25|3|s|minus|2.25|9.5
+Awire|net@3|||2700|res@0|b|15.5|18.5|pin@0||15.5|20.25
+Awire|net@5|||900|pin@1||2.25|20.25|s|plus|2.25|15.5
+X
+
+# Cell Ex8_11;1{sch}
+CEx8_11;1{sch}||schematic|1181413965468|1318906736292|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||2.25|1||||
+NGround|gnd@2||15.75|0.75||||
+NWire_Pin|pin@1||2.25|20.25||||
+Ngeneric:Invisible-Pin|pin@3||10|-6|||||SIM_spice_card(D5G2;)S[GL Vout Vs Vout Vs 1e-4,".noise v(vout,0) vs dec 100 1 1k",*.options post]
+NWire_Pin|pin@33||6|20.25||||
+NWire_Pin|pin@37||15.75|20.5||||
+NResistor|res@0||15.75|8.5|||R||SCHEM_resistance(D5G1;X0.25;Y-2.5;)S1kohm
+Ispiceparts:ACVoltage;1{ic}|s|D5G1;|2.25|12.5|||D5G4;|ATTR_ACVoltage(D5G1;NPY1;)S1V|ATTR_DCVoltage(D5G0.5;NPY1.5;)S1V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+Awire|Vout|D5G2;||2700|res@0|b|15.75|10.5|pin@37||15.75|20.5
+Awire|Vs|D5G2;X-0.5;Y1.5;||1800|pin@1||2.25|20.25|pin@33||6|20.25
+Awire|net@0|||2700|gnd@0||2.25|3|s|minus|2.25|9.5
+Awire|net@5|||900|pin@1||2.25|20.25|s|plus|2.25|15.5
+Awire|net@45|||900|res@0|a|15.75|6.5|gnd@2||15.75|2.75
+X
+
+# Cell Ex8_12;1{sch}
+CEx8_12;1{sch}||schematic|1181413965468|1286663371113|
+NDiode|1|D5G1;|15.75|8.5|||RR||SCHEM_diode(D5G1;)S""|SIM_spice_model(D5G1;X-2.75;)SDiode
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||2.25|1||||
+NGround|gnd@2||15.75|0.75||||
+Ngeneric:Invisible-Pin|pin@3||8|-5.5|||||SIM_spice_card(D5G2;)S[VGND GND 0 DC 0,.model Diode D TT=10n Rs=0,".noise v(vout,0) vs dec 100 1 100G",*.options post]
+NWire_Pin|pin@41||2.25|13.75||||
+NWire_Pin|pin@43||15.75|13.75||||
+NResistor|res@0||9|13.75|||RR||SCHEM_resistance(D5G1;Y-1.75;)S1kohm
+Ispiceparts:ACVoltage;1{ic}|s|D5G1;|2.25|8|||D5G4;|ATTR_ACVoltage(D5G1;NPX-7.25;)S1V|ATTR_DCVoltage(D5G1;NPX-7;Y1.5;)S1.7V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+Awire|Vout|D5G1;X0.25;Y0.75;||0|pin@43||15.75|13.75|res@0|a|11|13.75
+Awire|Vs|D5G1;Y0.75;||0|res@0|b|7|13.75|pin@41||2.25|13.75
+Awire|net@0|||2700|gnd@0||2.25|3|s|minus|2.25|5
+Awire|net@65|||900|pin@41||2.25|13.75|s|plus|2.25|11
+Awire|net@69|||900|1|a|15.75|6.5|gnd@2||15.75|2.75
+Awire|net@70|||2700|1|b|15.75|10.5|pin@43||15.75|13.75
+X
+
+# Cell Ex8_13;1{sch}
+CEx8_13;1{sch}||schematic|1181413965468|1286663392704|
+NDiode|1|D5G1;|15.75|8.5|||||SCHEM_diode(D5G1;)S""|SIM_spice_model(D5G1;X-2.75;)SDiode
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||2.25|1||||
+NGround|gnd@2||15.75|0.75||||
+Ngeneric:Invisible-Pin|pin@3||8|-5|||||SIM_spice_card(D5G2;)S[VGND GND 0 DC 0,.model Diode D TT=10n Rs=0 CJ0=25f,".noise v(vout,0) vs dec 100 1 100G",*.options post]
+NWire_Pin|pin@41||2.25|13.75||||
+NWire_Pin|pin@43||15.75|13.75||||
+NResistor|res@0||9|13.75|||RR||SCHEM_resistance(D5G1;Y-1.75;)S1kohm
+Ispiceparts:ACVoltage;1{ic}|s|D5G1;Y1.25;|2.25|8|||D5G4;|ATTR_ACVoltage(D5G1;NPX-7.25;)S1V|ATTR_DCVoltage(D5G1;NPX-7;Y1.5;)S1.7V|ATTR_Delay(D5G0.5;NPY-1.5;)S1ns|ATTR_Frequency(D5G0.5;NPY-1;)S800M
+Awire|Vout|D5G1;X0.25;Y0.75;||0|pin@43||15.75|13.75|res@0|a|11|13.75
+Awire|Vs|D5G1;Y0.75;||0|res@0|b|7|13.75|pin@41||2.25|13.75
+Awire|net@0|||2700|gnd@0||2.25|3|s|minus|2.25|5
+Awire|net@65|||900|pin@41||2.25|13.75|s|plus|2.25|11
+Awire|net@72|||900|1|b|15.75|6.5|gnd@2||15.75|2.75
+Awire|net@75|||900|pin@43||15.75|13.75|1|a|15.75|10.5
+X
+
+# Cell Ex8_14;1{sch}
+CEx8_14;1{sch}||schematic|1181418678250|1286663413417|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||19.25|16.5|||R||SCHEM_capacitance(D5G1;X-2;)S10pF
+NGround|gnd@0||4.5|5||||
+Ispiceparts:DCVoltage;1{ic}|in|D5G1;Y1;|4.5|12|||D5G4;|ATTR_Voltage(D5G0.5;NP)S0V
+NWire_Pin|pin@1||4.5|16.5||||
+NWire_Pin|pin@8||28.25|16.5||||
+Ngeneric:Invisible-Pin|pin@10||15|6.5|||||SIM_spice_card(D5G1;)S[VGND GND 0 DC 0,Eopamp Vout 0 0 Vm 100MEG,".noise v(vout,0) Vin dec 100 100 1G",*.options post]
+NResistor|res@0||11|16.5|||||SCHEM_resistance(D5G1;Y1.25;)S10kohm
+Awire|Vm|D5G1;Y0.75;||0|cap@0|a|17.25|16.5|res@0|b|13|16.5
+Awire|Vout|D5G1;X2.25;Y0.75;||1800|cap@0|b|21.25|16.5|pin@8||28.25|16.5
+Awire|net@0|||2700|gnd@0||4.5|7|in|minus|4.5|8.5
+Awire|net@3|||900|pin@1||4.5|16.5|in|plus|4.5|15.5
+Awire|net@18|||0|res@0|a|9|16.5|pin@1||4.5|16.5
+X
+
+# Cell Ex8_18;1{sch}
+CEx8_18;1{sch}||schematic|1181418678250|1286663429978|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NCapacitor|cap@0||19.25|17.5|||R||SCHEM_capacitance(D5G1;X-2;)S1000pF
+NGround|gnd@0||5.75|11.25||||
+NWire_Pin|pin@4||13.25|13.75||||
+NWire_Pin|pin@7||13.25|17.5||||
+NWire_Pin|pin@8||28.25|17.5||||
+Ngeneric:Invisible-Pin|pin@10||20.25|10|||||SIM_spice_card(D5G1;)S[VGND GND 0 DC 0,Eopamp Vout 0 Vp Vm 100MEG,".noise v(vout,0) Vplus dec 100 1 1G",*.options post]
+NWire_Pin|pin@11||5.75|19.75||||
+NWire_Pin|pin@12||13.25|20||||
+NWire_Pin|pin@13||28.25|20||||
+NWire_Pin|pin@15||9.5|19.75||||
+Ispiceparts:DCVoltage;1{ic}|plus|D5G1;Y1;|5.75|16|||D5G4;|ATTR_Voltage(D5G0.5;NP)S0V
+NResistor|res@0||19.25|20|||||SCHEM_resistance(D5G1;Y1.25;)S100kohm
+Awire|Vm|D5G1;||2700|pin@4||13.25|13.75|pin@7||13.25|17.5
+Awire|Vout|D5G1;X0.25;Y0.75;||1800|cap@0|b|21.25|17.5|pin@8||28.25|17.5
+Awire|Vp|D5G1;Y0.5;||1800|pin@11||5.75|19.75|pin@15||9.5|19.75
+Awire|net@0|||900|gnd@0||5.75|13.25|plus|minus|5.75|12.5
+Awire|net@13|||0|cap@0|a|17.25|17.5|pin@7||13.25|17.5
+Awire|net@19|||900|pin@11||5.75|19.75|plus|plus|5.75|19.5
+Awire|net@21|||0|res@0|a|17.25|20|pin@12||13.25|20
+Awire|net@22|||900|pin@12||13.25|20|pin@7||13.25|17.5
+Awire|net@23|||1800|res@0|b|21.25|20|pin@13||28.25|20
+Awire|net@24|||900|pin@13||28.25|20|pin@8||28.25|17.5
+X

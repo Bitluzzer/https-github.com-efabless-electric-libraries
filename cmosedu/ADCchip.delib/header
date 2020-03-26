@@ -1,0 +1,11 @@
+# header information:
+HADCchip|9.05
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# Tools:
+Ouser|DefaultTechnology()Sschematic
+Osimulation|VerilogUseAssign()BT
+C____SEARCH_FOR_CELL_FILES____

@@ -1,0 +1,9 @@
+* *****************************************************
+* XH035 Electric VLSI Reference Libraries Folders
+* *****************************************************
+
+* EFXH035A primitive technology and ngspice primitives library
+/ef/tech/XFAB/EFXH035A/libs.tech/elec
+
+* EFXH035A reference libraries
+/ef/tech/XFAB/EFXH035A/libs.ref/elec

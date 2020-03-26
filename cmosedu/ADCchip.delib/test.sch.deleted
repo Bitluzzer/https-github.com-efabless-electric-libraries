@@ -1,0 +1,13 @@
+HADCchip|9.05
+
+# External Libraries:
+
+LIO_CELLS_F|IO_CELLS_F
+
+# Cell test;1{sch}
+Ctest;1{sch}||schematic|1419718777547|1419721438354|
+IIO_CELLS_F:H_ANOF;1{ic}|H_ANOF@0||-19.5|7.5|||D5G4;
+IIO_CELLS_F:H_ANOF;1{ic}|H_ANOF@1||-19.5|-23|||D5G4;
+Ngeneric:Facet-Center|art@0||0|0||||AV
+Awire|net@0|||2700|H_ANOF@1|CLAMPC|-33.5|-10|H_ANOF@0|CLAMPC|-33.5|20.5
+X
